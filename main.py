@@ -40,7 +40,22 @@ def engineeringCollegesByCity(city):
         output = searchByCity(name_of_city)
     except:
         return {
-            "Status":"Server at server side"
+            "Status":"Error at server side"
+        }
+
+    return output
+
+@app.get('/engineeringColleges/nirf/state={state}')
+def engineeringCollegesByState(state):
+
+    # Chnaging the output in lowercase
+    name = state.lower()
+    
+    try:
+        output = searchByState(name)
+    except:
+        return {
+            "Status":"Error at server side"
         }
 
     return output
