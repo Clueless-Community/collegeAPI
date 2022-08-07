@@ -53,3 +53,26 @@ Output :
     ...
 ] 
 ```
+
+`http://127.0.0.1:8000/engineeringColleges/nirf/city={name_of_the_city}` - Pass the name of the city in the url. 
+
+For example http://127.0.0.1:8000/engineeringColleges/nirf/city=kolkata - This will return the colleges in Kolkata as the output
+
+Output:
+```js
+[
+    {
+        "name": "Jadavpur University",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 11
+    },
+    {
+        "name": "Heritage Institute of Technology",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 215
+    },
+    ...
+]
+```
