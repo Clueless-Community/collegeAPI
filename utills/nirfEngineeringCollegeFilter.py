@@ -78,5 +78,37 @@ def searchByCity(name):
 
     return collegesList
 
-# ans = searchByCity('Kolkata')
-# print(ans)
+
+# For Colleges, extracing list of colleges
+stateList = df['State'].tolist()
+for i in range(len(stateList)):
+    name = stateList[i]
+    splits = name.split(' ')
+    if len(splits) > 1:
+        name = "".join(splits)
+        stateList[i] = name.lower()
+    else:
+        stateList[i] = name.lower()
+
+# Adding it as a new Column to avoid nameing convention conflicts (Note: Data Frame has now been updated)
+df['NewState'] = stateList
+
+def searchByState(name): 
+    result = []
+    if name in stateList:
+        ans = df[df['NewState'] == f"{name}"]
+        
+        for i in range(len(ans)):
+            testList = ans.iloc[i:, :].values
+            testList2 = testList.tolist()
+
+            if '|' in testList2[0][0].split(' '):
+                name = nameSlice(testList2[0][0])
+                testList2[0][0] = name
+            
+            testDict = convert_to_dict(testList2[0])
+            result.append(testDict)   
+    else:
+        print("Error")
+
+    return result
