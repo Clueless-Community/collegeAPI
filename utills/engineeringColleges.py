@@ -64,4 +64,5 @@ json_file = json.dumps(collegesList, indent=4)
 # print(json_file)
 with open('../jsonFiles/engineeringCollegesNirf.json', 'w') as file:
     file.write(json_file)
+
     
