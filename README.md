@@ -32,8 +32,29 @@ uvicorn main:app --reload
 ```
 
 ## Endpoints
-http://127.0.0.1:8000/engineeringColleges/nirf - This  will return a JSON file of all the 
-engineering colleges listed in NIRF
+
+http://127.0.0.1:8000/engineeringColleges - This endpoint will return the list of all the engineering colleges in India with their city and state mentioned in JSON format.
+
+Output :
+```js
+[
+    {
+        "name": "A G Patil Institute of Technology",
+        "city": "Solapur",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "A P Shah Institute Of Technology",
+        "city": "Thane",
+        "state": "Maharashtra"
+    },
+    ...
+]
+```
+
+
+http://127.0.0.1:8000/engineeringColleges/nirf - This  will return a list of all the 
+engineering colleges listed in NIRF in JSON format
 
 Output :
 ```js

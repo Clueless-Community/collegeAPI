@@ -16,15 +16,29 @@ def home():
     }
 
 
+@app.get('/engineeringColleges')
+def enfineeringColleges():
+
+    try:
+
+        with open('./jsonFiles/allEngineeringColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        output = {
+            "Status":"Error at server side"
+        }
+
+    return output
+
 @app.get('/engineeringColleges/nirf')
-def engineeringColleges():
+def engineeringCollegesNirf():
 
     try:
         with open('./jsonFiles/engineeringCollegesNirf.json', 'r') as file:
             output = json.load(file)
     except:
         return {
-            "Status":"Server at server side"
+            "Status":"Error at server side"
         }
 
     return output
