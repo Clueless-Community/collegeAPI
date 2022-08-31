@@ -33,9 +33,11 @@ uvicorn main:app --reload
 
 ## Endpoints
 
-http://127.0.0.1:8000/engineeringColleges - This endpoint will return the list of all the engineering colleges in India with their city and state mentioned in JSON format.
+**GET** `/engineeringColleges` 
 
-Output :
+This endpoint will return the list of all the engineering colleges in India with their city and state mentioned in JSON format as the output as shown :
+
+
 ```js
 [
     {
@@ -53,10 +55,10 @@ Output :
 ```
 
 
-http://127.0.0.1:8000/engineeringColleges/nirf - This  will return a list of all the 
-engineering colleges listed in NIRF in JSON format
+**GET** `/engineeringColleges/nirf`
 
-Output :
+This  will return a list of all the engineering colleges listed in NIRF in JSON format as an otput.
+
 ```js
 [
     {
@@ -75,11 +77,12 @@ Output :
 ] 
 ```
 
-`http://127.0.0.1:8000/engineeringColleges/nirf/city={name_of_the_city}` - Pass the name of the city in the url. 
+**GET** `/engineeringColleges/nirf/city={name_of_the_city}` 
 
-For example http://127.0.0.1:8000/engineeringColleges/nirf/city=kolkata - This will return the colleges in Kolkata as the output
+Pass the name of the city in the url, for example `/engineeringColleges/nirf/city=kolkata`
 
-Output:
+This will return the colleges in Kolkata as an output.
+
 ```js
 [
     {
@@ -98,11 +101,12 @@ Output:
 ]
 ```
 
-`http://127.0.0.1:8000/engineeringColleges/nirf/state={name_of_the_state}` - Pass the name of the city in the url. 
+**GET** `/engineeringColleges/nirf/state={name_of_the_state}`
 
-For example http://127.0.0.1:8000/engineeringColleges/nirf/state=westbengal - This will return the colleges in West Bengal as the output
+Pass the name of the city in the url, for example `/engineeringColleges/nirf/state=westbengal`
 
-Output :
+This will return the colleges in West Bengal as an output.
+
 ```js
 [
     {
