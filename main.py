@@ -1,15 +1,15 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 import json
 
 # Imports
-from utills.nirfEngineeringCollegeFilter import *
+from helpers.nirfEngineeringCollegeFilter import *
 
 # Initiating a FastAPI application
 app = FastAPI()
 
 
 @app.get('/')
-def home():
+async def home():
 
     return {
         "Status":"Server running sucessfully"
@@ -17,12 +17,12 @@ def home():
 
 
 @app.get('/engineeringColleges')
-def enfineeringColleges():
+async def enfineeringColleges():
 
     try:
 
-        with open('./jsonFiles/allEngineeringColleges.json', 'r') as file:
-            output = json.load(file)
+        with open('./data/allEngineeringColleges.json', 'r') as file:
+            output = await json.load(file)
     except:
         output = {
             "Status":"Error at server side"
@@ -31,11 +31,11 @@ def enfineeringColleges():
     return output
 
 @app.get('/engineeringColleges/nirf')
-def engineeringCollegesNirf():
+async def engineeringCollegesNirf():
 
     try:
-        with open('./jsonFiles/engineeringCollegesNirf.json', 'r') as file:
-            output = json.load(file)
+        with open('./data/engineeringCollegesNirf.json', 'r') as file:
+            output = await json.load(file)
     except:
         return {
             "Status":"Error at server side"
@@ -45,14 +45,15 @@ def engineeringCollegesNirf():
 
 
 @app.get('/engineeringColleges/nirf/city={city}')
-def engineeringCollegesByCity(city):
+async def engineeringCollegesByCity(city: str | None = None):
 
     # Capitalizing first letter entered by the user
     name_of_city = city.title()
 
     try:
         output = searchByCity(name_of_city)
-    except:
+    except Exception as e:
+        print(e)
         return {
             "Status":"Error at server side"
         }
@@ -60,13 +61,13 @@ def engineeringCollegesByCity(city):
     return output
 
 @app.get('/engineeringColleges/nirf/state={state}')
-def engineeringCollegesByState(state):
+async def engineeringCollegesByState(state: str | None = None):
 
     # Chnaging the output in lowercase
     name = state.lower()
     
     try:
-        output = searchByState(name)
+        output = await searchByState(name)
     except:
         return {
             "Status":"Error at server side"
