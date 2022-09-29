@@ -1,76 +1,85 @@
 from fastapi import FastAPI, HTTPException
 import json
-
 # Imports
+
 from helpers.nirfEngineeringCollegeFilter import *
+from src import filters
+
 
 # Initiating a FastAPI application
-app = FastAPI()
+app = FastAPI(
+    title="College API",
+    description="Fetch the details of Indian Colleges",
+    version="1",
+    terms_of_service="http://example.com/terms/",
+    contact={
+        "name": "Clueless Community",
+        "url": "https://www.clueless.tech/",
+        "email": "https://www.clueless.tech/contact-us",
+    },
+    license_info={
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    }
+)
 
 
 @app.get('/')
 async def home():
 
     return {
-        "Status":"Server running sucessfully"
+        "Status": "Server running sucessfully"
     }
 
 
 @app.get('/engineeringColleges')
-async def enfineeringColleges():
+def enfineeringColleges():
 
     try:
-
-        with open('./data/allEngineeringColleges.json', 'r') as file:
-            output = await json.load(file)
+        with open(r'data\allEngineeringColleges.json', 'r') as file:
+            output = json.load(file)
     except:
-        output = {
-            "Status":"Error at server side"
-        }
+        raise HTTPException(status_code=404)
 
     return output
+
 
 @app.get('/engineeringColleges/nirf')
-async def engineeringCollegesNirf():
+def engineeringCollegesNirf():
 
     try:
-        with open('./data/engineeringCollegesNirf.json', 'r') as file:
-            output = await json.load(file)
+        with open(r'data\nirfEngineeringColleges.json', 'r') as file:
+            output = json.load(file)
     except:
-        return {
-            "Status":"Error at server side"
-        }
+        raise HTTPException(status_code=503)
 
     return output
 
 
-@app.get('/engineeringColleges/nirf/city={city}')
-async def engineeringCollegesByCity(city: str | None = None):
 
-    # Capitalizing first letter entered by the user
-    name_of_city = city.title()
-
-    try:
-        output = searchByCity(name_of_city)
-    except Exception as e:
-        print(e)
-        return {
-            "Status":"Error at server side"
-        }
-
-    return output
-
-@app.get('/engineeringColleges/nirf/state={state}')
+@app.get('/engineeringColleges/state={state}')
 async def engineeringCollegesByState(state: str | None = None):
 
-    # Chnaging the output in lowercase
-    name = state.lower()
-    
-    try:
-        output = await searchByState(name)
-    except:
-        return {
-            "Status":"Error at server side"
-        }
+    name_of_state = state.lower()
 
-    return output
+    try:
+        response = filters.engineering_colleges_by_state(name_of_state)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='State  not found')
+
+
+
+@app.get('/engineeringColleges/city={city}')
+async def engineeringCollegesByCity(city: str | None = None):
+    name_of_the_city = city.lower()
+    try:
+        response = filters.engineering_colleges_by_city(name_of_the_city)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='City not found')
