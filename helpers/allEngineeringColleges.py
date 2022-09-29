@@ -1,7 +1,7 @@
+# Scrape all the colleges participated in 
+
 import pandas as pd
 import json
-
-
 
 scrapper = pd.read_html(
     'https://www.nirfindia.org/2022/EngineeringRankingALL.html')
@@ -27,8 +27,6 @@ for i in range(len(df)):
     # continue
 
 # collegesList
-
-
 json_file = json.dumps(collegesList, indent=4)
-with open('../data/allEngineeringColleges.json', 'w') as file:
+with open(r'data/allEngineeringColleges.json', 'w') as file:
     file.write(json_file)

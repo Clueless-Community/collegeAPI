@@ -1,3 +1,5 @@
+# Scrape the colleges listed in NIRF rankings only
+
 import pandas as pd
 import json
 
@@ -62,7 +64,7 @@ for i in range(len(dataFrame)):
 
 json_file = json.dumps(collegesList, indent=4)
 # print(json_file)
-with open('../jsonFiles/engineeringCollegesNirf.json', 'w') as file:
+with open(r'data/nirfEngineeringColleges.json', 'w') as file:
     file.write(json_file)
 
     
