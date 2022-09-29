@@ -32,7 +32,7 @@ async def home():
     }
 
 
-@app.get('/engineeringColleges')
+@app.get('/engineering_colleges')
 def enfineeringColleges():
 
     try:
@@ -44,7 +44,7 @@ def enfineeringColleges():
     return output
 
 
-@app.get('/engineeringColleges/nirf')
+@app.get('/engineering_colleges/nirf')
 def engineeringCollegesNirf():
 
     try:
@@ -57,7 +57,7 @@ def engineeringCollegesNirf():
 
 
 
-@app.get('/engineeringColleges/state={state}')
+@app.get('/engineering_colleges/state={state}')
 async def engineeringCollegesByState(state: str | None = None):
 
     name_of_state = state.lower()
@@ -72,7 +72,7 @@ async def engineeringCollegesByState(state: str | None = None):
 
 
 
-@app.get('/engineeringColleges/city={city}')
+@app.get('/engineering_colleges/city={city}')
 async def engineeringCollegesByCity(city: str | None = None):
     name_of_the_city = city.lower()
     try:
