@@ -11,11 +11,14 @@
   <a href="https://github.com/Clueless-Community/collegeAPI/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
 </p>
 
+---
 
-<p align="center">
-  <a href="#"><img src="https://forthebadge.com/images/badges/made-with-python.svg" /></a>&nbsp;&nbsp;
-  <a href="#"><img src="https://forthebadge.com/images/badges/built-by-developers.svg" /></a>&nbsp;&nbsp;
-</p>
+## Tech Stack 💻
+
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+
+---
 
 
 ## What do we exactly do?
