@@ -31,7 +31,7 @@ You can contribute to this project under [Hacktoberfest 2022](https://hacktoberf
 
 ## How to contribute?🤔
 
-We recommend you to go through the [CONTRIBUTING.md]() where we have mentioned all the guidelines that help you to set up the project and make some awesome contributions 😄
+We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless-Community/collegeAPI/blob/main/CONTRIBUTING.md) where we have mentioned all the guidelines that help you to set up the project and make some awesome contributions 😄
 
 ---
 
