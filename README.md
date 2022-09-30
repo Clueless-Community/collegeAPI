@@ -11,11 +11,14 @@
   <a href="https://github.com/Clueless-Community/collegeAPI/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
 </p>
 
+---
 
-<p align="center">
-  <a href="#"><img src="https://forthebadge.com/images/badges/made-with-python.svg" /></a>&nbsp;&nbsp;
-  <a href="#"><img src="https://forthebadge.com/images/badges/built-by-developers.svg" /></a>&nbsp;&nbsp;
-</p>
+## Tech Stack 💻
+
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+
+---
 
 
 ## What do we exactly do?
@@ -23,14 +26,14 @@ The ambition of this project is to provide data of Indian Colleges from all the 
 
 ## Wants to contribute?👀
 You can contribute to this project under [Hacktoberfest 2022](https://hacktoberfest.com/) 🤩 
+
 ![image](https://user-images.githubusercontent.com/70385488/192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6.png)
 
 ## How to contribute?🤔
+
 We recommend you to go through the [CONTRIBUTING.md]() where we have mentioned all the guidelines that help you to set up the project and make some awesome contributions 😄
 
 ---
-
-
 
 ## Endpoints
 

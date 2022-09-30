@@ -1,8 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import json
-# Imports
 
-from helpers.nirfEngineeringCollegeFilter import *
+# Imports
 from src import filters
 
 
