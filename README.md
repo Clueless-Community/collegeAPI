@@ -1,126 +1,44 @@
-# Project setup
+<h1 align=center> CollegeAPI </h1>
+
+<h3 align=center> Ever faced a problem while collecting the data of Indian Colleges? Here we are with the solution, <b>College API</b>.<br>An API that helps you to fetch the data of Indian Colleges.⚡</h3>
+
+----
+
+<p align="center">
+  <a href="https://github.com/Clueless-Community/collegeAPI/issues"><img src="https://img.shields.io/github/issues/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/Clueless-Community/collegeAPI/fork"><img src="https://img.shields.io/github/forks/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
+  <a href="#"><img src="https://img.shields.io/github/stars/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/Clueless-Community/collegeAPI/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Clueless-Community/collegeAPI.svg?style=for-the-badge&logo=appveyor" /></a>&nbsp;&nbsp;
+</p>
 
 
-## Fork and clone the repository
-```bash
-git clone https://github.com/nikhil25803/collegeAPI.git
-```
+<p align="center">
+  <a href="#"><img src="https://forthebadge.com/images/badges/made-with-python.svg" /></a>&nbsp;&nbsp;
+  <a href="#"><img src="https://forthebadge.com/images/badges/built-by-developers.svg" /></a>&nbsp;&nbsp;
+</p>
 
-## Change the directory
-```bash
-cd collegeAPI
-```
 
-## Activate the virtual environment
-> For windows
-```bash
-env\Scripts\Activate.ps1
-```
-> For Linux
-```bash
-source env/scripts/activate
-```
+## What do we exactly do?
+The ambition of this project is to provide data of Indian Colleges from all the categories listed in NIRF through different endpoints. We also enable the user to filter the college by the desired city and state.
 
-## Install the dependencies
-```powershell
-pip install -r requirements.txt
-```
+## Wants to contribute?👀
+You can contribute to this project under [Hacktoberfest 2022](https://hacktoberfest.com/) 🤩 
+![image](https://user-images.githubusercontent.com/70385488/192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6.png)
 
-## Run the FastAPI server
-```powershell
-uvicorn main:app --reload
-```
+## How to contribute?🤔
+We recommend you to go through the [CONTRIBUTING.md]() where we have mentioned all the guidelines that help you to set up the project and make some awesome contributions 😄
+
+---
+
+
 
 ## Endpoints
 
-**GET** `/engineeringColleges` 
+| Method   |      Path      |  Description |
+|----------|:-------------:|------:|
+| **GET** | `/engineering_colleges` | Fetch the list of all the engineering colleges. |
+| **GET** |  `/engineering_colleges/nirf` | Fetch the list of all the 300 engineering colleges ranked by NIRF. In this endpoint, the rank of the colleges will be provided along with the other details. |
+| **GET** |  `/engineering_colleges/state={state}` | Fetch the list of all the engineering colleges in the state passed by the user as a `parameter`. |
+| **GET** |  `/engineering_colleges/city={city}` | Fetch the list of all the engineering colleges in the city passed by the user as a `parameter`.  |
 
-This endpoint will return the list of all the engineering colleges in India with their city and state mentioned in JSON format as the output as shown :
-
-
-```js
-[
-    {
-        "name": "A G Patil Institute of Technology",
-        "city": "Solapur",
-        "state": "Maharashtra"
-    },
-    {
-        "name": "A P Shah Institute Of Technology",
-        "city": "Thane",
-        "state": "Maharashtra"
-    },
-    ...
-]
-```
-
-
-**GET** `/engineeringColleges/nirf`
-
-This  will return a list of all the engineering colleges listed in NIRF in JSON format as an otput.
-
-```js
-[
-    {
-        "name": "Indian Institute of Technology Madras",
-        "city": "Chennai",
-        "state": "Tamil Nadu",
-        "nirfRank": 1
-    },
-    {
-        "name": "Indian Institute of Technology, Delhi",
-        "city": "New Delhi",
-        "state": "Delhi",
-        "nirfRank": 2
-    },
-    ...
-] 
-```
-
-**GET** `/engineeringColleges/nirf/city={name_of_the_city}` 
-
-Pass the name of the city in the url, for example `/engineeringColleges/nirf/city=kolkata`
-
-This will return the colleges in Kolkata as an output.
-
-```js
-[
-    {
-        "name": "Jadavpur University",
-        "city": "Kolkata",
-        "state": "West Bengal",
-        "nirfRank": 11
-    },
-    {
-        "name": "Heritage Institute of Technology",
-        "city": "Kolkata",
-        "state": "West Bengal",
-        "nirfRank": 215
-    },
-    ...
-]
-```
-
-**GET** `/engineeringColleges/nirf/state={name_of_the_state}`
-
-Pass the name of the city in the url, for example `/engineeringColleges/nirf/state=westbengal`
-
-This will return the colleges in West Bengal as an output.
-
-```js
-[
-    {
-        "name": "Indian Institute of Technology, Kharagpur",
-        "city": "Kharagpur",
-        "state": "West Bengal",
-        "nirfRank": 5
-    },
-    {
-        "name": "Jadavpur University",
-        "city": "Kolkata",
-        "state": "West Bengal",
-        "nirfRank": 11
-    },
-    ...
-]
-```
+----
