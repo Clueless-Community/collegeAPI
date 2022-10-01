@@ -92,3 +92,13 @@ def medicalColleges():
         raise HTTPException(status_code=404)
 
     return output
+
+@app.get('/medical_colleges/nirf')
+def medicalColleges():
+    try:
+        with open(r'data\nirfMedicalColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=503)
+
+    return output
