@@ -82,3 +82,13 @@ async def engineeringCollegesByCity(city: str | None = None):
 
     except Exception as e:
         raise HTTPException(status_code=404, detail='City not found')
+
+@app.get('/medical_colleges')
+def medicalColleges():
+    try:
+        with open(r'data\allMedicalColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output

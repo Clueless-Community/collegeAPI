@@ -1,0 +1,757 @@
+[
+    {
+        "name": "Aarupadai Veedu Medical College and Hospital",
+        "city": "Puducherry",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Adichunchanagiri Institute of Medical Science",
+        "city": "Nagamangala",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "All India Institute of Medical Sciences Bhopal",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "All India Institute of Medical Sciences Bhubaneswar",
+        "city": "Khordha",
+        "state": "Odisha"
+    },
+    {
+        "name": "All India Institute of Medical Sciences Jodhpur",
+        "city": "Jodhpur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "All India Institute of Medical Sciences, Delhi",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "ALL INDIA INSTITUTE OF MEDICAL SCIENCES, PATNA",
+        "city": "Patna",
+        "state": "Bihar"
+    },
+    {
+        "name": "ALL INDIA INSTITUTE OF MEDICAL SCIENCES, RAIPUR",
+        "city": "Raipur",
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "ALL INDIA INSTITUTE OF MEDICAL SCIENCES, RISHIKESH",
+        "city": "Rishikesh",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "AMALA INSTITUTE OF MEDICAL SCIENCES, THRISSUR",
+        "city": "Thrissur",
+        "state": "Kerala"
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Annamalai University",
+        "city": "Annamalainagar",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "B. J. Medical College",
+        "city": "Ahmadabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "B. P. S. Government Medical College for Women",
+        "city": "Sonipat",
+        "state": "Haryana"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Bharati Vidyapeeth (Deemed to be University) Medical College, Pune",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Bharati Vidyapeeth Deemed University Medical College & Hospital Sangli",
+        "city": "Sangli",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "BISHOP BENZIGER COLLEGE OF NURSING",
+        "city": "KOLLAM",
+        "state": "Kerala"
+    },
+    {
+        "name": "BVV Sangha`s S. Nijalingappa Medical College",
+        "city": "Bagalkot",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Central Institute of Psychiatry",
+        "city": "Ranchi",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Chalmeda Ananda Rao Institute of Medical Sciences, Karimnagar",
+        "city": "Karimnagar",
+        "state": "Telangana"
+    },
+    {
+        "name": "Chettinad Academy of Research and Education",
+        "city": "Kelambakkam, Chengalpattu District",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Christian Medical College",
+        "city": "Vellore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Christian Medical College, Ludhiana",
+        "city": "Ludhiana",
+        "state": "Punjab"
+    },
+    {
+        "name": "D. Y. Patil Educational Society",
+        "city": "Kolhapur",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "city": "Wardha",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Dayanand Medical College",
+        "city": "Ludhiana",
+        "state": "Punjab"
+    },
+    {
+        "name": "Desh Bhagat University",
+        "city": "Mandi Gobindgarh",
+        "state": "Punjab"
+    },
+    {
+        "name": "DR RAM MANOHAR LOHIA INSTITUTE OF MEDICAL SCIENCES, LUCKNOW",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Dr Sarvepalli Radhakrishnan Rajasthan Ayurved University, Jodhpur",
+        "city": "Jodhpur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Dr. D. Y. Patil Vidyapeeth",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Dr. S. N. Medical College and Hospital",
+        "city": "Jodhpur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Dr. Vasantrao Pawar Medical College, Hospital & Research Centre, Nashik",
+        "city": "Nashik",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "E S COLLEGE OF NURSING, VILLUPURAM",
+        "city": "Villupuram",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "E S I, Joka",
+        "city": "KOLKATA - 700104",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Era's Lucknow Medical College & Hospital, Lucknow",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "ESI MEDICAL COLLEGE & ESI-PGIMSR, CHENNAI",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "ESIC MEDICAL COLLEGE AND HOSPITAL",
+        "city": "Faridabad",
+        "state": "Haryana"
+    },
+    {
+        "name": "ESIC MEDICAL COLLEGE AND HOSPITAL, SEDAM ROAD GULBARGA",
+        "city": "KALABURAGI",
+        "state": "Karnataka"
+    },
+    {
+        "name": "ESIC MEDICAL COLLEGE AND POST GRADUATE INSTITUTE OF MEDICAL SCINECES AND RESEARCH, Bangalore",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Fr. Muller Medical College",
+        "city": "Mangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "G M E R S MEDICAL COLLEGE, AHMEDABAD",
+        "city": "Ahmadabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "G M E R S MEDICAL COLLEGE, GANDHINAGAR",
+        "city": "Gandhinagar",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Geetanjali University",
+        "city": "Udaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "GEMS Medical College, Srikakulam",
+        "city": "Srikakulam",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "GMERS Medical College, Gotri, Vadodara",
+        "city": "Vadodara",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Goa Medical College Bambolim",
+        "city": "North Goa",
+        "state": "Goa"
+    },
+    {
+        "name": "GOVERNMENT CHENGALPATTU MEDICAL COLLEGE & HOSPITAL, KANCHEEPURAM",
+        "city": "Chengalpattu",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Government Medical College",
+        "city": "Bhavnagar",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Government Medical College",
+        "city": "Surat",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Government Medical College, Amritsar",
+        "city": "Amritsar",
+        "state": "Punjab"
+    },
+    {
+        "name": "Govt. Medical College & Hospital",
+        "city": "Chandigarh",
+        "state": "Chandigarh"
+    },
+    {
+        "name": "Gujarat Adani Institute of Medical Science",
+        "city": "Bhuj",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Gujarat Cancer & Research Institute",
+        "city": "Ahmadabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Himalayan Institute of Medical Sciences",
+        "city": "Dehradun",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "Homeopathic Medical College",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Homoeopathy University, Jaipur",
+        "city": "Jaipur -",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Indira Gandhi Institute of Medical Sciences",
+        "city": "Patna",
+        "state": "Bihar"
+    },
+    {
+        "name": "Institute of Liver and Biliary Sciences",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Institute of Post Graduate Medical Education & Research",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Jamia Hamdard",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Jawaharlal Institute of Post Graduate Medical Education & Research",
+        "city": "Puducherry",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "JAWAHARLAL NEHRU MEDICAL COLLEGE",
+        "city": "Belagavi",
+        "state": "Karnataka"
+    },
+    {
+        "name": "JSS College of Physiotherapy",
+        "city": "Mysore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "JSS Medical College, Mysore",
+        "city": "Mysore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "K. S. Hegde Medical Academy",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "BHUBANESWAR",
+        "state": "Odisha"
+    },
+    {
+        "name": "KARPAGA VINAYAGA INSTITUTE OF MEDICAL SCIENCES AND RESEARCH CENTRE, KANCHEEPURAM",
+        "city": "Chengalpattu",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kasturba Medical College, Mangalore",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Kasturba Medical College, Manipal",
+        "city": "Manipal",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Kidwai Memorial Institute of Oncology",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "King George`s Medical University",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "KMCT Medical College",
+        "city": "Calicut",
+        "state": "Kerala"
+    },
+    {
+        "name": "Konaseema Institute of Medical Sciences Research Foundation",
+        "city": "Amalapuram",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Krishna Institute of Medical Sciences Deemed University, Karad",
+        "city": "Karad",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Kurnool Medical College",
+        "city": "Kurnool",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "L. N. College of Nursing",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "L. N. Medical College",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Lady Hardinge Medical College",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "M. G. R. Educational and Research Institute",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "M. S. Ramaiah Medical College",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "M.P. SHAH MEDICAL COLLEGE, JAMNAGAR",
+        "city": "Jamnagar",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Madras Medical College & Government General Hospital, Chennai",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Maharaja Sayajirao University of Baroda",
+        "city": "Vadodara",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Maharishi Markandeshwar",
+        "city": "Ambala",
+        "state": "Haryana"
+    },
+    {
+        "name": "Mahatma Gandhi Institute of Medical Sciences, Wardha",
+        "city": "Wardha",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "MAHATMA GANDHI MEDICAL COLLEGE AND RESEARCH INSTITUTE",
+        "city": "Puducherry",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Mahatma Gandhi Mission's Medical College,Navi Mumbai",
+        "city": "Raigarh",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Maulana Azad Medical College",
+        "city": "Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Medical College",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Meenakshi Academy of Higher Education and Research",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "MGM Institute of Health Sciences, Navi Mumbai",
+        "city": "Navi Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "MNR Medical College, Sanagareddy",
+        "city": "Sanga Reddy, Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "name": "Narayana Medical College, Nellore",
+        "city": "Sri Potti Sriramulu Nellore",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "National Institute of Ayurveda, Jaipur",
+        "city": "Jaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "National Institute of Mental Health & Neuro Sciences, Bangalore",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Nehru College of Nursing",
+        "city": "Vaniyamkulam",
+        "state": "Kerala"
+    },
+    {
+        "name": "P.D.U. Medical College, Rajkot",
+        "city": "Rajkot",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Pad. Dr. V.V. Patil Foundations Medical College, Ahmednagar.",
+        "city": "Ahmadnagar",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Parul University",
+        "city": "Vadodara",
+        "state": "Gujarat"
+    },
+    {
+        "name": "People?s College of Medical Sciences & Research Centre, Bhopal",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Pondicherry Institute of Medical Sciences",
+        "city": "Kalapet Post",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Post Graduate Institute of Medical Education and Research",
+        "city": "Chandigarh",
+        "state": "Chandigarh"
+    },
+    {
+        "name": "Pravara Institute of Medical Sciences, Ahmednagar",
+        "city": "Ahmednagar",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "PSG College of Nursing",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "PSG INSTITUTE OF MEDICAL SCIENCES & RESEARCH, COIMBATORE",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Pushpagiri Institute of Medical Sciences and Research Centre, Tiruvalla",
+        "city": "Thiruvalla",
+        "state": "Kerala"
+    },
+    {
+        "name": "Raja Rajeswari Medical College & Hospital",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Rajshree Institute of Management & Technology",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "RAMA UNIVERSITY UTTAR PRADESH",
+        "city": "Kanpur Nagar",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Regional Institute of Medical Sciences",
+        "city": "Imphal West",
+        "state": "Manipur"
+    },
+    {
+        "name": "Rukmani Ben DeepchandGardi Medical College, Charitable Hospital, Ujjain",
+        "city": "Ujjain",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technology",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "S.R.M.S. Institute of Medical Sciences",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "SARADA KRISHNA HOMOEOPATHY MEDICAL COLLEGE, KANNYAKUMARI",
+        "city": "Kulasekharam",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sawai Man Singh Medical College",
+        "city": "Jaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "SCB Medical College and Hospital",
+        "city": "Cuttack",
+        "state": "Odisha"
+    },
+    {
+        "name": "SDM Medical College",
+        "city": "Dharwad",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sharda University",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Shri B.M.Patil Medical College, Hospital & Research Centre",
+        "city": "Vijayapura",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Shri Sathya Sai Medical College and Research Institute",
+        "city": "Thiruporur Taluk -",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sikkim Manipal Institute of Medical Sciences (SMIMS)",
+        "city": "Gangtok",
+        "state": "Sikkim"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "state": "Odisha"
+    },
+    {
+        "name": "Sree Balaji Medical College and Hospital",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sree Chitra Tirunal Institute for Medical Sciences and Technology, Thiruvananthapuram",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala"
+    },
+    {
+        "name": "Sri Devraj Urs Academy of Higher Education and Research",
+        "city": "Kolar",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sri Guru Ram Das Institute of Medical Sciences & Research",
+        "city": "Amritsar",
+        "state": "Punjab"
+    },
+    {
+        "name": "Sri Manakula Vinayagar Medical College and Hospital",
+        "city": "Puducherry",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sri Sairam Homoeopathy Medical College",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sri Siddhartha Medical College, Tumkur",
+        "city": "Tumkur",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sri Venkateshwaraa Medical College Hospital and Research Centre",
+        "city": "Puducherry",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Sri Venkateswara Institute of Medical Sciences",
+        "city": "Tirupati",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "St. John's Medical College",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sumandeep Vidyapeeth, Vadodara",
+        "city": "Vadodara",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Swami Vivekanand Subharti University",
+        "city": "Meerut",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Teerthanker Mahaveer University",
+        "city": "Moradabad",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "TIRUNELVELI MEDICAL COLLEGE, TIRUNELVELI",
+        "city": "Tirunelveli -",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Trichy SRM Medical College Hospital and Research Centre",
+        "city": "Tiruchirappalli",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "U. N. Mehta Institute of Cardiology & Research Centre",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "University College of Medical Sciences",
+        "city": "Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Vardhman Mahavir Medical College & Safdarjung Hospital",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Vinayaka Mission's Kirupananda Variyar Medical College and Hospital",
+        "city": "Salem",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Vinayaka Mission's Medical College and Hospital",
+        "city": "Karaikal",
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Yenepoya Medical College",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Yenepoya Nursing College",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Yenepoya Physiotherapy College",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    }
+]
