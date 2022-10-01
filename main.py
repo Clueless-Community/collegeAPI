@@ -83,7 +83,7 @@ async def engineeringCollegesByCity(city: str or None = None):
         response =[]
         for i in city_list:
             i = i.lower();
-            response.append(filters.engineering_colleges_by_state(i))
+            response.append(filters.engineering_colleges_by_city(i))
     
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
