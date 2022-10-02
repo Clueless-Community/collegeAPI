@@ -15,7 +15,7 @@ df1 = df1.drop(columns=['Institute ID', 'Score'], axis=1)
 scrapper2 = pd.read_html(
     'https://www.nirfindia.org/2022/EngineeringRanking150.html'
 )
-rank_col1 = list(range(201,251))
+rank_col1 = list(range(201, 251))
 df2 = scrapper2[0]
 df2['Rank'] = rank_col1
 
@@ -25,10 +25,9 @@ scrapper3 = pd.read_html(
     'https://www.nirfindia.org/2022/EngineeringRanking200.html'
 )
 
-rank_col3 = list(range(251,301))
+rank_col3 = list(range(251, 301))
 df3 = scrapper3[0]
 df3['Rank'] = rank_col3
-
 
 
 # Concatinating the DataFrames
@@ -37,6 +36,8 @@ dataFrame = pd.concat(dfList)
 dataFrame
 
 # Function to remove 'More Details |' from each string
+
+
 def nameSlice(str):
     list = [s for s in str]
     new_list = list[:len(list)-14]
@@ -66,5 +67,3 @@ json_file = json.dumps(collegesList, indent=4)
 # print(json_file)
 with open(r'data/nirfEngineeringColleges.json', 'w') as file:
     file.write(json_file)
-
-    

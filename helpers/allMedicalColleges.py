@@ -17,6 +17,7 @@ def convert_to_dict(list):
     dictValue = dict(zip(keysName, list))
     return dictValue
 
+
 collegesList = []
 for i in range(len(df)):
     testList = df.iloc[i:, :].values

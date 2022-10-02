@@ -1,4 +1,4 @@
-# Scrape all the colleges participated in 
+# Scrape all the colleges participated in
 
 import pandas as pd
 import json
@@ -17,6 +17,7 @@ def convert_to_dict(list):
     keysName = ['name', 'city', 'state', 'nirfRank']
     dictValue = dict(zip(keysName, list))
     return dictValue
+
 
 collegesList = []
 for i in range(len(df)):

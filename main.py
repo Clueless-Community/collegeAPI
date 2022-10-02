@@ -55,17 +55,15 @@ def engineeringCollegesNirf():
     return output
 
 
-
-
 @app.get('/engineering_colleges/state={state}')
 async def engineeringCollegesByState(state: str or None = None):
-    # multiple states will be seperated by commas like Maharastra,Andhra Pradesh
-    states_list = state.split(",");
+    # multiple states will be seperated by & like Maharastra,Andhra Pradesh
+    states_list = state.split("&")
 
     try:
-        response =[]
+        response = []
         for i in states_list:
-            i = i.lower();
+            i = i.lower()
             response.append(filters.engineering_colleges_by_state(i))
 
         if len(response) == 0:
@@ -75,23 +73,21 @@ async def engineeringCollegesByState(state: str or None = None):
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-
 @app.get('/engineering_colleges/city={city}')
 async def engineeringCollegesByCity(city: str or None = None):
-    city_list = city.split(",");
+    city_list = city.split("&")
     try:
-        response =[]
+        response = []
         for i in city_list:
-            i = i.lower();
+            i = i.lower()
             response.append(filters.engineering_colleges_by_city(i))
-    
+
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
 
     except Exception as e:
         raise HTTPException(status_code=404, detail='City not found')
-
 
 
 @app.get('/medical_colleges')
