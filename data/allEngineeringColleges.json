@@ -1801,11 +1801,6 @@
     },
     {
         "name": "Government Engineering College",
-        "city": "Jabalpur",
-        "state": "Madhya Pradesh"
-    },
-    {
-        "name": "Government Engineering College",
         "city": "Palanpur",
         "state": "Gujarat"
     },
@@ -2443,6 +2438,11 @@
         "name": "J.B. Institute of Technology",
         "city": "Dehradun",
         "state": "Uttarakhand"
+    },
+    {
+        "name": "Jabalpur Engineering college",
+        "city": "Jabalpur",
+        "state": "Madhya Pradesh"
     },
     {
         "name": "Jadavpur University",
