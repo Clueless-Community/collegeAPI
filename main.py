@@ -4,7 +4,6 @@ import json
 # Imports
 from src import filters
 
-
 # Initiating a FastAPI application
 app = FastAPI(
     title="College API",
@@ -32,7 +31,7 @@ async def home():
 
 
 @app.get('/engineering_colleges')
-def enfineeringColleges():
+def engineeringColleges():
 
     try:
         with open(r'data\allEngineeringColleges.json', 'r') as file:
@@ -57,13 +56,13 @@ def engineeringCollegesNirf():
 
 @app.get('/engineering_colleges/state={state}')
 async def engineeringCollegesByState(state: str or None = None):
-    # multiple states will be seperated by & like Maharastra,Andhra Pradesh
-    states_list = state.split("&")
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
 
     try:
         response = []
         for i in states_list:
-            i = i.lower()
+            i = i.replace(" ", "").lower()
             response.append(filters.engineering_colleges_by_state(i))
 
         if len(response) == 0:
@@ -75,11 +74,11 @@ async def engineeringCollegesByState(state: str or None = None):
 
 @app.get('/engineering_colleges/city={city}')
 async def engineeringCollegesByCity(city: str or None = None):
-    city_list = city.split("&")
+    city_list = [x.strip() for x in city.split('&')]
     try:
         response = []
         for i in city_list:
-            i = i.lower()
+            i = i.replace(" ", "").lower()
             response.append(filters.engineering_colleges_by_city(i))
 
         if len(response) == 0:
@@ -99,3 +98,39 @@ def medicalColleges():
         raise HTTPException(status_code=404)
 
     return output
+
+
+@app.get('/medical_colleges/state={state}')
+async def medicalCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower();
+            response.append(filters.medical_colleges_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+        
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='Some error occured, please try again')
+
+    
+@app.get('/medical_colleges/city={city}')
+async def medicalCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower();
+            response.append(filters.medical_colleges_by_city(i))
+    
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='Some error occured, please try again')
+    
