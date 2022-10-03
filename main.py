@@ -34,7 +34,7 @@ async def home():
 def engineeringColleges():
 
     try:
-        with open(r'\data\allEngineeringColleges.json', 'r') as file:
+        with open(r'data\allEngineeringColleges.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=404)
@@ -62,7 +62,7 @@ async def engineeringCollegesByState(state: str or None = None):
     try:
         response = []
         for i in states_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
             response.append(filters.engineering_colleges_by_state(i))
 
         if len(response) == 0:
@@ -78,7 +78,7 @@ async def engineeringCollegesByCity(city: str or None = None):
     try:
         response = []
         for i in city_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
             response.append(filters.engineering_colleges_by_city(i))
 
         if len(response) == 0:
