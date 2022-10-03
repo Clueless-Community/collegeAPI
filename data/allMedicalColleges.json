@@ -95,9 +95,19 @@
         "state": "Kerala"
     },
     {
+        "name": "Burdwan Medical College and Hospital",
+        "city": "Burdwan",
+        "state": "West Bengal"
+    },
+    {
         "name": "BVV Sangha`s S. Nijalingappa Medical College",
         "city": "Bagalkot",
         "state": "Karnataka"
+    },
+    {
+        "name": "Calcutta National Medical College and Hospital",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Central Institute of Psychiatry",
@@ -460,6 +470,11 @@
         "state": "Tamil Nadu"
     },
     {
+        "name": "Midnapore Medical College and Hospital",
+        "city": "Midnapore",
+        "state": "West Bengal"
+    },
+    {
         "name": "MGM Institute of Health Sciences, Navi Mumbai",
         "city": "Navi Mumbai",
         "state": "Maharashtra"
@@ -488,6 +503,11 @@
         "name": "Nehru College of Nursing",
         "city": "Vaniyamkulam",
         "state": "Kerala"
+    },
+    {
+        "name": "Nil Ratan Sircar Medical College and Hospital",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "P.D.U. Medical College, Rajkot",
@@ -563,6 +583,11 @@
         "name": "Regional Institute of Medical Sciences",
         "city": "Imphal West",
         "state": "Manipur"
+    },
+    {
+        "name": "R.G.Kar Medical College and Hospital",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Rukmani Ben DeepchandGardi Medical College, Charitable Hospital, Ujjain",
