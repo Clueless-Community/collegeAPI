@@ -107,31 +107,36 @@ async def medicalCollegesByState(state: str or None = None):
     try:
         response = []
         for i in states_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
             response.append(filters.medical_colleges_by_state(i))
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
-        
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='Some error occured, please try again')
 
-    
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
 @app.get('/medical_colleges/city={city}')
 async def medicalCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = []
         for i in city_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
             response.append(filters.medical_colleges_by_city(i))
-    
+
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
 
     except Exception as e:
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
         raise HTTPException(status_code=404, detail='Some error occured, please try again')
 
 @app.get('/management_colleges')
@@ -186,3 +191,4 @@ def managementCollegesNirf():
         raise HTTPException(status_code=503)
 
     return output
+
