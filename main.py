@@ -133,4 +133,56 @@ async def medicalCollegesByCity(city: str or None = None):
 
     except Exception as e:
         raise HTTPException(status_code=404, detail='Some error occured, please try again')
+
+@app.get('/management_colleges')
+def managementColleges():
+    try:
+        with open(r'data\allManagementColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+@app.get('/management_colleges/city={city}')
+async def managementCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower();
+            response.append(filters.management_colleges_by_city(i))
     
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='Some error occured, please try again')
+
+@app.get('/management_colleges/state={state}')
+async def managementCollegesByState(state: str or None = None):
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower();
+            response.append(filters.management_colleges_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+        
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='Some error occured, please try again')
+
+@app.get('/management_colleges/nirf')
+def managementCollegesNirf():
+
+    try:
+        with open(r'data\nirfManagementColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=503)
+
+    return output
