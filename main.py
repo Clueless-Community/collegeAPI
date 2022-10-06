@@ -16,8 +16,8 @@ app = FastAPI(
         "email": "https://www.clueless.tech/contact-us",
     },
     license_info={
-        "name": "Apache 2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+        "name": "GPL-3.0 license",
+        "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
     }
 )
 
@@ -101,38 +101,46 @@ def medicalColleges():
 
 
 @app.get('/medical_colleges/state={state}')
-async def medicalCollegesByState(state: str or None = None):
+def medicalCollegesByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = []
         for i in states_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
             response.append(filters.medical_colleges_by_state(i))
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
-        
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='Some error occured, please try again')
 
-    
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
 @app.get('/medical_colleges/city={city}')
 async def medicalCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = []
         for i in city_list:
-            i = i.replace(" ", "").lower();
+            i = i.replace(" ", "").lower()
+            print(i)
             response.append(filters.medical_colleges_by_city(i))
-    
+
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
 
     except Exception as e:
-        raise HTTPException(status_code=404, detail='Some error occured, please try again')
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
 
 @app.get('/management_colleges')
 def managementColleges():
@@ -144,37 +152,6 @@ def managementColleges():
 
     return output
 
-@app.get('/management_colleges/city={city}')
-async def managementCollegesByCity(city: str or None = None):
-    city_list = [x.strip() for x in city.split('&')]
-    try:
-        response = []
-        for i in city_list:
-            i = i.replace(" ", "").lower();
-            response.append(filters.management_colleges_by_city(i))
-    
-        if len(response) == 0:
-            raise HTTPException(status_code=404, detail='City not found')
-        return response
-
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='Some error occured, please try again')
-
-@app.get('/management_colleges/state={state}')
-async def managementCollegesByState(state: str or None = None):
-    states_list = [x.strip() for x in state.split('&')]
-    try:
-        response = []
-        for i in states_list:
-            i = i.replace(" ", "").lower();
-            response.append(filters.management_colleges_by_state(i))
-
-        if len(response) == 0:
-            raise HTTPException(status_code=404, detail='State not found')
-        return response
-        
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='Some error occured, please try again')
 
 @app.get('/management_colleges/nirf')
 def managementCollegesNirf():
@@ -186,3 +163,39 @@ def managementCollegesNirf():
         raise HTTPException(status_code=503)
 
     return output
+
+
+@app.get('/management_colleges/city={city}')
+async def managementCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.management_colleges_by_city(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/management_colleges/state={state}')
+async def managementCollegesByState(state: str or None = None):
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.management_colleges_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
