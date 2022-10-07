@@ -1050,6 +1050,11 @@
         "state": "Rajasthan"
     },
     {
+        "name": "Cooch Behar Government Engineering College",
+        "city": "Cooch Behar",
+        "state": "West Bengal"
+    },
+    {
         "name": "Coorg Institute of Technology",
         "city": "Ponnampet",
         "state": "Karnataka"
@@ -1756,6 +1761,11 @@
     },
     {
         "name": "Government College of Engineering & Ceramic Technology",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Government College of Engineering & Leather Technology",
         "city": "Kolkata",
         "state": "West Bengal"
     },
@@ -5093,6 +5103,11 @@
         "name": "Silicon Institute of Technology (SIT), Bhubaneswar",
         "city": "Bhubaneswar",
         "state": "Odisha"
+    },
+    {
+        "name": "Siliguri Institute Of Technology",
+        "city": "Siliguri",
+        "state": "West Bengal"
     },
     {
         "name": "Sinhgad Academy of Engineering",
