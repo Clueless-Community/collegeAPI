@@ -199,3 +199,15 @@ async def managementCollegesByState(state: str or None = None):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/colleges/nirf')
+def managementCollegesNirf():
+
+    try:
+        with open(r'data\nirfCollegesRanked.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
