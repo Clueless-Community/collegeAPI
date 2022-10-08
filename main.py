@@ -214,7 +214,7 @@ def allColleges():
 
 
 @app.get('/colleges/nirf')
-def managementCollegesNirf():
+def nirfCollegesRanked():
 
     try:
         with open(r'data\nirfCollegesRanked.json', 'r') as file:
