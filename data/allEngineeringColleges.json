@@ -154,6 +154,17 @@
         "city": "Chennai",
         "state": "Tamil Nadu"
     },
+    
+     {
+        "name": "Ajeenkya DY Patil School Of Engineering",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Ajeenkya DY Patil University",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
     {
         "name": "Ajay Kumar Garg Engineering College",
         "city": "Ghaziabad",
@@ -1084,6 +1095,17 @@
         "city": "Pune",
         "state": "Maharashtra"
     },
+    {
+        "name": "D. Y. Patil College of Engineering Akurdi",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "D. Y. Patil International University",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    
     {
         "name": "D.K.T.E. Society`s Textile and Engineering Institute, Ichalkaranji",
         "city": "Ichalkaranji",
