@@ -90,6 +90,11 @@
         "state": "Karnataka"
     },
     {
+        "name": "Adamas University",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
         "name": "Adani Institute of Infrastructure Engineering",
         "city": "Ahmedabad",
         "state": "Gujarat"
@@ -1487,6 +1492,11 @@
     },
     {
         "name": "Future Institute of Engineering and Management",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Future Institute of Technology",
         "city": "Kolkata",
         "state": "West Bengal"
     },
