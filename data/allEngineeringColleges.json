@@ -774,6 +774,10 @@
         "name": "C.V. Raman Global University, Odisha",
         "city": "Bhubaneswar",
         "state": "Odisha"
+    },{
+        "name": "Calcutta Institute of Engineering and Management",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Calcutta Institute of Technology",
@@ -1009,6 +1013,11 @@
         "name": "College of Engineering & Technology",
         "city": "Akola",
         "state": "Maharashtra"
+    },
+    {
+        "name": "College of Engineering and Management",
+        "city": "Kolaghat",
+        "state": "West Bengal"
     },
     {
         "name": "College of Engineering & Technology, Bhubaneswar",
@@ -1778,6 +1787,11 @@
     },
     {
         "name": "Government College of Engineering & Ceramic Technology",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Government College of Engineering & Leather Technology",
         "city": "Kolkata",
         "state": "West Bengal"
     },
@@ -3820,6 +3834,11 @@
         "name": "Nehru Institute of Engineering and Technology",
         "city": "Coimbatore",
         "state": "Tamil Nadu"
+    },
+    {
+        "name": "Neotia Institute of Technology, Management and Sciencee",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Netaji Subhas University of Technology (NSUT)",
