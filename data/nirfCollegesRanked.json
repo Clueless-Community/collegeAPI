@@ -1,0 +1,1202 @@
+[
+    {
+        "Name": "Miranda House",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 1
+    },
+    {
+        "Name": "Hindu College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 2
+    },
+    {
+        "Name": "Presidency College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 3
+    },
+    {
+        "Name": "Loyola College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 4
+    },
+    {
+        "Name": "Lady Shri Ram College For Women",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 5
+    },
+    {
+        "Name": "PSGR Krishnammal College for Women",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 6
+    },
+    {
+        "Name": "Atma Ram Sanatan Dharm College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 7
+    },
+    {
+        "Name": "St. Xavier`s College",
+        "City": "Kolkata",
+        "State": "West Bengal",
+        "Rank": 8
+    },
+    {
+        "Name": "Ramakrishna Mission Vidyamandira",
+        "City": "Howrah",
+        "State": "West Bengal",
+        "Rank": 9
+    },
+    {
+        "Name": "Kirori Mal College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 10
+    },
+    {
+        "Name": "St. Stephens's College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 11
+    },
+    {
+        "Name": "Shri Ram College of Commerce",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 12
+    },
+    {
+        "Name": "Rama Krishna Mission Vivekananda Centenary College",
+        "City": "Rahara",
+        "State": "West Bengal",
+        "Rank": 13
+    },
+    {
+        "Name": "Hans Raj College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 14
+    },
+    {
+        "Name": "Sri Venkateswara College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 14
+    },
+    {
+        "Name": "Lady Irwin College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 16
+    },
+    {
+        "Name": "Madras Christian College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 17
+    },
+    {
+        "Name": "Acharya Narendra Dev College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 18
+    },
+    {
+        "Name": "Ramakrishna Mission Residential College",
+        "City": "Kolkata",
+        "State": "West Bengal",
+        "Rank": 19
+    },
+    {
+        "Name": "PSG College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 20
+    },
+    {
+        "Name": "Deen Dayal Upadhyaya College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 21
+    },
+    {
+        "Name": "Thiagarajar College",
+        "City": "Madurai",
+        "State": "Tamil Nadu",
+        "Rank": 22
+    },
+    {
+        "Name": "Gargi College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 23
+    },
+    {
+        "Name": "University College, Thiruvananthapuram",
+        "City": "Thiruvananthapuram",
+        "State": "Kerala",
+        "Rank": 24
+    },
+    {
+        "Name": "Bhaskaracharya College of Applied Sciences",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 25
+    },
+    {
+        "Name": "St. Joseph`s College, Tiruchirappalli",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 26
+    },
+    {
+        "Name": "Rajagiri College of Social Sciences",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 27
+    },
+    {
+        "Name": "Deshbandhu College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 28
+    },
+    {
+        "Name": "Daulat Ram College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 29
+    },
+    {
+        "Name": "V.O. Chidambaram College",
+        "City": "Tuticorin",
+        "State": "Tamil Nadu",
+        "Rank": 30
+    },
+    {
+        "Name": "Kongunadu Arts & Science College",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 31
+    },
+    {
+        "Name": "Government Arts College",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 32
+    },
+    {
+        "Name": "Sri Krishna Arts and Science College",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 33
+    },
+    {
+        "Name": "Maitreyi College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 34
+    },
+    {
+        "Name": "Dyal Singh College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 35
+    },
+    {
+        "Name": "Shaheed Rajguru College of Applied Sciences for Women",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 36
+    },
+    {
+        "Name": "St. Teresa`s College, Ernakulam",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 37
+    },
+    {
+        "Name": "Madras School of Social Work",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 38
+    },
+    {
+        "Name": "Sri Guru Tegh Bahadur Khalsa College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 39
+    },
+    {
+        "Name": "Kamala Nehru College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 40
+    },
+    {
+        "Name": "Ramanujan College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 41
+    },
+    {
+        "Name": "I.C.College of Home Science",
+        "City": "Hisar",
+        "State": "Haryana",
+        "Rank": 42
+    },
+    {
+        "Name": "Bishop Heber College",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 43
+    },
+    {
+        "Name": "Jesus & Mary College",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 44
+    },
+    {
+        "Name": "Pachhunga University College",
+        "City": "Aizawl",
+        "State": "Mizoram",
+        "Rank": 45
+    },
+    {
+        "Name": "Government Home Science College,Sector-10",
+        "City": "Chandigarh",
+        "State": "Chandigarh",
+        "Rank": 46
+    },
+    {
+        "Name": "Queen Mary`s College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 47
+    },
+    {
+        "Name": "Maharaja Agrasen College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 48
+    },
+    {
+        "Name": "Virudhunagar Hindu Nadars Senthikumara Nadar College",
+        "City": "Virudhunagar",
+        "State": "Tamil Nadu",
+        "Rank": 49
+    },
+    {
+        "Name": "Mar Ivanios College, Thiruvananthapuram",
+        "City": "Thiruvananthapuram",
+        "State": "Kerala",
+        "Rank": 50
+    },
+    {
+        "Name": "Shaheed Sukhdev College of Business Studies",
+        "City": "New Delhi",
+        "State": "Delhi",
+        "Rank": 51
+    },
+    {
+        "Name": "St. Xavier's College",
+        "City": "Ahmedabad",
+        "State": "Gujarat",
+        "Rank": 52
+    },
+    {
+        "Name": "Government College for Women, Thiruvananthapuram",
+        "City": "Thiruvananthapuram",
+        "State": "Kerala",
+        "Rank": 53
+    },
+    {
+        "Name": "Alagappa Government Arts College, Karaikudi",
+        "City": "Karaikudi",
+        "State": "Tamil Nadu",
+        "Rank": 54
+    },
+    {
+        "Name": "M S Ramaiah College of Arts, Science, and Commerce",
+        "City": "Bengaluru",
+        "State": "Karnataka",
+        "Rank": 55
+    },
+    {
+        "Name": "Mar Athanasius College",
+        "City": "Kothamangalam",
+        "State": "Kerala",
+        "Rank": 56
+    },
+    {
+        "Name": "Ferugusson College(Autonomous)",
+        "City": "Pune",
+        "State": "Maharashtra",
+        "Rank": 57
+    },
+    {
+        "Name": "Bishop Moore College, Mavelikkara, Alappuzha",
+        "City": "Alappuzha",
+        "State": "Kerala",
+        "Rank": 58
+    },
+    {
+        "Name": "Sacred Heart College",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 59
+    },
+    {
+        "Name": "Maharaja`s College, Ernakulam",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 60
+    },
+    {
+        "Name": "Indraprastha College for Women",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 61
+    },
+    {
+        "Name": "S.B. College, Changanacherry",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 62
+    },
+    {
+        "Name": "ST. Thomas College, Thrissur",
+        "City": "Thrissur",
+        "State": "Kerala",
+        "Rank": 63
+    },
+    {
+        "Name": "Sri Guru Gobind Singh College of Commerce",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 63
+    },
+    {
+        "Name": "Ethiraj College for Women",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 65
+    },
+    {
+        "Name": "Ramjas College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 66
+    },
+    {
+        "Name": "Holy Cross College, Tiruchirappalli",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 67
+    },
+    {
+        "Name": "St.Xavier`s College, Palayamkottai",
+        "City": "Palayamkottai",
+        "State": "Tamil Nadu",
+        "Rank": 68
+    },
+    {
+        "Name": "College of Social Work Nirmala Niketan 38 New Marine Lines Mumbai - 400 020",
+        "City": "Mumbai",
+        "State": "Maharashtra",
+        "Rank": 69
+    },
+    {
+        "Name": "Sri Ramakrishna Mission Vidyalaya College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 70
+    },
+    {
+        "Name": "Shivaji College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 70
+    },
+    {
+        "Name": "Women`s Christian College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 72
+    },
+    {
+        "Name": "Raja Narendra Lal Khan Women's College - Autonomous",
+        "City": "Midnapore",
+        "State": "West Bengal",
+        "Rank": 73
+    },
+    {
+        "Name": "Bethune College",
+        "City": "Kolkata",
+        "State": "West Bengal",
+        "Rank": 74
+    },
+    {
+        "Name": "Institute of Home Economics",
+        "City": "NEW DELHI",
+        "State": "Delhi",
+        "Rank": 75
+    },
+    {
+        "Name": "Stella Maris College for Women",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 76
+    },
+    {
+        "Name": "Shyam Lal College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 77
+    },
+    {
+        "Name": "St. Joseph`s College, Devagiri",
+        "City": "Kozhikode",
+        "State": "Kerala",
+        "Rank": 78
+    },
+    {
+        "Name": "Jamal Mohamed College, Tiruchirappalli",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 79
+    },
+    {
+        "Name": "Kanchi Mamunivar Government Institute for Postgraduate Studies and Research",
+        "City": "Puducherry",
+        "State": "Pondicherry",
+        "Rank": 80
+    },
+    {
+        "Name": "CMS College Kottayam",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 81
+    },
+    {
+        "Name": "Sacred Heart College (Autonomous)",
+        "City": "Tirupattur",
+        "State": "Tamil Nadu",
+        "Rank": 82
+    },
+    {
+        "Name": "Ayya Nadar Janaki Ammal College",
+        "City": "Sivakasi",
+        "State": "Tamil Nadu",
+        "Rank": 83
+    },
+    {
+        "Name": "Keshav Mahavidyalya",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 84
+    },
+    {
+        "Name": "Government Victoria College, Palakkad",
+        "City": "Palakkad",
+        "State": "Kerala",
+        "Rank": 85
+    },
+    {
+        "Name": "Lady Doak College",
+        "City": "Madurai",
+        "State": "Tamil Nadu",
+        "Rank": 86
+    },
+    {
+        "Name": "St. Xavier`s College",
+        "City": "Mumbai",
+        "State": "Maharashtra",
+        "Rank": 87
+    },
+    {
+        "Name": "Dr. N. G. P. Arts and Science College",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 88
+    },
+    {
+        "Name": "Bishop Kurialacherry College For Women, Amalagiri P.O Kottayam",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 89
+    },
+    {
+        "Name": "Sri Ramakrishna College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 90
+    },
+    {
+        "Name": "Nesamony Memorial Christian College, Kanyakumari Dist.",
+        "City": "Marthandam",
+        "State": "Tamil Nadu",
+        "Rank": 91
+    },
+    {
+        "Name": "Fatima Mata National College, Kollam",
+        "City": "Kollam",
+        "State": "Kerala",
+        "Rank": 92
+    },
+    {
+        "Name": "St. Joseph`s College of Commerce",
+        "City": "Bengaluru",
+        "State": "Karnataka",
+        "Rank": 93
+    },
+    {
+        "Name": "Andhra Loyola College",
+        "City": "Vijayawada",
+        "State": "Andhra Pradesh",
+        "Rank": 94
+    },
+    {
+        "Name": "Women`s Christian College, Nagercoil",
+        "City": "Nagercoil",
+        "State": "Tamil Nadu",
+        "Rank": 94
+    },
+    {
+        "Name": "Scott Christian College, Nagercoil",
+        "City": "Nagercoil",
+        "State": "Tamil Nadu",
+        "Rank": 96
+    },
+    {
+        "Name": "Midnapore College",
+        "City": "Paschim Medinipur",
+        "State": "West Bengal",
+        "Rank": 97
+    },
+    {
+        "Name": "Union Christian College",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 97
+    },
+    {
+        "Name": "Mahatma Gandhi Government Arts College",
+        "City": "Mahe",
+        "State": "Pondicherry",
+        "Rank": 99
+    },
+    {
+        "Name": "Vellalar College for Women",
+        "City": "Erode",
+        "State": "Tamil Nadu",
+        "Rank": 100
+    },
+    {
+        "Name": "A. V. C. College",
+        "City": "Mayiladuthurai",
+        "State": "Tamil Nadu",
+        "Rank": 101
+    },
+    {
+        "Name": "Anna Adarsh College for Women",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 102
+    },
+    {
+        "Name": "Aryabhatta College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 103
+    },
+    {
+        "Name": "Assumption College",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 104
+    },
+    {
+        "Name": "Bharathi Womens College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 105
+    },
+    {
+        "Name": "Catholicate College",
+        "City": "Pathanamthitta",
+        "State": "Kerala",
+        "Rank": 106
+    },
+    {
+        "Name": "Christ College (Autonomous)",
+        "City": "Thrissur",
+        "State": "Kerala",
+        "Rank": 107
+    },
+    {
+        "Name": "Delhi College of Arts & Commerce",
+        "City": "South West",
+        "State": "Delhi",
+        "Rank": 108
+    },
+    {
+        "Name": "Dhanalakshmi Srinivasan College of Arts & Science for Women",
+        "City": "Perambalur",
+        "State": "Tamil Nadu",
+        "Rank": 109
+    },
+    {
+        "Name": "Dr. S. N. S. Rajalakshmi College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 110
+    },
+    {
+        "Name": "Farook College, Kozhikkode",
+        "City": "Kozhikode",
+        "State": "Kerala",
+        "Rank": 111
+    },
+    {
+        "Name": "Fatima College",
+        "City": "Madurai",
+        "State": "Tamil Nadu",
+        "Rank": 112
+    },
+    {
+        "Name": "Goswami Ganesh Dutta S.D. College",
+        "City": "Chandigarh",
+        "State": "Chandigarh",
+        "Rank": 113
+    },
+    {
+        "Name": "Government Arts College, Thiruvananthapuram",
+        "City": "Thiruvananthapuram",
+        "State": "Kerala",
+        "Rank": 114
+    },
+    {
+        "Name": "Government Arts College, Tiruppur",
+        "City": "Udumalpet",
+        "State": "Tamil Nadu",
+        "Rank": 115
+    },
+    {
+        "Name": "Government Brennen College",
+        "City": "Kannur",
+        "State": "Kerala",
+        "Rank": 116
+    },
+    {
+        "Name": "Government College, Nattakom, Kottayam",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 117
+    },
+    {
+        "Name": "Government Institute of Science, Nagpur",
+        "City": "Nagpur",
+        "State": "Maharashtra",
+        "Rank": 118
+    },
+    {
+        "Name": "Guru Nanak College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 119
+    },
+    {
+        "Name": "Hindusthan College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 120
+    },
+    {
+        "Name": "Institute of Science & Technology for Advanced Studies & Research (ISTAR)(SFI),Vallabh Vidyanagar",
+        "City": "Vallabh Vidyanagar",
+        "State": "Gujarat",
+        "Rank": 121
+    },
+    {
+        "Name": "Janki Devi Memorial College",
+        "City": "Central",
+        "State": "Delhi",
+        "Rank": 122
+    },
+    {
+        "Name": "Kalindi College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 123
+    },
+    {
+        "Name": "Kristu Jayanti College",
+        "City": "Bengaluru",
+        "State": "Karnataka",
+        "Rank": 124
+    },
+    {
+        "Name": "Loreto College",
+        "City": "Kolkata",
+        "State": "West Bengal",
+        "Rank": 125
+    },
+    {
+        "Name": "Loyala Academy",
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "Rank": 126
+    },
+    {
+        "Name": "Marian College, Kuttikanam P.O. Peermade",
+        "City": "Kuttikanam",
+        "State": "Kerala",
+        "Rank": 127
+    },
+    {
+        "Name": "Mehr Chand Mahajan D.A.V. College for Women",
+        "City": "Chandigarh",
+        "State": "Chandigarh",
+        "Rank": 128
+    },
+    {
+        "Name": "N. G. M. College",
+        "City": "Pollachi",
+        "State": "Tamil Nadu",
+        "Rank": 129
+    },
+    {
+        "Name": "National College",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 130
+    },
+    {
+        "Name": "Nirmala College, Muvattupuzha",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 131
+    },
+    {
+        "Name": "Ponda Education Society Shri Ravi S Naik College of Arts & Science",
+        "City": "North Goa",
+        "State": "Goa",
+        "Rank": 132
+    },
+    {
+        "Name": "PSMO College, Thirurangadi",
+        "City": "Malappuram",
+        "State": "Kerala",
+        "Rank": 133
+    },
+    {
+        "Name": "Rajah Serfoji Government College, Thanjavur",
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "Rank": 134
+    },
+    {
+        "Name": "Rajdhani College",
+        "City": "West",
+        "State": "Delhi",
+        "Rank": 135
+    },
+    {
+        "Name": "Rathinam College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 136
+    },
+    {
+        "Name": "S S Jain Subodh P G College, Jaipur",
+        "City": "Jaipur",
+        "State": "Rajasthan",
+        "Rank": 137
+    },
+    {
+        "Name": "Scottish Church College",
+        "City": "Kolkata",
+        "State": "West Bengal",
+        "Rank": 138
+    },
+    {
+        "Name": "SDNB Vaishnav College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 139
+    },
+    {
+        "Name": "Seethalakshmi Ramaswami College",
+        "City": "Tiruchirappalli",
+        "State": "Tamil Nadu",
+        "Rank": 140
+    },
+    {
+        "Name": "Shri M. V. & Smt. N. V. Virani Science College",
+        "City": "Rajkot",
+        "State": "Gujarat",
+        "Rank": 141
+    },
+    {
+        "Name": "Sri Sarada College for Women(Autonomous)",
+        "City": "Salem",
+        "State": "Tamil Nadu",
+        "Rank": 142
+    },
+    {
+        "Name": "St. Aloysius College",
+        "City": "Mangaluru",
+        "State": "Karnataka",
+        "Rank": 143
+    },
+    {
+        "Name": "St. Dominic`s College, Parathod P.O., Kanjirappally",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 144
+    },
+    {
+        "Name": "St. Francis College for Women",
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "Rank": 145
+    },
+    {
+        "Name": "St. Josephs Arts & Science College, Lalbhag Rd, Bangalore",
+        "City": "Bengaluru",
+        "State": "Karnataka",
+        "Rank": 146
+    },
+    {
+        "Name": "St. Joseph's College",
+        "City": "Thrissur",
+        "State": "Kerala",
+        "Rank": 147
+    },
+    {
+        "Name": "St. Mary`s College",
+        "City": "Thoothukudi",
+        "State": "Tamil Nadu",
+        "Rank": 148
+    },
+    {
+        "Name": "St. Xavier`s College for Women, Aluva",
+        "City": "Aluva",
+        "State": "Kerala",
+        "Rank": 149
+    },
+    {
+        "Name": "The American College",
+        "City": "Madurai",
+        "State": "Tamil Nadu",
+        "Rank": 150
+    },
+    {
+        "Name": "A.P.C. Mahalaxmi College for Women",
+        "City": "Thoothukkudi",
+        "State": "Tamil Nadu",
+        "Rank": 151
+    },
+    {
+        "Name": "Auxilium College",
+        "City": "Vellore",
+        "State": "Tamil Nadu",
+        "Rank": 152
+    },
+    {
+        "Name": "B. V. Raju College",
+        "City": "West Godavari",
+        "State": "Andhra Pradesh",
+        "Rank": 153
+    },
+    {
+        "Name": "Baselius College, Kottayam",
+        "City": "Kottayam",
+        "State": "Kerala",
+        "Rank": 154
+    },
+    {
+        "Name": "Bharathidasan Government College for Women",
+        "City": "Puducherry",
+        "State": "Pondicherry",
+        "Rank": 155
+    },
+    {
+        "Name": "Bhavans Vivekananda College of Science, Humanities and Commerce",
+        "City": "Secunderabad",
+        "State": "Telangana",
+        "Rank": 156
+    },
+    {
+        "Name": "Bhim Rao Ambedkar College",
+        "City": "North East",
+        "State": "Delhi",
+        "Rank": 157
+    },
+    {
+        "Name": "Bon Secours College for Women",
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "Rank": 158
+    },
+    {
+        "Name": "D.A.V.College",
+        "City": "Chandigarh- (U.T)",
+        "State": "Chandigarh",
+        "Rank": 159
+    },
+    {
+        "Name": "Dempo Charities Trust Dhempe College of Arts & Science",
+        "City": "North Goa",
+        "State": "Goa",
+        "Rank": 160
+    },
+    {
+        "Name": "DG Vaishnav College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 161
+    },
+    {
+        "Name": "Dr. Ambedkar Government Arts College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 162
+    },
+    {
+        "Name": "Government Arts College, Salem",
+        "City": "Salem",
+        "State": "Tamil Nadu",
+        "Rank": 163
+    },
+    {
+        "Name": "Government Arts College Thiruvannamalai",
+        "City": "Thiruvannamalai",
+        "State": "Tamil Nadu",
+        "Rank": 164
+    },
+    {
+        "Name": "Government Arts College, Kumbakonam",
+        "City": "Kumbakonam",
+        "State": "Tamil Nadu",
+        "Rank": 165
+    },
+    {
+        "Name": "Government College",
+        "City": "Rajahmundry",
+        "State": "Andhra Pradesh",
+        "Rank": 166
+    },
+    {
+        "Name": "Government College for Women, Kumbakonam",
+        "City": "Kumbakonam",
+        "State": "Tamil Nadu",
+        "Rank": 167
+    },
+    {
+        "Name": "Government College Kasaragod, Vidya Nagar",
+        "City": "Kasaragod",
+        "State": "Kerala",
+        "Rank": 168
+    },
+    {
+        "Name": "Government Post-graduate College for Girls, Sector-11",
+        "City": "Chandigarh",
+        "State": "Chandigarh",
+        "Rank": 169
+    },
+    {
+        "Name": "Holy Cross College",
+        "City": "Nagercoil",
+        "State": "Tamil Nadu",
+        "Rank": 170
+    },
+    {
+        "Name": "Justice Basher Ahmed Sayeed College for Women",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 171
+    },
+    {
+        "Name": "Lakshmi Bai College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 172
+    },
+    {
+        "Name": "Madura College",
+        "City": "Madurai",
+        "State": "Tamil Nadu",
+        "Rank": 173
+    },
+    {
+        "Name": "Maharaja Surajmal Institute",
+        "City": "West",
+        "State": "Delhi",
+        "Rank": 174
+    },
+    {
+        "Name": "Malankara Catholic College",
+        "City": "Kanniyakumari",
+        "State": "Tamil Nadu",
+        "Rank": 175
+    },
+    {
+        "Name": "MOP Vaishnav College for Women",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 176
+    },
+    {
+        "Name": "Nehru Arts & Science College, Kasaragod",
+        "City": "Kasaragod",
+        "State": "Kerala",
+        "Rank": 177
+    },
+    {
+        "Name": "Nehru Arts and Science College, Coimbatore",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 178
+    },
+    {
+        "Name": "New College",
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Rank": 179
+    },
+    {
+        "Name": "Nirmala College for Women",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 180
+    },
+    {
+        "Name": "Nirmalagiri College",
+        "City": "Kannur",
+        "State": "Kerala",
+        "Rank": 181
+    },
+    {
+        "Name": "Nizam College, Basheerbagh",
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "Rank": 182
+    },
+    {
+        "Name": "Rajiv Gandhi Institute of Information Technology and Biotechnology (RGIITBT)",
+        "City": "Pune",
+        "State": "Maharashtra",
+        "Rank": 183
+    },
+    {
+        "Name": "S.T.Hindu College, Nagercoil",
+        "City": "Nagercoil",
+        "State": "Tamil Nadu",
+        "Rank": 184
+    },
+    {
+        "Name": "Sadakathullah Appa College, Rahmath Nagar, Palayamkottai",
+        "City": "Tirunelveli",
+        "State": "Tamil Nadu",
+        "Rank": 185
+    },
+    {
+        "Name": "Sarah Tucker College, Palayamkottai",
+        "City": "Tirunelveli",
+        "State": "Tamil Nadu",
+        "Rank": 186
+    },
+    {
+        "Name": "Satyawati College",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 187
+    },
+    {
+        "Name": "Shaheed Bhagat Singh College (Evening)",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 188
+    },
+    {
+        "Name": "Shikshan Prasarak Mandalis Sir Parshurambhau College Arts, Science & Commerce, Pune",
+        "City": "Pune",
+        "State": "Maharashtra",
+        "Rank": 189
+    },
+    {
+        "Name": "Shri Shivaji Science College , Morshi Road , Amravati.",
+        "City": "Amravati",
+        "State": "Maharashtra",
+        "Rank": 190
+    },
+    {
+        "Name": "Sir Syed College",
+        "City": "Kannur",
+        "State": "Kerala",
+        "Rank": 191
+    },
+    {
+        "Name": "Sree Kerala Varma College, Thrissur",
+        "City": "Thrissur",
+        "State": "Kerala",
+        "Rank": 192
+    },
+    {
+        "Name": "Sri Aurobindo College (Evening)",
+        "City": "Delhi",
+        "State": "Delhi",
+        "Rank": 193
+    },
+    {
+        "Name": "Sri GVG Visalakshi College for Women",
+        "City": "Tiruppur",
+        "State": "Tamil Nadu",
+        "Rank": 194
+    },
+    {
+        "Name": "Sri Nehru Maha Vidyalaya College of Arts and Science",
+        "City": "Coimbatore",
+        "State": "Tamil Nadu",
+        "Rank": 195
+    },
+    {
+        "Name": "St. Alberts College",
+        "City": "Ernakulam",
+        "State": "Kerala",
+        "Rank": 196
+    },
+    {
+        "Name": "University College for Women, Koti",
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "Rank": 197
+    },
+    {
+        "Name": "V.V. Vanniaperumal College for Women",
+        "City": "Virudhunagar",
+        "State": "Tamil Nadu",
+        "Rank": 198
+    },
+    {
+        "Name": "Vimala College, Thrissur",
+        "City": "Thrissur",
+        "State": "Kerala",
+        "Rank": 199
+    },
+    {
+        "Name": "Yashwantrao Chavan Institute of Science, Satara",
+        "City": "Satara",
+        "State": "Maharashtra",
+        "Rank": 200
+    }
+]

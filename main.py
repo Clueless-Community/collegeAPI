@@ -211,3 +211,27 @@ def allColleges():
         raise HTTPException(status_code=404)
 
     return output
+
+
+@app.get('/colleges/nirf')
+def nirfCollegesRanked():
+
+    try:
+        with open(r'data\nirfCollegesRanked.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
+@app.get('/pharmacy_colleges')
+def allParticipatingPharmacyCollege():
+
+    try:
+        with open(r'data\allParticipatingPharmacyCollege.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
