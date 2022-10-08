@@ -49,6 +49,7 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/management_colleges` | Fetch the list of all the management colleges in India.  |
 | **GET** |  `/management_colleges/nirf` | Fetch the list of all the 300 management colleges ranked by NIRF. In this endpoint, the rank of the colleges will be provided along with the other details.  |
 | **GET** |  `/management_colleges/state={state}` | Fetch the list of all the management colleges in the state passed by the user as a `parameter`.  |
-| **GET** |  `/management_colleges/city={city}` | Fetch the list of all the management colleges in the city passed by the user as a `parameter`.  |
-
+| **GET** |  `/colleges` | Fetch the list of all the colleges listed in NIRF |
+| **GET** |  `/colleges/nirf` | Fetch the list of all the colleges ranked by NIRF.  |
+| **GET** |  `/pharmacy_colleges` | Fetch the list of all the pharmacy colleges listed in NIRF.  |
 ----
