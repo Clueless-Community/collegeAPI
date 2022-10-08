@@ -80,3 +80,29 @@ def management_colleges_by_city(city):
             output.append(data[i])
 
     return output
+
+
+# University Filter
+
+def univerities_by_city(city):
+
+    with open("data/allUniversity.json", 'r') as file:
+        data = json.load(file)
+    output = []
+    for i in range(len(data)):
+        cityCheck = data[i]['city'].lower()
+        if cityCheck == city:
+            output.append(data[i])
+
+    return output
+
+
+def univerities_by_state(state):
+    with open("data/allUniversity.json", 'r') as file:
+        data = json.load(file)
+    output = []
+    for i in range(len(data)):
+        stateCheck = data[i]['state'].replace(" ", "").lower()
+        if stateCheck == state:
+            output.append(data[i])
+    return output

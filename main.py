@@ -155,9 +155,8 @@ def managementColleges():
 
 @app.get('/management_colleges/nirf')
 def managementCollegesNirf():
-
     try:
-        with open(r'data\nirfManagementColleges.json', 'r') as file:
+        with open(r'data/nirfManagementColleges.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=503)
@@ -191,6 +190,56 @@ async def managementCollegesByState(state: str or None = None):
         for i in states_list:
             i = i.replace(" ", "").lower()
             response.append(filters.management_colleges_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+# University Endpoints
+
+@app.get('/universities')
+def universities():
+    try:
+        with open(r'data/allUniversity.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
+@app.get('/universities/city={city}')
+def universitiesByCity(city):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_city(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/universities/state={state}')
+def universitiesbyState(state):
+    print("Hello")
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_state(i))
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
