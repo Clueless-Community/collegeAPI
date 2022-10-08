@@ -201,6 +201,18 @@ async def managementCollegesByState(state: str or None = None):
             status_code=404, detail='Some error occured, please try again')
 
 
+@app.get('/colleges')
+def allColleges():
+
+    try:
+        with open(r'data\allEngineeringColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
 @app.get('/colleges/nirf')
 def managementCollegesNirf():
 
