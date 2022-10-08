@@ -235,3 +235,14 @@ def allParticipatingPharmacyCollege():
         raise HTTPException(status_code=404)
 
     return output
+
+@app.get('/pharmacy_colleges/nirf')
+def pharmacyCollegesNirf():
+
+    try:
+        with open(r'data\nirfPharmacyColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=503)
+
+    return output
