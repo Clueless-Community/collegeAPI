@@ -8,6 +8,8 @@ scrapper = pd.read_html("https://www.nirfindia.org/2022/DentalRanking.html")
 
 df: pd.core.frame.DataFrame = scrapper[0]
 df: pd.core.frame.DataFrame = df.drop(labels='Score', axis=1)
+df['Name'] = df['Name'].str.replace('More Details |', '', regex=False)
+
 
 formatted_df: pd.core.frame.DataFrame = df.iloc[:, 1:]
 formatted_df_list: List = formatted_df.values.tolist()
