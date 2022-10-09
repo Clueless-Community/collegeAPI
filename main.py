@@ -138,8 +138,7 @@ async def medicalCollegesByCity(city: str or None = None):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
-        raise HTTPException(
-            status_code=404, detail='Some error occured, please try again')
+
 
 
 @app.get('/management_colleges')
