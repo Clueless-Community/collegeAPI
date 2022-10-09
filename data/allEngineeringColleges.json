@@ -10,6 +10,11 @@
         "state": "Maharashtra"
     },
     {
+        "name": "AISSMS College of Engineering",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
         "name": "A. D. Patel Institute of Technology",
         "city": "Anand",
         "state": "Gujarat"
@@ -90,6 +95,11 @@
         "state": "Karnataka"
     },
     {
+        "name": "Adamas University",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
         "name": "Adani Institute of Infrastructure Engineering",
         "city": "Ahmedabad",
         "state": "Gujarat"
@@ -153,6 +163,17 @@
         "name": "Agni College of Technology",
         "city": "Chennai",
         "state": "Tamil Nadu"
+    },
+    
+     {
+        "name": "Ajeenkya DY Patil School Of Engineering",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Ajeenkya DY Patil University",
+        "city": "Pune",
+        "state": "Maharashtra"
     },
     {
         "name": "Ajay Kumar Garg Engineering College",
@@ -763,6 +784,10 @@
         "name": "C.V. Raman Global University, Odisha",
         "city": "Bhubaneswar",
         "state": "Odisha"
+    },{
+        "name": "Calcutta Institute of Engineering and Management",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Calcutta Institute of Technology",
@@ -1000,6 +1025,11 @@
         "state": "Maharashtra"
     },
     {
+        "name": "College of Engineering and Management",
+        "city": "Kolaghat",
+        "state": "West Bengal"
+    },
+    {
         "name": "College of Engineering & Technology, Bhubaneswar",
         "city": "Bhubaneswar",
         "state": "Odisha"
@@ -1084,6 +1114,17 @@
         "city": "Pune",
         "state": "Maharashtra"
     },
+    {
+        "name": "D. Y. Patil College of Engineering Akurdi",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "D. Y. Patil International University",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    
     {
         "name": "D.K.T.E. Society`s Textile and Engineering Institute, Ichalkaranji",
         "city": "Ichalkaranji",
@@ -1460,6 +1501,11 @@
         "state": "West Bengal"
     },
     {
+        "name": "Future Institute of Technology",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
         "name": "G H Patel College of Engineering & Technology",
         "city": "Vallabh Vidyanagar",
         "state": "Gujarat"
@@ -1756,6 +1802,11 @@
     },
     {
         "name": "Government College of Engineering & Ceramic Technology",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Government College of Engineering & Leather Technology",
         "city": "Kolkata",
         "state": "West Bengal"
     },
@@ -2960,6 +3011,11 @@
         "state": "Gujarat"
     },
     {
+        "name": "LNCT University",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
         "name": "Lakireddy Bali Reddy College of Engineering",
         "city": "Mylavaram",
         "state": "Andhra Pradesh"
@@ -3798,6 +3854,11 @@
         "name": "Nehru Institute of Engineering and Technology",
         "city": "Coimbatore",
         "state": "Tamil Nadu"
+    },
+    {
+        "name": "Neotia Institute of Technology, Management and Sciencee",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Netaji Subhas University of Technology (NSUT)",
@@ -5095,6 +5156,16 @@
         "state": "Odisha"
     },
     {
+        "name": "Surendra Institute of Engineering and Management, Siliguri",
+        "city": "Siliguri",
+        "state": "West bengal"
+    },
+    {
+        "name": "Siliguri Institute Of Technology",
+        "city": "Siliguri",
+        "state": "West bengal"
+    },
+    {
         "name": "Sinhgad Academy of Engineering",
         "city": "Pune",
         "state": "Maharashtra"
@@ -5830,6 +5901,11 @@
         "state": "Maharashtra"
     },
     {
+        "name": "Trinity Institute Of Technology & Research",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
         "name": "Tripura Institute of Technology",
         "city": "Agartala",
         "state": "Tripura"
@@ -6243,5 +6319,15 @@
         "name": "Zeal Education Society`s Zeal College of Engineering & Research",
         "city": "Pune",
         "state": "Maharashtra"
+    },
+    {
+        "name": "P D Pandya Institute Of Computer Application",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    }
+  {
+        "name": "Himalayan Group of Computer Application",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
     }
 ]

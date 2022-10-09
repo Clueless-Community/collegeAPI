@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 1
+    },
+    {
+        "name": "Manipal College of Dental Sciences, Manipal",
+        "city": "Udupi",
+        "state": "Karnataka",
+        "nirfRank": 2
+    },
+    {
+        "name": "Dr. D. Y. Patil Vidyapeeth",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "nirfRank": 3
+    },
+    {
+        "name": "Maulana Azad Institute of Dental Sciences",
+        "city": "Delhi",
+        "state": "Delhi",
+        "nirfRank": 4
+    },
+    {
+        "name": "King George`s Medical University",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "nirfRank": 5
+    },
+    {
+        "name": "A.B.Shetty Memorial Institute of Dental Sciences",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "nirfRank": 6
+    },
+    {
+        "name": "Manipal College of Dental Sciences, Mangalore",
+        "city": "Mangalore",
+        "state": "Karnataka",
+        "nirfRank": 7
+    },
+    {
+        "name": "SRM Dental College",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 8
+    },
+    {
+        "name": "Govt. Dental College, Nagpur",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "nirfRank": 9
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "nirfRank": 10
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "city": "Wardha",
+        "state": "Maharashtra",
+        "nirfRank": 11
+    },
+    {
+        "name": "JSS Dental College and Hospital",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "nirfRank": 12
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 13
+    },
+    {
+        "name": "M.S. Ramaiah University of Applied Sciences",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "nirfRank": 14
+    },
+    {
+        "name": "Postgraduate Institute of Dental Sciences",
+        "city": "Rohtak",
+        "state": "Haryana",
+        "nirfRank": 15
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "nirfRank": 16
+    },
+    {
+        "name": "Nair Hospital Dental College",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 17
+    },
+    {
+        "name": "Government Dental College, Bangalore",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "nirfRank": 18
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "nirfRank": 19
+    },
+    {
+        "name": "SDM College of Dental Sciences & Hospital",
+        "city": "Dharwad",
+        "state": "Karnataka",
+        "nirfRank": 20
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "nirfRank": 21
+    },
+    {
+        "name": "Meenakshi Academy of Higher Education and Research",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 22
+    },
+    {
+        "name": "Yenepoya Dental College",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "nirfRank": 23
+    },
+    {
+        "name": "Vishnu Dental College, Bheemavaram",
+        "city": "Bhimavaram",
+        "state": "Andhra Pradesh",
+        "nirfRank": 24
+    },
+    {
+        "name": "Dr. M. G. R. Educational and Research Institute",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 25
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "nirfRank": 26
+    },
+    {
+        "name": "Chettinad Dental College and Research Institute ",
+        "city": "Kelambakkam",
+        "state": "Tamil Nadu",
+        "nirfRank": 27
+    },
+    {
+        "name": "K L E Society's Institute of Dental Sciences",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "nirfRank": 28
+    },
+    {
+        "name": "Sree Balaji Dental College & Hospital",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 29
+    },
+    {
+        "name": "Government Dental College",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "nirfRank": 30
+    },
+    {
+        "name": "Karnavati University",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "nirfRank": 31
+    },
+    {
+        "name": "Ragas Dental College & Hospital, Chennai",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 32
+    },
+    {
+        "name": "Gitam Dental College & Hospital",
+        "city": "Vishakhapatnam",
+        "state": "Andhra Pradesh",
+        "nirfRank": 33
+    },
+    {
+        "name": "Raja Rajeswari Dental College & Hospital",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "nirfRank": 34
+    },
+    {
+        "name": "MGM Dental College, Navi Mumbai",
+        "city": "Navi Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 35
+    },
+    {
+        "name": "Government Dental College",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "nirfRank": 36
+    },
+    {
+        "name": "MGVs Karmaveer Bhausaheb Hire Dental College, Nashik",
+        "city": "Nashik",
+        "state": "Maharashtra",
+        "nirfRank": 37
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh",
+        "nirfRank": 38
+    },
+    {
+        "name": "Govt. Dental College, Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "nirfRank": 39
+    },
+    {
+        "name": "Guru nanak Institute of Dental Sciences & Research",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 40
+    }
+]
