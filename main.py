@@ -155,8 +155,9 @@ def managementColleges():
 
 @app.get('/management_colleges/nirf')
 def managementCollegesNirf():
+
     try:
-        with open(r'data/nirfManagementColleges.json', 'r') as file:
+        with open(r'data\nirfManagementColleges.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=503)
