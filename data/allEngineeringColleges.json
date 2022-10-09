@@ -6324,10 +6324,15 @@
         "name": "P D Pandya Institute Of Computer Application",
         "city": "Ahmedabad",
         "state": "Gujarat"
-    }
-  {
+    },
+    {
         "name": "Himalayan Group of Computer Application",
         "city": "Lucknow",
         "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Annex College",
+        "city": "Kolkata",
+        "state": "West Bengal"
     }
 ]
