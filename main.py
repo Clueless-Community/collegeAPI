@@ -266,3 +266,14 @@ def nirf_dental_colleges():
             return output
     except:
         raise HTTPException(status_code=500)
+
+@app.get('/architecture_colleges/nirf')
+def architectureCollegesNirf():
+
+    try:
+        with open(r'data\nirfArchitectureColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=503)
+
+    return output
