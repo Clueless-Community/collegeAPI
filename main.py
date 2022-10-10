@@ -246,6 +246,16 @@ def pharmacyCollegesNirf():
 
     return output
 
+@app.get('/dental_colleges')
+def allParticipatingDentalCollege():
+
+    try:
+        with open(r'data\allParticipatingDentalCollege.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
 
 @app.get('/dental_colleges/nirf')
 def nirf_dental_colleges():
