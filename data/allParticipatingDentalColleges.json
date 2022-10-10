@@ -1,0 +1,504 @@
+{
+ "Name": [
+  {
+   "Name": "A.B.Shetty Memorial Institute of Dental Sciences",
+   "City": "Mangaluru",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "ADHIPARASAKTHI DENTAL COLLEGE AND HOSPITAL, KANCHEEPURAM",
+   "City": "Melmaruvathur",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "AJ Institute of Dental Sciences",
+   "City": "Dakshina Kannada",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Al-Badar Rural Gulbarga Dental College & Hospital",
+   "City": "Gulbarga",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Aligarh Muslim University",
+   "City": "Aligarh",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "Amrita Vishwa Vidyapeetham",
+   "City": "Coimbatore",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "Annamalai University",
+   "City": "Annamalainagar",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "Annasaheb Chudaman Patil Memorial Dental College",
+   "City": "Dhule",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Annoor Dental College, Muvattupuzha",
+   "City": "Muvattupuzha",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Army College of Dental Sciences",
+   "City": "Secunderabd",
+   "State": "Telangana"
+  },
+  {
+   "Name": "Baba Jaswant Singh Dental College Hospital & Research Institute, Ludhiana",
+   "City": "Ludhiana",
+   "State": "Punjab"
+  },
+  {
+   "Name": "Banaras Hindu University",
+   "City": "Varanasi",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "Bapuji Dental College & Hospital",
+   "City": "Davangere",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "BEST DENTAL SCIENCE COLLEGE (Inst. Code - 269), MADURAI",
+   "City": "Madurai",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "BHABHA COLLEGE OF DENTAL SCIENCE",
+   "City": "Bhopal",
+   "State": "Madhya Pradesh"
+  },
+  {
+   "Name": "Bharati Vidyapeeth (Deemed to be University) Dental College and Hospital, Navi Mumbai",
+   "City": "Navi Mumbai",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Bharati Vidyapeeth (Deemed to be University) Dental College and Hospital, Pune",
+   "City": "Pune",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Bharati Vidyapeeth Dental College & Hospital",
+   "City": "Sangli",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Bhojia Dental College & Hospital",
+   "City": "Baddi",
+   "State": "Himachal Pradesh"
+  },
+  {
+   "Name": "Chettinad Dental College and Research Institute",
+   "City": "Kelambakkam",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "Christian Dental College",
+   "City": "Ludhiana",
+   "State": "Punjab"
+  },
+  {
+   "Name": "Coorg Institute of Dental Sciences",
+   "City": "Virajpet",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "D A Pandu Memorial R V Dental College",
+   "City": "Bangalore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Darshan Dental College & Hospital",
+   "City": "Udaipur",
+   "State": "Rajasthan"
+  },
+  {
+   "Name": "Dasmesh Institute of Research & Dental Sciences, Faridkot",
+   "City": "Faridkot",
+   "State": "Punjab"
+  },
+  {
+   "Name": "Datta Meghe Institute of Medical Sciences",
+   "City": "Wardha",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Dayananda Sagar College of Dental Sciences",
+   "City": "Bangalore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Desh Bhagat University",
+   "City": "Mandi Gobindgarh",
+   "State": "Punjab"
+  },
+  {
+   "Name": "Dharmsinh Desai University",
+   "City": "Nadiad",
+   "State": "Gujarat"
+  },
+  {
+   "Name": "Dr. D. Y. Patil Vidyapeeth",
+   "City": "Pune",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Dr. Harvansh Singh Judge Institute of Dental Sciences",
+   "City": "Chandigarh",
+   "State": "Chandigarh"
+  },
+  {
+   "Name": "Drs. Sudha and Nageswara Rao Siddhartha Institute of Dental Sciences",
+   "City": "Vijayawada",
+   "State": "Andhra Pradesh"
+  },
+  {
+   "Name": "ESIC Dental College",
+   "City": "Gulbarga",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "ESIC Dental College",
+   "City": "Delhi",
+   "State": "Delhi"
+  },
+  {
+   "Name": "Farooqia Dental College & Hospital",
+   "City": "Mysore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Geetanjali University",
+   "City": "Udaipur",
+   "State": "Rajasthan"
+  },
+  {
+   "Name": "Gitam Dental College & Hospital",
+   "City": "Vishakhapatnam",
+   "State": "Andhra Pradesh"
+  },
+  {
+   "Name": "GOVERNMENT DENTAL COLLEGE",
+   "City": "Thiruvananthapuram",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Government Dental College",
+   "City": "Ahmedabad",
+   "State": "Gujarat"
+  },
+  {
+   "Name": "Government Dental College, Bangalore",
+   "City": "Bangalore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Govt. Dental College, Indore",
+   "City": "Indore",
+   "State": "Madhya Pradesh"
+  },
+  {
+   "Name": "Govt. Dental College, Nagpur",
+   "City": "Nagpur",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "GURU NANAK INSTITUTE OF DENTAL SCIENCES & RESEARCH",
+   "City": "Kolkata-",
+   "State": "West Bengal"
+  },
+  {
+   "Name": "H.P. Govt. Dental College & Hospital",
+   "City": "Shimla",
+   "State": "Himachal Pradesh"
+  },
+  {
+   "Name": "HAZARIBAG COLLEGE OF DENTAL SCIENCES & HOSPITAL",
+   "City": "Hazaribag",
+   "State": "Jharkhand"
+  },
+  {
+   "Name": "Himachal Institute of Dental Sciences",
+   "City": "Sirmour",
+   "State": "Himachal Pradesh"
+  },
+  {
+   "Name": "I.T.S. DENTAL COLLEGE HOSPITAL & RESEARCH CENTER, GREATAR NOIDA",
+   "City": "Greater Noida",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "Indira Gandhi Institute of Dental Sciences",
+   "City": "Ernakulam",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Indira Gandhi Institute of Dental Sciences",
+   "City": "Puducherry",
+   "State": "Pondicherry"
+  },
+  {
+   "Name": "Institute of Dental Sciences",
+   "City": "Bareilly",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "Institute of Dental Sciences",
+   "City": "Jammu",
+   "State": "Jammu and Kashmir"
+  },
+  {
+   "Name": "INSTITUTE OF DENTAL STUDIES & TECHNOLOGY DELHI-MEERUT ROAD, KADRABAD, MODINAGAR",
+   "City": "Modinagar",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "ITS Centre for Dental Studies and Research Delhi, Murad Nagar, Ghaziabad",
+   "City": "Ghaziabad",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "J.N. Kapoor, D.A.V Centenary Dental College",
+   "City": "Yamunanagar",
+   "State": "Haryana"
+  },
+  {
+   "Name": "Jamia Millia Islamia, New Delhi",
+   "City": "New Delhi",
+   "State": "Delhi"
+  },
+  {
+   "Name": "Jan Nayak Ch. Devi Lal Dental College, Sirsa",
+   "City": "Sirsa",
+   "State": "Haryana"
+  },
+  {
+   "Name": "JKK Natrajah Dental College",
+   "City": "Komarapalayam",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "JSS Dental College and Hospital",
+   "City": "Mysuru",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "K L E Society's Institute of Dental Sciences",
+   "City": "Bengaluru",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Kalinga Institute of Industrial Technology",
+   "City": "BHUBANESWAR",
+   "State": "Odisha"
+  },
+  {
+   "Name": "Kamineni Inst. of Dental Sciences, Narketpally",
+   "City": "Nalgonda",
+   "State": "Telangana"
+  },
+  {
+   "Name": "Karnavati University",
+   "City": "Gandhinagar",
+   "State": "Gujarat"
+  },
+  {
+   "Name": "Karpaga Vinayaga Institute Of Dental sciences",
+   "City": "Chengalpattu",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "King George`s Medical University",
+   "City": "Lucknow",
+   "State": "Uttar Pradesh"
+  },
+  {
+   "Name": "KLE VISHWANATH KATTI INSTITUTE OF DENTAL SCIENCES",
+   "City": "Belgaum",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "KMCT Dental College",
+   "City": "Kozhikode",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Krishna Institute of Medical Sciences Deemed University, Karad",
+   "City": "Karad",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Krishnadevaraya College of Dental Sciences & Hospital",
+   "City": "Bengaluru",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "KSR Institute of Dental Science and Research",
+   "City": "Tiruchengode",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "KVG Dental College & Hospital Sullia",
+   "City": "Sullia",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Luxmi Bai Institute of Dental Sciences & Hospital",
+   "City": "Patiala",
+   "State": "Punjab"
+  },
+  {
+   "Name": "M R Ambedkar Dental College & Hospital Institute",
+   "City": "Bengaluru",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "M. G. R. Educational and Research Institute",
+   "City": "Chennai",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "M.S. Ramaiah University of Applied Sciences",
+   "City": "Bangalore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Maharaja Ganga Singh Dental College & Research Centre",
+   "City": "Sri Ganganagar",
+   "State": "Rajasthan"
+  },
+  {
+   "Name": "Maharishi Markandeshwar",
+   "City": "Ambala",
+   "State": "Haryana"
+  },
+  {
+   "Name": "Mahe Institute of Dental Sciences & Hospital",
+   "City": "Mahe",
+   "State": "Pondicherry"
+  },
+  {
+   "Name": "MALABAR DENTAL COLLEGE, MUNDUR",
+   "City": "EDAPPAL",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Malla Reddy Institute of Dental Sciences",
+   "City": "Hyderabad",
+   "State": "Telangana"
+  },
+  {
+   "Name": "Manav Rachna International Institute of Research & Studies",
+   "City": "Faridabad",
+   "State": "Haryana"
+  },
+  {
+   "Name": "Manipal College of Dental Sciences, Mangalore",
+   "City": "Mangalore",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Manipal College of Dental Sciences, Manipal",
+   "City": "Udupi",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Mar Baselios Dental College",
+   "City": "Ernakulam",
+   "State": "Kerala"
+  },
+  {
+   "Name": "Maratha Mandal`s Nathajirao G Halgekar Institute",
+   "City": "Belgaum",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Maulana Azad Institute of Dental Sciences",
+   "City": "Delhi",
+   "State": "Delhi"
+  },
+  {
+   "Name": "Meenakshi Academy of Higher Education and Research",
+   "City": "Chennai",
+   "State": "Tamil Nadu"
+  },
+  {
+   "Name": "MGM Dental College, Navi Mumbai",
+   "City": "Navi Mumbai",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "MGVs Karmaveer Bhausaheb Hire Dental College, Nashik",
+   "City": "Nashik",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "MNR Dental College",
+   "City": "Sangareddy",
+   "State": "Telangana"
+  },
+  {
+   "Name": "Nair Hospital Dental College",
+   "City": "Mumbai",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Navodaya dental College",
+   "City": "Raichur",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "NIMS University, Jaipur",
+   "City": "Jaipur",
+   "State": "Rajasthan"
+  },
+  {
+   "Name": "NOORUL ISLAM COLLEGE OF DENTAL SCIENCES, NEYYATTINKARA",
+   "City": "Neyyattinkara",
+   "State": "Kerala"
+  },
+  {
+   "Name": "P.M. Nadagouda Memorial Dental College & Hospital",
+   "City": "Bagalkot",
+   "State": "Karnataka"
+  },
+  {
+   "Name": "Pacific Dental College & Hospital",
+   "City": "Udaipur",
+   "State": "Rajasthan"
+  },
+  {
+   "Name": "Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai",
+   "City": "Mumbai",
+   "State": "Maharashtra"
+  },
+  {
+   "Name": "Panjab University",
+   "City": "Chandigarh",
+   "State": "Chandigarh"
+  },
+  {
+   "Name": "Pb. Govt. Dental College & Hospital",
+   "City": "Amritsar",
+   "State": "Punjab"
+  },
+  {
+   "Name": "People?s Dental Academy",
+   "City": "Bhopal",
+   "State": "Madhya Pradesh"
+  },
+  {
+   "Name": "PMS College of Dental Science & Research",
+   "City": "Thiruvananthapuram",
+   "State": "Kerala"
+  }
+ ]
+}
