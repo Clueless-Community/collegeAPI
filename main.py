@@ -21,23 +21,31 @@ app = FastAPI(
         "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
     }
 )
-def colleges_by_state_or_city(field,region,region_list):
+
+# Helpers Function
+
+
+def colleges_by_state_or_city(field, region, region_list):
     response = []
     for i in region_list:
         i = i.replace(" ", "").lower()
-        if(field=='engineering' and region=='state'):
+        if(field == 'engineering' and region == 'state'):
             response.extend(filters.engineering_colleges_by_state(i))
-        elif(field=='engineering' and region=='city'):
+        elif(field == 'engineering' and region == 'city'):
             response.extend(filters.engineering_colleges_by_city(i))
-        elif(field=='medical' and region=='state'):
+        elif(field == 'medical' and region == 'state'):
             response.extend(filters.medical_colleges_by_state(i))
-        elif(field=='medical' and region=='city'):
+        elif(field == 'medical' and region == 'city'):
             response.extend(filters.medical_colleges_by_city(i))
-        elif(field=='management' and region=='state'):
+        elif(field == 'management' and region == 'state'):
             response.extend(filters.management_colleges_by_state(i))
-        elif(field=='management' and region=='city'):
+        elif(field == 'management' and region == 'city'):
             response.extend(filters.management_colleges_by_city(i))
     return response
+
+# Homepage
+
+
 @app.get('/')
 async def home():
 
@@ -46,6 +54,7 @@ async def home():
     }
 
 
+# Engineering Colleges
 @app.get('/engineering_colleges')
 def engineeringColleges():
     try:
@@ -73,7 +82,8 @@ async def engineeringCollegesByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response =colleges_by_state_or_city('engineering','state',states_list)
+        response = colleges_by_state_or_city(
+            'engineering', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
@@ -85,7 +95,7 @@ async def engineeringCollegesByState(state: str or None = None):
 async def engineeringCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response =colleges_by_state_or_city('engineering','city',city_list)
+        response = colleges_by_state_or_city('engineering', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
@@ -94,6 +104,7 @@ async def engineeringCollegesByCity(city: str or None = None):
         raise HTTPException(status_code=404, detail='City not found')
 
 
+# Medical Colleges
 @app.get('/medical_colleges')
 def medicalColleges():
     try:
@@ -104,13 +115,21 @@ def medicalColleges():
 
     return output
 
+@app.get('/medical_colleges/nirf')
+def nirfMedicalColleges():
+    try:
+        with open(os.path.join(os.getcwd(),"data", "nirfMedicalColleges.json")) as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=500)
+    return output
 
 @app.get('/medical_colleges/state={state}')
 def medicalCollegesByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response =colleges_by_state_or_city('medical','state',states_list)
+        response = colleges_by_state_or_city('medical', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
@@ -124,7 +143,7 @@ def medicalCollegesByState(state: str or None = None):
 async def medicalCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response =colleges_by_state_or_city('medical','city',city_list)
+        response = colleges_by_state_or_city('medical', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
@@ -135,6 +154,7 @@ async def medicalCollegesByCity(city: str or None = None):
             status_code=404, detail='Some error occured, please try again')
 
 
+# Management Colleges
 @app.get('/management_colleges')
 def managementColleges():
     try:
@@ -162,7 +182,7 @@ def managementCollegesNirf():
 async def managementCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response =colleges_by_state_or_city('management','city',city_list)
+        response = colleges_by_state_or_city('management', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return response
@@ -175,7 +195,8 @@ async def managementCollegesByCity(city: str or None = None):
 async def managementCollegesByState(state: str or None = None):
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response =colleges_by_state_or_city('management','state',states_list)
+        response = colleges_by_state_or_city(
+            'management', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
@@ -185,6 +206,7 @@ async def managementCollegesByState(state: str or None = None):
             status_code=404, detail='Some error occured, please try again')
 
 
+# Colleges
 @app.get('/colleges')
 def allColleges():
 
@@ -209,6 +231,7 @@ def nirfCollegesRanked():
     return output
 
 
+# Pharmacy Colleges
 @app.get('/pharmacy_colleges')
 def allParticipatingPharmacyCollege():
 
@@ -233,6 +256,7 @@ def pharmacyCollegesNirf():
     return output
 
 
+# Dental Colleges
 @app.get('/dental_colleges/nirf')
 def nirf_dental_colleges():
 
@@ -242,7 +266,10 @@ def nirf_dental_colleges():
             return output
     except:
         raise HTTPException(status_code=500)
-    
+
+# Law Colleges
+
+
 @app.get('/law_colleges/nirf')
 def nirf_dental_colleges():
 
@@ -252,6 +279,9 @@ def nirf_dental_colleges():
             return output
     except:
         raise HTTPException(status_code=500)
+
+# Architecture Colleges
+
 
 @app.get('/architecture_colleges/nirf')
 def architectureCollegesNirf():
