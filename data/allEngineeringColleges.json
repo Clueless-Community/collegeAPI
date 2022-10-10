@@ -10,6 +10,11 @@
         "state": "Maharashtra"
     },
     {
+        "name": "AISSMS College of Engineering",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
         "name": "A. D. Patel Institute of Technology",
         "city": "Anand",
         "state": "Gujarat"
@@ -88,6 +93,11 @@
         "name": "ACS College of Engineering",
         "city": "Bengaluru",
         "state": "Karnataka"
+    },
+    {
+        "name": "Adamas University",
+        "city": "Kolkata",
+        "state": "West Bengal"
     },
     {
         "name": "Adani Institute of Infrastructure Engineering",
@@ -1487,6 +1497,11 @@
     },
     {
         "name": "Future Institute of Engineering and Management",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Future Institute of Technology",
         "city": "Kolkata",
         "state": "West Bengal"
     },
@@ -2994,6 +3009,11 @@
         "name": "L.J.Institue of Engineering and Technology (SFI) - Ahmedabad",
         "city": "Ahmadabad",
         "state": "Gujarat"
+    },
+    {
+        "name": "LNCT University",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
     },
     {
         "name": "Lakireddy Bali Reddy College of Engineering",
@@ -6299,5 +6319,15 @@
         "name": "Zeal Education Society`s Zeal College of Engineering & Research",
         "city": "Pune",
         "state": "Maharashtra"
+    },
+    {
+        "name": "P D Pandya Institute Of Computer Application",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+  {
+        "name": "Himalayan Group of Computer Application",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
     }
 ]
