@@ -26,7 +26,7 @@ def colleges_by_state_or_city(field,region,region_list):
     for i in region_list:
         i = i.replace(" ", "").lower()
         if(field=='engineering' and region=='state'):
-            response.append(filters.engineering_colleges_by_state(i))
+            response.extend(filters.engineering_colleges_by_state(i))
         elif(field=='engineering' and region=='city'):
             response.extend(filters.engineering_colleges_by_city(i))
         elif(field=='medical' and region=='state'):
