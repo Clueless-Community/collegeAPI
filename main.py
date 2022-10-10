@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 import json
+import os
 
 # Imports
 from src import filters
@@ -138,9 +139,6 @@ async def medicalCollegesByCity(city: str or None = None):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
-        raise HTTPException(
-            status_code=404, detail='Some error occured, please try again')
-
 
 @app.get('/management_colleges')
 def managementColleges():
@@ -236,11 +234,44 @@ def allParticipatingPharmacyCollege():
 
     return output
 
+
 @app.get('/pharmacy_colleges/nirf')
 def pharmacyCollegesNirf():
 
     try:
         with open(r'data\nirfPharmacyColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=503)
+
+    return output
+
+
+@app.get('/dental_colleges/nirf')
+def nirf_dental_colleges():
+
+    try:
+        with open(os.path.join(os.getcwd(), "data", "nirfDentalColleges.json")) as file:
+            output = json.load(file)
+            return output
+    except:
+        raise HTTPException(status_code=500)
+    
+@app.get('/law_colleges/nirf')
+def nirf_dental_colleges():
+
+    try:
+        with open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
+            output = json.load(file)
+            return output
+    except:
+        raise HTTPException(status_code=500)
+
+@app.get('/architecture_colleges/nirf')
+def architectureCollegesNirf():
+
+    try:
+        with open(r'data\nirfArchitectureColleges.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=503)
