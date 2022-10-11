@@ -52,5 +52,4 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/colleges` | Fetch the list of all the colleges listed in NIRF |
 | **GET** |  `/colleges/nirf` | Fetch the list of all the colleges ranked by NIRF.  |
 
-
 ----
