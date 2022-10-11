@@ -40,6 +40,10 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.management_colleges_by_state(i))
         elif(field == 'management' and region == 'city'):
             response.extend(filters.management_colleges_by_city(i))
+        elif(field == 'research' and region == 'state'):
+            response.extend(filters.research_colleges_by_state(i))
+        elif(field == 'research' and region == 'city'):
+            response.extend(filters.research_colleges_by_city(i))
     return response
 
 
@@ -282,6 +286,16 @@ def nirf_dental_colleges():
 
 # Architecture Colleges
 
+@app.get('/architecture_colleges')
+def researchColleges():
+    try:
+        with open(r'data\allArchitectureColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
 
 @app.get('/architecture_colleges/nirf')
 def architectureCollegesNirf():
@@ -293,3 +307,134 @@ def architectureCollegesNirf():
         raise HTTPException(status_code=503)
 
     return output
+
+@app.get('/architecture_colleges/state={state}')
+def architectureCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city('architecture', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+@app.get('/architecture_colleges/city={city}')
+async def architectureCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city('architecture', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+# Research Colleges
+
+
+@app.get('/research_colleges')
+def researchColleges():
+    try:
+        with open(r'data\allResearchColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
+@app.get('/research_colleges/state={state}')
+def researchCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city('research', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/research_colleges/city={city}')
+async def researchCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city('research', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/research_colleges/nirf')
+def nirfResearchColleges():
+    try:
+        with open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=500)
+    return output
+
+
+# University Endpoints
+
+@app.get('/universities')
+def universities():
+    try:
+        with open(r'data/allUniversity.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
+@app.get('/universities/city={city}')
+def universitiesByCity(city):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_city(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/universities/state={state}')
+def universitiesbyState(state):
+    print("Hello")
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
