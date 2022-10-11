@@ -271,9 +271,8 @@ def nirf_dental_colleges():
     except:
         raise HTTPException(status_code=500)
 
+
 # Law Colleges
-
-
 @app.get('/law_colleges/nirf')
 def nirf_dental_colleges():
 
@@ -284,12 +283,12 @@ def nirf_dental_colleges():
     except:
         raise HTTPException(status_code=500)
 
-# Architecture Colleges
 
+# Architecture Colleges
 @app.get('/architecture_colleges')
 def researchColleges():
     try:
-        with open(r'data\allArchitectureColleges.json', 'r') as file:
+        with open(os.path.join(os.getcwd(), "data", "allArchitectureColleges.json")) as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=404)
@@ -336,9 +335,8 @@ async def architectureCollegesByCity(city: str or None = None):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
+
 # Research Colleges
-
-
 @app.get('/research_colleges')
 def researchColleges():
     try:
@@ -349,6 +347,14 @@ def researchColleges():
 
     return output
 
+@app.get('/research_colleges/nirf')
+def nirfResearchColleges():
+    try:
+        with open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=500)
+    return output
 
 @app.get('/research_colleges/state={state}')
 def researchCollegesByState(state: str or None = None):
@@ -380,18 +386,8 @@ async def researchCollegesByCity(city: str or None = None):
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/research_colleges/nirf')
-def nirfResearchColleges():
-    try:
-        with open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
-            output = json.load(file)
-    except:
-        raise HTTPException(status_code=500)
-    return output
-
 
 # University Endpoints
-
 @app.get('/universities')
 def universities():
     try:
