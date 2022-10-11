@@ -14,7 +14,7 @@ testList = test.tolist()
 
 
 def convert_to_dict(list):
-    keysName = ['name', 'city', 'state']
+    keysName = ['Name', 'City', 'State']
     dictValue = dict(zip(keysName, list))
     return dictValue
 
