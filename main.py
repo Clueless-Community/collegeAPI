@@ -339,3 +339,12 @@ async def researchCollegesByCity(city: str or None = None):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
+@app.get('/research_colleges/nirf')
+def nirfResearchColleges():
+    try:
+        with open(os.path.join(os.getcwd(),"data", "nirfResearchColleges.json")) as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=500)
+    return output        
+

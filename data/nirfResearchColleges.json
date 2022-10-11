@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Indian Institute of Scien",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "nirfRank": 1
+    },
+    {
+        "name": "Indian Institute of Technology Madr",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 2
+    },
+    {
+        "name": "Indian Institute of Technology Bomb",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 3
+    },
+    {
+        "name": "Indian Institute of Technology Del",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "nirfRank": 4
+    },
+    {
+        "name": "Indian Institute of Technology Kharagp",
+        "city": "Kharagpur",
+        "state": "West Bengal",
+        "nirfRank": 5
+    },
+    {
+        "name": "Indian Institute of Technology Kanp",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh",
+        "nirfRank": 6
+    },
+    {
+        "name": "Indian Institute of Technology Roork",
+        "city": "Roorkee",
+        "state": "Uttarakhand",
+        "nirfRank": 7
+    },
+    {
+        "name": "All India Institute of Medical Scienc",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "nirfRank": 8
+    },
+    {
+        "name": "Indian Institute of Technology Guwaha",
+        "city": "Guwahati",
+        "state": "Assam",
+        "nirfRank": 9
+    },
+    {
+        "name": "Tata Institute of Fundamental Resear",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 10
+    },
+    {
+        "name": "University of Del",
+        "city": "Delhi",
+        "state": "Delhi",
+        "nirfRank": 11
+    },
+    {
+        "name": "Vellore Institute of Technolo",
+        "city": "Vellore",
+        "state": "Tamil Nadu",
+        "nirfRank": 12
+    },
+    {
+        "name": "Homi Bhabha National Institu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 13
+    },
+    {
+        "name": "Banaras Hindu Universi",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "nirfRank": 14
+    },
+    {
+        "name": "Indian Institute of Technology Hyderab",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "nirfRank": 15
+    },
+    {
+        "name": "Indian Institute of Science Education & Research Pu",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "nirfRank": 16
+    },
+    {
+        "name": "Jadavpur Universi",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 17
+    },
+    {
+        "name": "Jawaharlal Nehru Universi",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "nirfRank": 18
+    },
+    {
+        "name": "Jawaharlal Nehru Centre for Advanced Scientific Resear",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "nirfRank": 19
+    },
+    {
+        "name": "Indian Institute of Technology (Indian School of Mine",
+        "city": "Dhanbad",
+        "state": "Jharkhand",
+        "nirfRank": 20
+    },
+    {
+        "name": "Institute of Chemical Technolo",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "nirfRank": 21
+    },
+    {
+        "name": "Academy of Scientific & Innovative Resear",
+        "city": "Ghaziabad",
+        "state": "Uttar Pradesh",
+        "nirfRank": 22
+    },
+    {
+        "name": "Bharathiar Universi",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "nirfRank": 23
+    },
+    {
+        "name": "Aligarh Muslim Universi",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh",
+        "nirfRank": 24
+    },
+    {
+        "name": "University of Hyderab",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "nirfRank": 25
+    },
+    {
+        "name": "Indian Institute of Technology Indo",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "nirfRank": 26
+    },
+    {
+        "name": "Manipal Academy of Higher Educati",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "nirfRank": 27
+    },
+    {
+        "name": "Panjab Universi",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "nirfRank": 28
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeeth",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "nirfRank": 29
+    },
+    {
+        "name": "Jamia Millia Islam",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "nirfRank": 30
+    },
+    {
+        "name": "National Institute of Technology Rourke",
+        "city": "Rourkela",
+        "state": "Odisha",
+        "nirfRank": 31
+    },
+    {
+        "name": "Anna Universi",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 32
+    },
+    {
+        "name": "Calcutta Universi",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 33
+    },
+    {
+        "name": "Indian Institute of Science Education & Research Kolka",
+        "city": "Mohanpur",
+        "state": "West Bengal",
+        "nirfRank": 34
+    },
+    {
+        "name": "National Institute of Technology Tiruchirappal",
+        "city": "Tiruchirappalli",
+        "state": "Tamil Nadu",
+        "nirfRank": 35
+    },
+    {
+        "name": "Birla Institute of Technology & Science -Pila",
+        "city": "Pilani",
+        "state": "Rajasthan",
+        "nirfRank": 36
+    },
+    {
+        "name": "Savitribai Phule Pune Universi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "nirfRank": 37
+    },
+    {
+        "name": "Thapar Institute of Engineering and Technolo",
+        "city": "Patiala",
+        "state": "Punjab",
+        "nirfRank": 38
+    },
+    {
+        "name": "Indian Institute of Technology Gandhinag",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "nirfRank": 39
+    },
+    {
+        "name": "National Institute of Technology Karnata",
+        "city": "Surathkal",
+        "state": "Karnataka",
+        "nirfRank": 40
+    },
+    {
+        "name": "Indian Statistical Institute, Kolka",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "nirfRank": 41
+    },
+    {
+        "name": "National Institute of Mental Health & Neuro Sciences, Bangalo",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "nirfRank": 42
+    },
+    {
+        "name": "Indian Institute of Technology Bhubanesw",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "nirfRank": 43
+    },
+    {
+        "name": "Indian Institute of Science Education & Research, Moha",
+        "city": "Mohali",
+        "state": "Punjab",
+        "nirfRank": 44
+    },
+    {
+        "name": "Indian Institute of Science Education & Research Bhop",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "nirfRank": 45
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technolo",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "nirfRank": 46
+    },
+    {
+        "name": "Indian Institute of Technology Pat",
+        "city": "Patna",
+        "state": "Bihar",
+        "nirfRank": 47
+    },
+    {
+        "name": "Indian Institute of Engineering Science and Technolo",
+        "city": "Shibpur",
+        "state": "West Bengal",
+        "nirfRank": 48
+    },
+    {
+        "name": "Indian Institute of Technology Rop",
+        "city": "Rupnagar",
+        "state": "Punjab",
+        "nirfRank": 49
+    },
+    {
+        "name": "Shanmugha Arts Science Technology & Research Acade",
+        "city": "Thanjavur",
+        "state": "Tamil Nadu",
+        "nirfRank": 50
+    }
+]
