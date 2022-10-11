@@ -265,13 +265,13 @@ def architectureCollegesNirf():
     return output
 
 
-@app.get('/agriculture_colleges/nirf')
+@app.get('/agriculture_colleges/')
 def agriculture_colleges():
 
     try:
         with open(r'data/allagriculturecolleges.json', 'r') as file:
             output = json.load(file)
     except:
-        raise HTTPException(status_code=503)
+        raise HTTPException(status_code=404)
 
     return output
