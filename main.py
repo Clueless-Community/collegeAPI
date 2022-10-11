@@ -269,7 +269,7 @@ def architectureCollegesNirf():
 def agriculture_colleges():
 
     try:
-        with open(r'data/allAgriculturecolleges.json', 'r') as file:
+        with open(r'data/allAgricultureColleges.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=500)
