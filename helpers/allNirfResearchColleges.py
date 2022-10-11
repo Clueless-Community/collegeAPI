@@ -31,5 +31,5 @@ for item in formatted_df_list:
     college_list.append(item_dict)
 
 # Writing the json formatted data to a file
-with open(os.path.join(os.pardir, "data", "nirfResColleges.json"), 'w') as fp:
+with open(os.path.join(os.pardir, "data", "nirfResearchColleges.json"), 'w') as fp:
     json.dump(college_list, fp)
