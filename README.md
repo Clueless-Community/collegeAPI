@@ -52,4 +52,7 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/colleges` | Fetch the list of all the colleges listed in NIRF |
 | **GET** |  `/colleges/nirf` | Fetch the list of all the colleges ranked by NIRF.  |
 | **GET** |  `/pharmacy_colleges` | Fetch the list of all the pharmacy colleges listed in NIRF.  |
+| **GET** |  `/universities` | Fetch the list of all the universities in India.  |
+| **GET** |  `/universities/state={state}` | Fetch the list of all the universities in the state passed by the user as a `parameter`.  |
+| **GET** |  `/universities/city={city}` | Fetch the list of all the universities in the city passed by the user as a `parameter`.  |
 ----
