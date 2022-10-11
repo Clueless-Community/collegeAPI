@@ -1,0 +1,157 @@
+[
+    {
+        "Name": "Indian Institute of Science",
+        "City": "Bengaluru",
+        "Ranked":"1",
+        "State": "Karnataka"
+    },
+    {
+        "Name": "Jawaharlal Nehru University",
+        "City": "New Delhi",
+        "Ranked":"2",
+        "State": "Delhi"
+    },
+    {
+        "Name": "Jamia Millia Islamia, New Delhi",
+        "City": "New Delhi",
+        "Ranked":"3",
+        "State": "Delhi"
+    }, {
+        "Name": "Jadavpur University",
+        "City": "Kolkata",
+        "Ranked":"4",
+        "State": "West Bengal"
+    }, {
+        "Name": "Amrita Vishwa Vidyapeetham",
+        "City": "Coimbatore",
+        "Ranked":"5",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Banaras Hindu University",
+        "City": "Varanasi",
+        "Ranked":"6",
+        "State": "Uttar Pradesh"
+    }, {
+        "Name": "Manipal Academy of Higher Education",
+        "City": "Manipal",
+        "Ranked":"7",
+        "State": "Karnataka"
+    }, {
+        "Name": "Calcutta University",
+        "City": "Kolkata",
+        "Ranked":"8",
+        "State": "West Bengal"
+    }, {
+        "Name": "Vellore Institute of Technology",
+        "City": "Vellore",
+        "Ranked":"9",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "University of Hyderabad",
+        "City": "Hyderabad",
+        "Ranked":"10",
+        "State": "Telangana"
+    }, {
+        "Name": "Aligarh Muslim University",
+        "City": "Aligarh",
+        "Ranked":"Uttar Pradesh",
+        "State": "11"
+    }, {
+        "Name": "Savitribai Phule Pune University",
+        "City": "Pune",
+        "Ranked":"12",
+        "State": "Maharashtra"
+    }, {
+        "Name": "University of Delhi",
+        "City": "Delhi",
+        "Ranked":"13",
+        "State": "Delhi"
+    }, {
+        "Name": "Institute of Chemical Technology",
+        "City": "Mumbai",
+        "Ranked":"14",
+        "State": "Maharashtra"
+    }, {
+        "Name": "Bharathiar University",
+        "City": "Coimbatore",
+        "Ranked":"15",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Siksha `O` Anusandhan",
+        "City": "Bhubaneswar",
+        "Ranked":"16",
+        "State": "Odisha"
+    }, {
+        "Name": "Homi Bhabha National Institute",
+        "City": "Mumbai",
+        "Ranked":"17",
+        "State": "Maharashtra"
+    }, {
+        "Name": "Birla Institute of Technology & Science - Pilani",
+        "City": "Pilani",
+        "Ranked":"18",
+        "State": "Rajasthan"
+    }, {
+        "Name": "S.R.M. Institute of Science and Technology",
+        "City": "Chennai",
+        "Ranked":"19",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Kalinga Institute of Industrial Technology",
+        "City": "Bhubaneswar",
+        "Ranked":"20",
+        "State": "Odisha"
+    }, {
+        "Name": "Anna University",
+        "City": "Chennai",
+        "Ranked":"21",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Osmania University",
+        "City": "Hyderabad",
+        "Ranked":"22",
+        "State": "Telangana"
+    }, {
+        "Name": "Amity University",
+        "City": "Gautam Budh Nagar",
+        "Ranked":"23",
+        "State": "Uttar Pradesh"
+    }, {
+        "Name": "Shanmugha Arts Science Technology & Research Academy",
+        "City": "Thanjavur",
+        "Ranked":"24",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Panjab University",
+        "City": "Chandigarh",
+        "Ranked":"25",
+        "State": "Chandigarh"
+    }, {
+        "Name": "Saveetha Institute of Medical and Technical Sciences",
+        "City": "Chennai",
+        "Ranked":"26",
+        "State": "Tamil Nadu"
+    }, {
+        "Name": "Koneru Lakshmaiah Education Foundation University",
+        "City": "Vaddeswaram",
+        "Ranked":"27",
+        "State": "Andhra Pradesh"
+    }, {
+        "Name": "Alagappa University",
+        "City": "Karaikudi",
+        "Ranked":"28",
+        "State": "Tamil Nadu"
+    },
+    {
+        "Name": "Chandigarh University",
+        "City": "Mohali",
+        "Ranked":"29",
+        "State": "Punjab"
+    },
+    {
+        "Name": "Mahatma Gandhi University, Kottayam",
+        "City": "Kottayam",
+        "Ranked":"30",
+        "State": "Kerala"
+    }
+]
