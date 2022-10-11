@@ -40,7 +40,7 @@ def colleges_by_state_or_city(field, region, region_list):
         elif(field == 'management' and region == 'state'):
             response.extend(filters.management_colleges_by_state(i))
         elif(field == 'management' and region == 'city'):
-            response.extend(filters.management_colleges_by_city(i))               
+            response.extend(filters.management_colleges_by_city(i))
         elif(field == 'research' and region == 'state'):
             response.extend(filters.research_colleges_by_state(i))
         elif(field == 'research' and region == 'city'):
@@ -119,14 +119,16 @@ def medicalColleges():
 
     return output
 
+
 @app.get('/medical_colleges/nirf')
 def nirfMedicalColleges():
     try:
-        with open(os.path.join(os.getcwd(),"data", "nirfMedicalColleges.json")) as file:
+        with open(os.path.join(os.getcwd(), "data", "nirfMedicalColleges.json")) as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=500)
     return output
+
 
 @app.get('/medical_colleges/state={state}')
 def medicalCollegesByState(state: str or None = None):
@@ -300,6 +302,7 @@ def architectureCollegesNirf():
 
 # Research Colleges
 
+
 @app.get('/research_colleges')
 def researchColleges():
     try:
@@ -309,6 +312,7 @@ def researchColleges():
         raise HTTPException(status_code=404)
 
     return output
+
 
 @app.get('/research_colleges/state={state}')
 def researchCollegesByState(state: str or None = None):
@@ -339,12 +343,62 @@ async def researchCollegesByCity(city: str or None = None):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
+
 @app.get('/research_colleges/nirf')
 def nirfResearchColleges():
     try:
-        with open(os.path.join(os.getcwd(),"data", "nirfResearchColleges.json")) as file:
+        with open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=500)
-    return output        
+    return output
 
+
+# University Endpoints
+
+@app.get('/universities')
+def universities():
+    try:
+        with open(r'data/allUniversity.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+
+@app.get('/universities/city={city}')
+def universitiesByCity(city):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = []
+        for i in city_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_city(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/universities/state={state}')
+def universitiesbyState(state):
+    print("Hello")
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = []
+        for i in states_list:
+            i = i.replace(" ", "").lower()
+            response.append(filters.univerities_by_state(i))
+
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
