@@ -286,6 +286,16 @@ def nirf_dental_colleges():
 
 # Architecture Colleges
 
+@app.get('/architecture_colleges')
+def researchColleges():
+    try:
+        with open(r'data\allArchitectureColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
 
 @app.get('/architecture_colleges/nirf')
 def architectureCollegesNirf():
@@ -297,6 +307,34 @@ def architectureCollegesNirf():
         raise HTTPException(status_code=503)
 
     return output
+
+@app.get('/architecture_colleges/state={state}')
+def architectureCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city('architecture', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+@app.get('/architecture_colleges/city={city}')
+async def architectureCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city('architecture', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
 
 # Research Colleges
 
