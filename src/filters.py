@@ -74,8 +74,8 @@ def research_colleges_by_city(city):
 
     with open(r'data\allResearchColleges.json', 'r') as file:
         data = json.load(file)
-    return processing(data, 'city', city)
 
+    return processing(data, 'city', city)
 
 # University Filter
 
@@ -101,3 +101,18 @@ def univerities_by_state(state):
         if stateCheck == state:
             output.append(data[i])
     return output
+
+# Architecture Colleges Filter
+
+def architecture_colleges_by_state(state):
+
+    with open(r'data\allArchitectureColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'state',state)
+
+
+def architecture_colleges_by_city(city):
+
+    with open(r'data\allArchitectureColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'city',city)
