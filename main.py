@@ -402,3 +402,14 @@ def universitiesbyState(state):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
+
+@app.get('/agriculture_colleges')
+def nirfagricultureCollegesRanked():
+
+    try:
+        with open(r'allAgricultureColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
