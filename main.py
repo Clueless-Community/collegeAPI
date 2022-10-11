@@ -264,17 +264,6 @@ def architectureCollegesNirf():
 
     return output
 
-@app.get('/agriculture_colleges/')
-def agriculture_colleges():
-
-    try:
-        with open(r'data/allAgricultureColleges.json', 'r') as file:
-            output = json.load(file)
-    except:
-        raise HTTPException(status_code=500)
-
-    return output
-=======
 @app.get('/architecture_colleges/state={state}')
 def architectureCollegesByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
