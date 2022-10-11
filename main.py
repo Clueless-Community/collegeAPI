@@ -441,8 +441,9 @@ def universitiesbyState(state):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
+
 @app.get('/agriculture_colleges')
-def researchColleges():
+def agricultreColleges():
     try:
         with open(r'data\allAgriculture.json', 'r') as file:
             output = json.load(file)
