@@ -40,7 +40,11 @@ def colleges_by_state_or_city(field, region, region_list):
         elif(field == 'management' and region == 'state'):
             response.extend(filters.management_colleges_by_state(i))
         elif(field == 'management' and region == 'city'):
-            response.extend(filters.management_colleges_by_city(i))
+            response.extend(filters.management_colleges_by_city(i))               
+        elif(field == 'research' and region == 'state'):
+            response.extend(filters.research_colleges_by_state(i))
+        elif(field == 'research' and region == 'city'):
+            response.extend(filters.research_colleges_by_city(i))
     return response
 
 # Homepage
@@ -293,3 +297,45 @@ def architectureCollegesNirf():
         raise HTTPException(status_code=503)
 
     return output
+
+# Research Colleges
+
+@app.get('/research_colleges')
+def researchColleges():
+    try:
+        with open(r'data\allResearchColleges.json', 'r') as file:
+            output = json.load(file)
+    except:
+        raise HTTPException(status_code=404)
+
+    return output
+
+@app.get('/research_colleges/state={state}')
+def researchCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city('research', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+
+
+@app.get('/research_colleges/city={city}')
+async def researchCollegesByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city('research', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=404, detail='Some error occured, please try again')
+

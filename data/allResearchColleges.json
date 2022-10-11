@@ -1,0 +1,302 @@
+[
+    {
+        "code": "IR-R-U-0220",
+        "name": "Indian Institute of ScienceMore Details",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "code": "IR-R-U-0456",
+        "name": "Indian Institute of Technology MadrasMore Details",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0306",
+        "name": "Indian Institute of Technology BombayMore Details",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-I-1074",
+        "name": "Indian Institute of Technology DelhiMore Details",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "code": "IR-R-U-0573",
+        "name": "Indian Institute of Technology KharagpurMore Details",
+        "city": "Kharagpur",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-I-1075",
+        "name": "Indian Institute of Technology KanpurMore Details",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "code": "IR-R-U-0560",
+        "name": "Indian Institute of Technology RoorkeeMore Details",
+        "city": "Roorkee",
+        "state": "Uttarakhand"
+    },
+    {
+        "code": "IR-R-N-15",
+        "name": "All India Institute of Medical SciencesMore Details",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "code": "IR-R-U-0053",
+        "name": "Indian Institute of Technology GuwahatiMore Details",
+        "city": "Guwahati",
+        "state": "Assam"
+    },
+    {
+        "code": "IR-R-U-0330",
+        "name": "Tata Institute of Fundamental ResearchMore Details",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-U-0120",
+        "name": "University of DelhiMore Details",
+        "city": "Delhi",
+        "state": "Delhi"
+    },
+    {
+        "code": "IR-R-U-0490",
+        "name": "Vellore Institute of TechnologyMore Details",
+        "city": "Vellore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0304",
+        "name": "Homi Bhabha National InstituteMore Details",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-U-0500",
+        "name": "Banaras Hindu UniversityMore Details",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "code": "IR-R-U-0013",
+        "name": "Indian Institute of Technology HyderabadMore Details",
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "code": "IR-R-U-0305",
+        "name": "Indian Institute of Science Education & Research PuneMore Details",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-U-0575",
+        "name": "Jadavpur UniversityMore Details",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-U-0109",
+        "name": "Jawaharlal Nehru UniversityMore Details",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "code": "IR-R-U-0224",
+        "name": "Jawaharlal Nehru Centre for Advanced Scientific ResearchMore Details",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "code": "IR-R-U-0205",
+        "name": "Indian Institute of Technology (Indian School of Mines)More Details",
+        "city": "Dhanbad",
+        "state": "Jharkhand"
+    },
+    {
+        "code": "IR-R-U-0308",
+        "name": "Institute of Chemical TechnologyMore Details",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-U-0713",
+        "name": "Academy of Scientific & Innovative ResearchMore Details",
+        "city": "Ghaziabad",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "code": "IR-R-U-0447",
+        "name": "Bharathiar UniversityMore Details",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0496",
+        "name": "Aligarh Muslim UniversityMore Details",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "code": "IR-R-U-0042",
+        "name": "University of HyderabadMore Details",
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "code": "IR-R-U-0273",
+        "name": "Indian Institute of Technology IndoreMore Details",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "code": "IR-R-U-0234",
+        "name": "Manipal Academy of Higher EducationMore Details",
+        "city": "Manipal",
+        "state": "Karnataka"
+    },
+    {
+        "code": "IR-R-U-0078",
+        "name": "Panjab UniversityMore Details",
+        "city": "Chandigarh",
+        "state": "Chandigarh"
+    },
+    {
+        "code": "IR-R-U-0436",
+        "name": "Amrita Vishwa VidyapeethamMore Details",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0108",
+        "name": "Jamia Millia IslamiaMore Details",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "code": "IR-R-U-0357",
+        "name": "National Institute of Technology RourkelaMore Details",
+        "city": "Rourkela",
+        "state": "Odisha"
+    },
+    {
+        "code": "IR-R-U-0439",
+        "name": "Anna UniversityMore Details",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0570",
+        "name": "Calcutta UniversityMore Details",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-U-0572",
+        "name": "Indian Institute of Science Education & Research KolkataMore Details",
+        "city": "Mohanpur",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-U-0467",
+        "name": "National Institute of Technology TiruchirappalliMore Details",
+        "city": "Tiruchirappalli",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0391",
+        "name": "Birla Institute of Technology & Science -PilaniMore Details",
+        "city": "Pilani",
+        "state": "Rajasthan"
+    },
+    {
+        "code": "IR-R-U-0323",
+        "name": "Savitribai Phule Pune UniversityMore Details",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "code": "IR-R-I-1480",
+        "name": "Thapar Institute of Engineering and TechnologyMore Details",
+        "city": "Patiala",
+        "state": "Punjab"
+    },
+    {
+        "code": "IR-R-U-0139",
+        "name": "Indian Institute of Technology GandhinagarMore Details",
+        "city": "Gandhinagar",
+        "state": "Gujarat"
+    },
+    {
+        "code": "IR-R-U-0237",
+        "name": "National Institute of Technology KarnatakaMore Details",
+        "city": "Surathkal",
+        "state": "Karnataka"
+    },
+    {
+        "code": "IR-R-U-0574",
+        "name": "Indian Statistical Institute, KolkataMore Details",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-U-0236",
+        "name": "National Institute of Mental Health & Neuro Sciences, BangaloreMore Details",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "code": "IR-R-U-0355",
+        "name": "Indian Institute of Technology BhubaneswarMore Details",
+        "city": "Bhubaneswar",
+        "state": "Odisha"
+    },
+    {
+        "code": "IR-R-U-0377",
+        "name": "Indian Institute of Science Education & Research, MohaliMore Details",
+        "city": "Mohali",
+        "state": "Punjab"
+    },
+    {
+        "code": "IR-R-U-0272",
+        "name": "Indian Institute of Science Education & Research BhopalMore Details",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "code": "IR-R-U-0473",
+        "name": "S.R.M. Institute of Science and TechnologyMore Details",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "code": "IR-R-U-0064",
+        "name": "Indian Institute of Technology PatnaMore Details",
+        "city": "Patna",
+        "state": "Bihar"
+    },
+    {
+        "code": "IR-R-U-0584",
+        "name": "Indian Institute of Engineering Science and TechnologyMore Details",
+        "city": "Shibpur",
+        "state": "West Bengal"
+    },
+    {
+        "code": "IR-R-U-0378",
+        "name": "Indian Institute of Technology RoparMore Details",
+        "city": "Rupnagar",
+        "state": "Punjab"
+    },
+    {
+        "code": "IR-R-U-0476",
+        "name": "Shanmugha Arts Science Technology & Research AcademyMore Details",
+        "city": "Thanjavur",
+        "state": "Tamil Nadu"
+    }
+]

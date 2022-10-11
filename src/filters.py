@@ -55,3 +55,20 @@ def management_colleges_by_city(city):
     with open(r'data\allManagementColleges.json', 'r') as file:
         data = json.load(file)
     return processing(data,'City',city)
+
+
+# Research Colleges Filter
+
+
+def research_colleges_by_state(state):
+
+    with open(r'data\allResearchColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'state',state)
+
+
+def research_colleges_by_city(city):
+
+    with open(r'data\allResearchColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'city',city)
