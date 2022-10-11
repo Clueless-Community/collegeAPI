@@ -29,5 +29,5 @@ for i in range(len(df)):
 
 # collegesList
 json_file = json.dumps(collegesList, indent=4)
-with open(r'allArchitectureColleges.json', 'w') as file:
+with open(r'data\allArchitectureColleges.json', 'w') as file:
     file.write(json_file)
