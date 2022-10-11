@@ -266,7 +266,7 @@ def architectureCollegesNirf():
 
 
 @app.get('/agriculture_colleges/nirf')
-def architectureCollegesNirf():
+def agriculture_colleges():
 
     try:
         with open(r'data/allagriculturecolleges.json', 'r') as file:
