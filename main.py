@@ -256,23 +256,12 @@ def nirf_dental_colleges():
             return output
     except:
         raise HTTPException(status_code=500)
-
-
+    
 @app.get('/law_colleges/nirf')
 def nirf_dental_colleges():
 
     try:
         with open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
-            output = json.load(file)
-            return output
-    except:
-        raise HTTPException(status_code=500)
-
-
-@app.get('/dental_colleges')
-def dental_colleges():
-    try:
-        with open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
             output = json.load(file)
             return output
     except:
