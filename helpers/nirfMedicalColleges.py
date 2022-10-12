@@ -1,7 +1,7 @@
 import json
 from requests_html import HTMLSession
 
-s= HTMLSession()
+s = HTMLSession()
 
 url = 'https://www.nirfindia.org/2022/MedicalRankingALL.html'
 
