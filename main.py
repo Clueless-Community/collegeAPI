@@ -436,11 +436,7 @@ def universitiesbyState(state):
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/universities/nirf')
-def nirfuniversitiesRanked():
 
-    try:
-        with open(r'data\nirftopuniversity.json', 'r') as file:
             output = json.load(file)
     except:
         raise HTTPException(status_code=404)
