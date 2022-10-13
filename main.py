@@ -307,12 +307,14 @@ def architectureCollegesNirf():
 
     return output
 
+
 @app.get('/architecture_colleges/state={state}')
 def architectureCollegesByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city('architecture', 'state', states_list)
+        response = colleges_by_state_or_city(
+            'architecture', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return response
@@ -320,6 +322,7 @@ def architectureCollegesByState(state: str or None = None):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
+
 
 @app.get('/architecture_colleges/city={city}')
 async def architectureCollegesByCity(city: str or None = None):
@@ -347,6 +350,7 @@ def researchColleges():
 
     return output
 
+
 @app.get('/research_colleges/nirf')
 def nirfResearchColleges():
     try:
@@ -355,6 +359,7 @@ def nirfResearchColleges():
     except:
         raise HTTPException(status_code=500)
     return output
+
 
 @app.get('/research_colleges/state={state}')
 def researchCollegesByState(state: str or None = None):
@@ -384,7 +389,6 @@ async def researchCollegesByCity(city: str or None = None):
 
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
-
 
 
 # University Endpoints
@@ -435,10 +439,18 @@ def universitiesbyState(state):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
-
-
-            output = json.load(file)
+        output = json.load(file)
     except:
         raise HTTPException(status_code=404)
 
     return output
+
+
+@app.get("/dental_colleges")
+def participating_dental_colleges():
+    try:
+        with open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
+            output = json.load(file)
+            return output
+    except:
+        raise HTTPException(status_code=500)
