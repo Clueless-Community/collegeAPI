@@ -56,3 +56,17 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/universities/state={state}` | Fetch the list of all the universities in the state passed by the user as a `parameter`.  |
 | **GET** |  `/universities/city={city}` | Fetch the list of all the universities in the city passed by the user as a `parameter`.  |
 ----
+
+
+<h2 align='center'> Project maintainers </h2>
+<table align='center'>
+<tr>
+    <td align="center">
+        <a href="https://github.com/nikhil25803">
+            <img src="https://avatars.githubusercontent.com/u/93156825?v=4" width="100;" alt="Nikhil Raj"/>
+            <br />
+            <sub><b>Nikhil Raj</b></sub>
+        </a>
+    </td>
+  </tr>
+</table>
