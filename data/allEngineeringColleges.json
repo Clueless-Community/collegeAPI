@@ -6329,5 +6329,40 @@
         "name": "Himalayan Group of Computer Application",
         "city": "Lucknow",
         "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Sheth M.C. College of Dairy Science",
+        "city": "Anand",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Som Lalit Institute Of Business Management SLIBM",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Silver Oak College Of Engineering & Technology SOCET",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "RB Institute Of Management Studies",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Asia Pacific Institute Of Hotel Management APIM",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Unitedworld School Of Business",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Sardar Patel Institute Of Economics & Social Research",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
     }
 ]
