@@ -1,9 +1,11 @@
-from fastapi import FastAPI, HTTPException
-import json
-import os
+
 
 # Imports
+from fastapi import FastAPI, HTTPException
 from src import filters
+import json
+import os
+import aiofiles 
 
 # Initiating a FastAPI application
 app = FastAPI(
@@ -55,28 +57,25 @@ async def home():
         "Status": "Server running sucessfully"
     }
 
-
 # Engineering Colleges
 @app.get('/engineering_colleges')
-def engineeringColleges():
+async def engineeringColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
-
+    return json.loads(output)
 
 @app.get('/engineering_colleges/nirf')
-def engineeringCollegesNirf():
+async def engineeringCollegesNirf():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfEngineeringColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfEngineeringColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=503)
 
-    return output
+    return json.loads(output)
 
 
 @app.get('/engineering_colleges/state={state}')
@@ -108,24 +107,24 @@ async def engineeringCollegesByCity(city: str or None = None):
 
 # Medical Colleges
 @app.get('/medical_colleges')
-def medicalColleges():
+async def medicalColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
 
-    return output
+    return json.loads(output)
 
 
 @app.get('/medical_colleges/nirf')
-def nirfMedicalColleges():
+async def nirfMedicalColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfMedicalColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfMedicalColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=500)
-    return output
+    return json.loads(output)
 
 
 @app.get('/medical_colleges/state={state}')
@@ -160,14 +159,13 @@ async def medicalCollegesByCity(city: str or None = None):
 
 # Management Colleges
 @app.get('/management_colleges')
-def managementColleges():
+async def managementColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/management_colleges/nirf')
@@ -212,100 +210,86 @@ async def managementCollegesByState(state: str or None = None):
 
 # Colleges
 @app.get('/colleges')
-def allColleges():
-
+async def allColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/colleges/nirf')
-def nirfCollegesRanked():
-
+async def nirfCollegesRanked():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfCollegesRanked.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfCollegesRanked.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 # Pharmacy Colleges
 @app.get('/pharmacy_colleges')
-def allParticipatingPharmacyCollege():
-
+async def allParticipatingPharmacyCollege():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/pharmacy_colleges/nirf')
-def pharmacyCollegesNirf():
-
+async def pharmacyCollegesNirf():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfPharmacyColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfPharmacyColleges.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=503)
-
-    return output
+        raise HTTPException(status_code=404)
+    return json.loads(output)
 
 
 # Dental Colleges
 @app.get('/dental_colleges/nirf')
-def nirf_dental_colleges():
-
+async def nirf_dental_colleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfDentalColleges.json")) as file:
-            output = json.load(file)
-            return output
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfDentalColleges.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=500)
+        raise HTTPException(status_code=404)
+    return json.loads(output)
 
 
 # Law Colleges
 @app.get('/law_colleges/nirf')
-def nirf_dental_colleges():
-
+async def nirf_dental_colleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
-            output = json.load(file)
-            return output
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=500)
-
+        raise HTTPException(status_code=404)
+    return json.loads(output)
 
 # Architecture Colleges
 @app.get('/architecture_colleges')
-def researchColleges():
+async def researchColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allArchitectureColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allArchitectureColleges.json")) as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/architecture_colleges/nirf')
-def architectureCollegesNirf():
-
+async def architectureCollegesNirf():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfArchitectureColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfArchitectureColleges.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=503)
-
-    return output
+        raise HTTPException(status_code=404)
+    return json.loads(output)
 
 
 @app.get('/architecture_colleges/state={state}')
@@ -341,24 +325,23 @@ async def architectureCollegesByCity(city: str or None = None):
 
 # Research Colleges
 @app.get('/research_colleges')
-def researchColleges():
+async def researchColleges():
     try:
-        with open(r'data\allResearchColleges.json', 'r') as file:
-            output = json.load(file)
+        async with aiofiles.open(r'data\allResearchColleges.json', 'r') as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/research_colleges/nirf')
-def nirfResearchColleges():
+async def nirfResearchColleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
-            output = json.load(file)
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=500)
-    return output
+        raise HTTPException(status_code=404)
+    return json.loads(output)
 
 
 @app.get('/research_colleges/state={state}')
@@ -393,14 +376,13 @@ async def researchCollegesByCity(city: str or None = None):
 
 # University Endpoints
 @app.get('/universities')
-def universities():
+async def universities():
     try:
-        with open(r'data/allUniversity.json', 'r') as file:
-            output = json.load(file)
+        async with aiofiles.open(r'data/allUniversity.json', 'r') as file:
+            output = await file.read()
     except:
         raise HTTPException(status_code=404)
-
-    return output
+    return json.loads(output)
 
 
 @app.get('/universities/city={city}')
@@ -423,7 +405,6 @@ def universitiesByCity(city):
 
 @app.get('/universities/state={state}')
 def universitiesbyState(state):
-    print("Hello")
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = []
@@ -439,18 +420,12 @@ def universitiesbyState(state):
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
-        output = json.load(file)
-    except:
-        raise HTTPException(status_code=404)
-
-    return output
-
 
 @app.get("/dental_colleges")
-def participating_dental_colleges():
+async def participating_dental_colleges():
     try:
-        with open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
-            output = json.load(file)
-            return output
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
+            output = await file.read()
     except:
-        raise HTTPException(status_code=500)
+        raise HTTPException(status_code=404)
+    return json.loads(output)
