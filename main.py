@@ -6,6 +6,7 @@ from src import filters
 import json
 import os
 import aiofiles 
+from starlette.responses import FileResponse
 
 # Initiating a FastAPI application
 app = FastAPI(
@@ -23,6 +24,20 @@ app = FastAPI(
         "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
     }
 )
+
+favicon_path = "favicon.ico"
+app.get('/favicon.ico', include_in_schema=False)
+def favicon():
+    return FileResponse(favicon_path)
+
+
+# Homepage
+@app.get('/')
+async def home():
+
+    return {
+        "Status": "Server running sucessfully"
+    }
 
 
 # Filter Function
@@ -49,13 +64,6 @@ def colleges_by_state_or_city(field, region, region_list):
     return response
 
 
-# Homepage
-@app.get('/')
-async def home():
-
-    return {
-        "Status": "Server running sucessfully"
-    }
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
