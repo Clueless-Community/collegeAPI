@@ -271,7 +271,7 @@ async def nirf_dental_colleges():
 
 # Law Colleges
 @app.get('/law_colleges/nirf')
-async def nirf_dental_colleges():
+async def nirf_law_colleges():
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
             output = await file.read()
