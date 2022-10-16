@@ -285,10 +285,10 @@ async def pharmacyCollegesByCity(state: str or None = None):
         response = colleges_by_state_or_city(
             'pharmacy', 'city', city_list)
         if len(response) == 0:
-            raise HTTPException(status_code=404, detail='State not found')
+            raise HTTPException(status_code=404, detail='City not found')
         return response
     except Exception as e:
-        raise HTTPException(status_code=404, detail='State  not found')
+        raise HTTPException(status_code=404, detail='City  not found')
 
 
 # Dental Colleges
