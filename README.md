@@ -55,6 +55,9 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/universities` | Fetch the list of all the universities in India.  |
 | **GET** |  `/universities/state={state}` | Fetch the list of all the universities in the state passed by the user as a `parameter`.  |
 | **GET** |  `/universities/city={city}` | Fetch the list of all the universities in the city passed by the user as a `parameter`.  |
+| **GET** |  `/dental_colleges` | Fetch the list of all the NIRF dental colleges in India.  |
+| **GET** |  `/dental_colleges/state={state}` | Fetch the list of all the NIRF dental colleges in the state passed by the user as a `parameter`.  |
+| **GET** |  `/dental_colleges/city={city}` | Fetch the list of all the NIRF dental colleges in the city passed by the user as a `parameter`.  |
 ----
 
 
