@@ -2,9 +2,8 @@
 import json
 import os
 
+
 # Engineering Colleges Filter
-
-
 def processing(data, searchfor, present):
     output = []
     for i in range(len(data)):
@@ -43,6 +42,7 @@ def medical_colleges_by_city(city):
         data = json.load(file)
     return processing(data, 'city', city)
 
+
 # Management Colleges Filter
 def management_colleges_by_state(state):
 
@@ -59,8 +59,6 @@ def management_colleges_by_city(city):
 
 
 # Research Colleges Filter
-
-
 def research_colleges_by_state(state):
 
     with open(r'data\allResearchColleges.json', 'r') as file:
@@ -75,8 +73,8 @@ def research_colleges_by_city(city):
 
     return processing(data, 'city', city)
 
-# University Filter
 
+# University Filter
 def univerities_by_city(city):
 
     with open("data/allUniversity.json", 'r') as file:
@@ -100,13 +98,13 @@ def univerities_by_state(state):
             output.append(data[i])
     return output
 
-# Architecture Colleges Filter
 
+# Architecture Colleges Filter
 def architecture_colleges_by_state(state):
 
     with open(r'data\allArchitectureColleges.json', 'r') as file:
         data = json.load(file)
-    return processing(data,'state',state)
+    return processing(data, 'state', state)
 
 
 def architecture_colleges_by_city(city):
@@ -125,3 +123,18 @@ def dental_colleges_by_city(city):
     with open(r'data\nirfDentalColleges.json', 'r') as file:
         data = json.load(file)
     return processing(data,'city',city)
+    return processing(data, 'city', city)
+
+
+# filter phamarcy colleges by state
+def pharmacy_college_by_state(state):
+    with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
+        data = json.load(file)
+    return processing(data, 'state', state)
+
+
+# filter phamarcy colleges by city
+def pharmacy_college_by_city(city):
+    with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
+        data = json.load(file)
+    return processing(data, 'city', city)
