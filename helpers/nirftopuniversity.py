@@ -4,7 +4,8 @@ import os
 from typing import List, Dict, Any
 
 # Scraping the html document to load the tabular list of universities
-scrapper = pd.read_html("https://www.nirfindia.org/2022/UniversityRanking.html")
+scrapper = pd.read_html(
+    "https://www.nirfindia.org/2022/UniversityRanking.html")
 
 df: pd.core.frame.DataFrame = scrapper[0]
 df: pd.core.frame.DataFrame = df.drop(labels='Score', axis=1)
