@@ -111,6 +111,18 @@ def architecture_colleges_by_city(city):
 
     with open(r'data\allArchitectureColleges.json', 'r') as file:
         data = json.load(file)
+    return processing(data,'city',city)
+
+
+def dental_colleges_by_state(state):
+    with open(r'data\nirfDentalColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'state',state)
+
+def dental_colleges_by_city(city):
+    with open(r'data\nirfDentalColleges.json', 'r') as file:
+        data = json.load(file)
+    return processing(data,'city',city)
     return processing(data, 'city', city)
 
 
