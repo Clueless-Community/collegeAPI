@@ -1,5 +1,3 @@
-
-
 # Imports
 from fastapi import FastAPI, HTTPException
 from src import filters
