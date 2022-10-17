@@ -6329,5 +6329,15 @@
         "name": "Himalayan Group of Computer Application",
         "city": "Lucknow",
         "state": "Uttar Pradesh"
-    }
+    },
+         {
+        "name": "Devbhoomi Group of Institution  ",
+        "city": "Saharanpur",
+        "state": "Uttar Pradesh"
+    },
+      {
+        "name": "Devbhoomi University ",
+        "city": "Dehradoon",
+        "state": "Uttrakhand"
+    },
 ]
