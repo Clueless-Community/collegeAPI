@@ -93,5 +93,20 @@
         "Name": "UTTAR BANGA KRISHI VISHWAVIDYALAYA ",
         "City": "COOCH BEHAR",
         "State": "WEST BENGAL"
+    },
+    {
+        "Name": "COLLEGE OF AGRICULTURE AND ALLIED SCIENCES",
+        "City": "BARAMATI",
+        "State": "MAHARASHTRA"
+    },
+    {
+        "Name": "DR BALASAHEB SAWANT KONKAN KRISHI VIDYAPEETH",
+        "City": "RATNAGIRI",
+        "State": "MAHARASHTRA"
+    },
+    {
+        "Name": "PDKV",
+        "City": "AKOLA",
+        "State": "MAHARASHTRA"
     }
 ]
