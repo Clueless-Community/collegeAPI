@@ -71,6 +71,18 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.pharmacy_college_by_city(i))
     return response
 
+# All Colleges Nirf Ranking
+@app.get('/all/nirf')
+async def allNirf():
+    try:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllColleges.json")) as file:
+            output = await file.read()
+    except:
+        raise HTTPException(status_code=503)
+
+    return json.loads(output)
+
+
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
@@ -81,6 +93,7 @@ async def engineeringColleges():
     except:
         raise HTTPException(status_code=404)
     return json.loads(output)
+
 
 
 @app.get('/engineering_colleges/nirf')
