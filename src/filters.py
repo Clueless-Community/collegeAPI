@@ -91,12 +91,12 @@ def univerities_by_city(city):
 def univerities_by_state(state):
     with open("data/allUniversity.json", 'r') as file:
         data = json.load(file)
-    output = []
-    for i in range(len(data)):
-        stateCheck = data[i]['state'].replace(" ", "").lower()
-        if stateCheck == state:
-            output.append(data[i])
-    return output
+    return processing(data, 'state', state)
+
+
+
+
+
 
 
 # Architecture Colleges Filter
