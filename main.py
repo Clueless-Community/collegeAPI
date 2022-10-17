@@ -1,5 +1,3 @@
-
-
 # Imports
 from fastapi import FastAPI, HTTPException
 from src import filters
@@ -73,6 +71,18 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.pharmacy_college_by_city(i))
     return response
 
+# All Colleges Nirf Ranking
+@app.get('/all/nirf')
+async def allNirf():
+    try:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllColleges.json")) as file:
+            output = await file.read()
+    except:
+        raise HTTPException(status_code=503)
+
+    return json.loads(output)
+
+
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
@@ -83,6 +93,7 @@ async def engineeringColleges():
     except:
         raise HTTPException(status_code=404)
     return json.loads(output)
+
 
 
 @app.get('/engineering_colleges/nirf')
@@ -283,7 +294,7 @@ async def pharmacyCollegesByState(state: str or None = None):
 
 
 @app.get('/pharmacy_colleges/city={city}')
-async def pharmacyCollegesByCity(state: str or None = None):
+async def pharmacyCollegesByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -304,6 +315,44 @@ async def nirf_dental_colleges():
     except:
         raise HTTPException(status_code=404)
     return json.loads(output)
+
+
+@app.get("/dental_colleges")
+async def participating_dental_colleges():
+    try:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
+            output = await file.read()
+    except:
+        raise HTTPException(status_code=404)
+    return json.loads(output)
+
+
+@app.get('/dental_colleges/state={state}')
+async def dentalCollegesByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'dental', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='State  not found')
+
+
+@app.get('/dental_colleges/city={city}')
+async def dentalCollegesByCity(city: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    cities_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'dental', 'city', cities_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='City  not found')
 
 
 # Law Colleges
@@ -465,41 +514,3 @@ def universitiesbyState(state):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
-
-
-@app.get("/dental_colleges")
-async def participating_dental_colleges():
-    try:
-        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
-            output = await file.read()
-    except:
-        raise HTTPException(status_code=404)
-    return json.loads(output)
-
-
-@app.get('/dental_colleges/state={state}')
-async def dentalCollegesByState(state: str or None = None):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
-    states_list = [x.strip() for x in state.split('&')]
-    try:
-        response = colleges_by_state_or_city(
-            'dental', 'state', states_list)
-        if len(response) == 0:
-            raise HTTPException(status_code=404, detail='State not found')
-        return response
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='State  not found')
-
-
-@app.get('/dental_colleges/city={city}')
-async def dentalCollegesByCity(city: str or None = None):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
-    cities_list = [x.strip() for x in city.split('&')]
-    try:
-        response = colleges_by_state_or_city(
-            'dental', 'city', cities_list)
-        if len(response) == 0:
-            raise HTTPException(status_code=404, detail='City not found')
-        return response
-    except Exception as e:
-        raise HTTPException(status_code=404, detail='City  not found')
