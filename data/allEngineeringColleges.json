@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "A G Patil Institute of Technology",
         "city": "Solapur",
         "state": "Maharashtra"
@@ -164,8 +163,8 @@
         "city": "Chennai",
         "state": "Tamil Nadu"
     },
-    
-     {
+
+    {
         "name": "Ajeenkya DY Patil School Of Engineering",
         "city": "Pune",
         "state": "Maharashtra"
@@ -309,6 +308,11 @@
         "name": "Andhra Loyola Institute of Engineering and Technology",
         "city": "Vijayawada",
         "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Andhra University College of Engineering",
+        "city": "Visakhapatnam",
+        "state": "Chennai"
     },
     {
         "name": "Angadi Instittute of Technology and Management",
@@ -784,7 +788,7 @@
         "name": "C.V. Raman Global University, Odisha",
         "city": "Bhubaneswar",
         "state": "Odisha"
-    },{
+    }, {
         "name": "Calcutta Institute of Engineering and Management",
         "city": "Kolkata",
         "state": "West Bengal"
@@ -1124,7 +1128,7 @@
         "city": "Pune",
         "state": "Maharashtra"
     },
-    
+
     {
         "name": "D.K.T.E. Society`s Textile and Engineering Institute, Ichalkaranji",
         "city": "Ichalkaranji",
@@ -6325,7 +6329,7 @@
         "city": "Ahmedabad",
         "state": "Gujarat"
     },
-  {
+    {
         "name": "Himalayan Group of Computer Application",
         "city": "Lucknow",
         "state": "Uttar Pradesh"
