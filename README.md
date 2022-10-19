@@ -39,7 +39,8 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 
 | Method   |      Path      |  Description |
 |----------|:-------------:|------:|
-| **GET** |  `/all/nirf` | Fetch the list of overall collges ranked by NIRF |
+| **GET** |  `/all` | Fetch the list of all participating collges ranked by NIRF |
+| **GET** |  `/all/nirf` | Fetch the list of overall colleges ranked by NIRF |
 | **GET** | `/engineering_colleges` | Fetch the list of all the engineering colleges in India. |
 | **GET** |  `/engineering_colleges/nirf` | Fetch the list of all the 300 engineering colleges ranked by NIRF. In this endpoint, the rank of the colleges will be provided along with the other details. |
 | **GET** |  `/engineering_colleges/state={state}` | Fetch the list of all the engineering colleges in the state passed by the user as a `parameter`. |
