@@ -71,6 +71,18 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.pharmacy_college_by_city(i))
     return response
 
+# All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
+@app.get('/all')
+async def allNirf():
+    try:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatingColleges22.json")) as file:
+            output = await file.read()
+    except:
+        raise HTTPException(status_code=503)
+
+    return json.loads(output)
+
+
 # All Colleges Nirf Ranking
 @app.get('/all/nirf')
 async def allNirf():
