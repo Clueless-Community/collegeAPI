@@ -1,5 +1,8 @@
 # Imports
 from fastapi import FastAPI, HTTPException
+from numpy import number, typename
+import numpy
+from pandas import array
 from src import filters
 import json
 import os
@@ -72,15 +75,18 @@ def colleges_by_state_or_city(field, region, region_list):
     return response
 
 # All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
+def paginate(data,page,limit):
+    return data[(page-1)*limit:page*limit]
+
 @app.get('/all')
-async def allNirf():
+async def allNirf(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatingColleges22.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=503)
 
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 # All Colleges Nirf Ranking
