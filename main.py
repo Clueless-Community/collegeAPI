@@ -1,4 +1,5 @@
 # Imports
+from curses import pair_number
 from fastapi import FastAPI, HTTPException
 from numpy import number, typename
 import numpy
@@ -75,7 +76,7 @@ def colleges_by_state_or_city(field, region, region_list):
     return response
 
 # All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
-def paginate(data,page,limit):
+def paginate(data:array,page,limit):
     return data[(page-1)*limit:page*limit]
 
 @app.get('/all')
@@ -91,42 +92,42 @@ async def allNirf(page:int=1,limit:int=50):
 
 # All Colleges Nirf Ranking
 @app.get('/all/nirf')
-async def allNirf():
+async def allNirf(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=503)
 
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
-async def engineeringColleges():
+async def engineeringColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 
 @app.get('/engineering_colleges/nirf')
-async def engineeringCollegesNirf():
+async def engineeringCollegesNirf(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfEngineeringColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=503)
 
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/engineering_colleges/state={state}')
-async def engineeringCollegesByState(state: str or None = None):
+async def engineeringCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -134,19 +135,19 @@ async def engineeringCollegesByState(state: str or None = None):
             'engineering', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response,page,limit)
     except Exception as e:
         raise HTTPException(status_code=404, detail='State  not found')
 
 
 @app.get('/engineering_colleges/city={city}')
-async def engineeringCollegesByCity(city: str or None = None):
+async def engineeringCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city('engineering', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
 
     except Exception as e:
         raise HTTPException(status_code=404, detail='City not found')
@@ -154,35 +155,35 @@ async def engineeringCollegesByCity(city: str or None = None):
 
 # Medical Colleges
 @app.get('/medical_colleges')
-async def medicalColleges():
+async def medicalColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
 
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/medical_colleges/nirf')
-async def nirfMedicalColleges():
+async def nirfMedicalColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfMedicalColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=500)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/medical_colleges/state={state}')
-def medicalCollegesByState(state: str or None = None):
+def medicalCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city('medical', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response ,page ,limit)
 
     except Exception as e:
         raise HTTPException(
@@ -190,13 +191,13 @@ def medicalCollegesByState(state: str or None = None):
 
 
 @app.get('/medical_colleges/city={city}')
-async def medicalCollegesByCity(city: str or None = None):
+async def medicalCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city('medical', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response ,page ,limit)
 
     except Exception as e:
 
@@ -206,17 +207,17 @@ async def medicalCollegesByCity(city: str or None = None):
 
 # Management Colleges
 @app.get('/management_colleges')
-async def managementColleges():
+async def managementColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/management_colleges/nirf')
-def managementCollegesNirf():
+def managementCollegesNirf(page:int=1,limit:int=50):
 
     try:
         with open(os.path.join(os.getcwd(), "data", "nirfManagementColleges.json")) as file:
@@ -224,31 +225,31 @@ def managementCollegesNirf():
     except:
         raise HTTPException(status_code=503)
 
-    return output
+    return paginate(output,page,limit)
 
 
 @app.get('/management_colleges/city={city}')
-async def managementCollegesByCity(city: str or None = None):
+async def managementCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city('management', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
 
 @app.get('/management_colleges/state={state}')
-async def managementCollegesByState(state: str or None = None):
+async def managementCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
             'management', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response, page ,limit)
 
     except Exception as e:
         raise HTTPException(
@@ -257,48 +258,48 @@ async def managementCollegesByState(state: str or None = None):
 
 # Colleges
 @app.get('/colleges')
-async def allColleges():
+async def allColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/colleges/nirf')
-async def nirfCollegesRanked():
+async def nirfCollegesRanked(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfCollegesRanked.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 # Pharmacy Colleges
 @app.get('/pharmacy_colleges')
-async def allParticipatingPharmacyCollege():
+async def allParticipatingPharmacyCollege(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/pharmacy_colleges/nirf')
-async def pharmacyCollegesNirf():
+async def pharmacyCollegesNirf(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfPharmacyColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/pharmacy_colleges/state={state}')
-async def pharmacyCollegesByState(state: str or None = None):
+async def pharmacyCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -306,47 +307,47 @@ async def pharmacyCollegesByState(state: str or None = None):
             'pharmacy', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response, page, limit)
     except Exception as e:
         raise HTTPException(status_code=404, detail='State  not found')
 
 
 @app.get('/pharmacy_colleges/city={city}')
-async def pharmacyCollegesByCity(city: str or None = None):
+async def pharmacyCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city(
             'pharmacy', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
     except Exception as e:
         raise HTTPException(status_code=404, detail='City  not found')
 
 
 # Dental Colleges
 @app.get('/dental_colleges/nirf')
-async def nirf_dental_colleges():
+async def nirf_dental_colleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfDentalColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get("/dental_colleges")
-async def participating_dental_colleges():
+async def participating_dental_colleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/dental_colleges/state={state}')
-async def dentalCollegesByState(state: str or None = None):
+async def dentalCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -354,13 +355,13 @@ async def dentalCollegesByState(state: str or None = None):
             'dental', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response, page, limit)
     except Exception as e:
         raise HTTPException(status_code=404, detail='State  not found')
 
 
 @app.get('/dental_colleges/city={city}')
-async def dentalCollegesByCity(city: str or None = None):
+async def dentalCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     cities_list = [x.strip() for x in city.split('&')]
     try:
@@ -368,45 +369,45 @@ async def dentalCollegesByCity(city: str or None = None):
             'dental', 'city', cities_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
     except Exception as e:
         raise HTTPException(status_code=404, detail='City  not found')
 
 
 # Law Colleges
 @app.get('/law_colleges/nirf')
-async def nirf_law_colleges():
+async def nirf_law_colleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 # Architecture Colleges
 @app.get('/architecture_colleges')
-async def researchColleges():
+async def researchColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allArchitectureColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/architecture_colleges/nirf')
-async def architectureCollegesNirf():
+async def architectureCollegesNirf(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfArchitectureColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/architecture_colleges/state={state}')
-def architectureCollegesByState(state: str or None = None):
+def architectureCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -414,7 +415,7 @@ def architectureCollegesByState(state: str or None = None):
             'architecture', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response, page, limit)
 
     except Exception as e:
         raise HTTPException(
@@ -422,13 +423,13 @@ def architectureCollegesByState(state: str or None = None):
 
 
 @app.get('/architecture_colleges/city={city}')
-async def architectureCollegesByCity(city: str or None = None):
+async def architectureCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city('architecture', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
 
     except Exception as e:
 
@@ -438,34 +439,34 @@ async def architectureCollegesByCity(city: str or None = None):
 
 # Research Colleges
 @app.get('/research_colleges')
-async def researchColleges():
+async def researchColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(r'data\allResearchColleges.json', 'r') as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/research_colleges/nirf')
-async def nirfResearchColleges():
+async def nirfResearchColleges(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/research_colleges/state={state}')
-def researchCollegesByState(state: str or None = None):
+def researchCollegesByState(state: str or None = None ,page : int = 1 ,limit : int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city('research', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response ,page ,limit)
 
     except Exception as e:
         raise HTTPException(
@@ -473,13 +474,13 @@ def researchCollegesByState(state: str or None = None):
 
 
 @app.get('/research_colleges/city={city}')
-async def researchCollegesByCity(city: str or None = None):
+async def researchCollegesByCity(city: str or None = None ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city('research', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page, limit)
 
     except Exception as e:
 
@@ -489,17 +490,17 @@ async def researchCollegesByCity(city: str or None = None):
 
 # University Endpoints
 @app.get('/universities')
-async def universities():
+async def universities(page:int=1,limit:int=50):
     try:
         async with aiofiles.open(r'data/allUniversity.json', 'r') as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
-    return json.loads(output)
+    return paginate(json.loads(output),page,limit)
 
 
 @app.get('/universities/city={city}')
-def universitiesByCity(city):
+def universitiesByCity(city ,page : int = 1 ,limit : int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = []
@@ -509,7 +510,7 @@ def universitiesByCity(city):
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
-        return response
+        return paginate(response, page ,limit)
 
     except Exception as e:
         raise HTTPException(
@@ -517,7 +518,7 @@ def universitiesByCity(city):
 
 
 @app.get('/universities/state={state}')
-def universitiesbyState(state):
+def universitiesbyState(state ,page : int = 1 ,limit : int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = []
@@ -527,7 +528,7 @@ def universitiesbyState(state):
 
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
-        return response
+        return paginate(response, page, limit)
 
     except Exception as e:
         raise HTTPException(
