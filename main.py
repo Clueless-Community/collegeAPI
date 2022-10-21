@@ -69,9 +69,15 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.pharmacy_college_by_state(i))
         elif(field == 'pharmacy' and region == 'city'):
             response.extend(filters.pharmacy_college_by_city(i))
+        elif(field == 'nirf' and region == 'state'):
+            response.extend(filters.nirf_colleges_by_state(i))
+        elif(field == 'nirf' and region == 'city'):
+            response.extend(filters.nirf_colleges_by_city(i))
     return response
 
 # All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
+
+
 @app.get('/all')
 async def allNirf():
     try:
@@ -95,6 +101,32 @@ async def allNirf():
     return json.loads(output)
 
 
+@app.get('/all/nirf/state={state}')
+async def allNirfByState(state: str or None = None):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'nirf', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='State  not found')
+
+
+@app.get('/all/nirf/city={city}')
+async def allNirfByCity(city: str or None = None):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'nirf', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='City  not found')
+
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
@@ -105,7 +137,6 @@ async def engineeringColleges():
     except:
         raise HTTPException(status_code=404)
     return json.loads(output)
-
 
 
 @app.get('/engineering_colleges/nirf')
