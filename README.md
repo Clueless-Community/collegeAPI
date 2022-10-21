@@ -62,6 +62,7 @@ We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless
 | **GET** |  `/dental_colleges/city={city}` | Fetch the list of all the NIRF dental colleges in the city passed by the user as a `parameter`.  |
 ----
 
+> For pagination add page and limit as query params i.e. `/all/?page=1&limit=10`
 
 <h2 align='center'> Project maintainers </h2>
 <table align='center'>
