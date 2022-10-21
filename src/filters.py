@@ -94,11 +94,6 @@ def univerities_by_state(state):
     return processing(data, 'state', state)
 
 
-
-
-
-
-
 # Architecture Colleges Filter
 def architecture_colleges_by_state(state):
 
@@ -111,18 +106,19 @@ def architecture_colleges_by_city(city):
 
     with open(r'data\allArchitectureColleges.json', 'r') as file:
         data = json.load(file)
-    return processing(data,'city',city)
+    return processing(data, 'city', city)
 
 
 def dental_colleges_by_state(state):
     with open(r'data\nirfDentalColleges.json', 'r') as file:
         data = json.load(file)
-    return processing(data,'state',state)
+    return processing(data, 'state', state)
+
 
 def dental_colleges_by_city(city):
     with open(r'data\nirfDentalColleges.json', 'r') as file:
         data = json.load(file)
-    return processing(data,'city',city)
+    return processing(data, 'city', city)
     return processing(data, 'city', city)
 
 
@@ -136,5 +132,18 @@ def pharmacy_college_by_state(state):
 # filter phamarcy colleges by city
 def pharmacy_college_by_city(city):
     with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
+        data = json.load(file)
+    return processing(data, 'city', city)
+
+
+# filter all Nirf colleges
+def nirf_colleges_by_state(state):
+    with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
+        data = json.load(file)
+    return processing(data, 'state', state)
+
+
+def nirf_colleges_by_state(city):
+    with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
         data = json.load(file)
     return processing(data, 'city', city)
