@@ -82,7 +82,6 @@ async def allNirf():
 
     return json.loads(output)
 
-
 # All Colleges Nirf Ranking
 @app.get('/all/nirf')
 async def allNirf():
@@ -93,8 +92,6 @@ async def allNirf():
         raise HTTPException(status_code=503)
 
     return json.loads(output)
-
-
 
 # Engineering Colleges
 @app.get('/engineering_colleges')
