@@ -143,7 +143,7 @@ def nirf_colleges_by_state(state):
     return processing(data, 'state', state)
 
 
-def nirf_colleges_by_state(city):
+def nirf_colleges_by_city(city):
     with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
         data = json.load(file)
     return processing(data, 'city', city)
