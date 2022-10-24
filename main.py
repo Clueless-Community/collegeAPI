@@ -109,7 +109,7 @@ async def allNirf(page: int = 1, limit: int = 50):
 
 
 # All Colleges Nirf Ranking
-@app.get('/all/nirf')
+@app.get('/all/nirf', description='All NIRF listed colleges ranking')
 async def allNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllColleges.json")) as file:
@@ -120,7 +120,7 @@ async def allNirf(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/all/nirf/state={state}')
+@app.get('/all/nirf/state={state}', description='Filter all NIRF listed colleges by state')
 async def allNirfByState(state: str or None = None):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -134,7 +134,7 @@ async def allNirfByState(state: str or None = None):
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-@app.get('/all/nirf/city={city}')
+@app.get('/all/nirf/city={city}', description='Filter all NIRF listed colleges by city')
 async def allNirfByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -148,7 +148,7 @@ async def allNirfByCity(city: str or None = None):
 
 
 # Engineering Colleges
-@app.get('/engineering_colleges')
+@app.get('/engineering_colleges', description='All engineering colleges')
 async def engineeringColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
@@ -158,7 +158,7 @@ async def engineeringColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/engineering_colleges/nirf')
+@app.get('/engineering_colleges/nirf', description='All NIRF listed engineering colleges')
 async def engineeringCollegesNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfEngineeringColleges.json")) as file:
@@ -169,7 +169,7 @@ async def engineeringCollegesNirf(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/engineering_colleges/state={state}')
+@app.get('/engineering_colleges/state={state}', description='Filter engineering colleges by state')
 async def engineeringCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -183,7 +183,7 @@ async def engineeringCollegesByState(state: str or None = None, page: int = 1, l
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-@app.get('/engineering_colleges/city={city}')
+@app.get('/engineering_colleges/city={city}', description='Filter engineering colleges by city')
 async def engineeringCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -197,7 +197,7 @@ async def engineeringCollegesByCity(city: str or None = None, page: int = 1, lim
 
 
 # Medical Colleges
-@app.get('/medical_colleges')
+@app.get('/medical_colleges', description='All medical colleges')
 async def medicalColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
@@ -208,7 +208,7 @@ async def medicalColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/medical_colleges/nirf')
+@app.get('/medical_colleges/nirf', description='All NIRF listed medical colleges')
 async def nirfMedicalColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfMedicalColleges.json")) as file:
@@ -218,7 +218,7 @@ async def nirfMedicalColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/medical_colleges/state={state}')
+@app.get('/medical_colleges/state={state}', description='Filter medical colleges by state')
 def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -233,7 +233,7 @@ def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int 
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/medical_colleges/city={city}')
+@app.get('/medical_colleges/city={city}', description='Filter medical colleges by city')
 async def medicalCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -249,7 +249,7 @@ async def medicalCollegesByCity(city: str or None = None, page: int = 1, limit: 
 
 
 # Management Colleges
-@app.get('/management_colleges')
+@app.get('/management_colleges', description='All management colleges')
 async def managementColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
@@ -259,7 +259,7 @@ async def managementColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/management_colleges/nirf')
+@app.get('/management_colleges/nirf', description='All NIRF listed colleges')
 def managementCollegesNirf(page: int = 1, limit: int = 50):
 
     try:
@@ -271,7 +271,7 @@ def managementCollegesNirf(page: int = 1, limit: int = 50):
     return paginate(output, page, limit)
 
 
-@app.get('/management_colleges/city={city}')
+@app.get('/management_colleges/city={city}', description='Filter management colleges by city')
 async def managementCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -284,7 +284,7 @@ async def managementCollegesByCity(city: str or None = None, page: int = 1, limi
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/management_colleges/state={state}')
+@app.get('/management_colleges/state={state}', description='Filter management colleges by state')
 async def managementCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -300,7 +300,7 @@ async def managementCollegesByState(state: str or None = None, page: int = 1, li
 
 
 # Colleges
-@app.get('/colleges')
+@app.get('/colleges', description='All colleges listed by NIRF')
 async def allColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
@@ -310,7 +310,7 @@ async def allColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/colleges/nirf')
+@app.get('/colleges/nirf', description='Ranking of all NIRF listed colleges')
 async def nirfCollegesRanked(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfCollegesRanked.json")) as file:
@@ -321,7 +321,7 @@ async def nirfCollegesRanked(page: int = 1, limit: int = 50):
 
 
 # Pharmacy Colleges
-@app.get('/pharmacy_colleges')
+@app.get('/pharmacy_colleges', description='All pharmacy colleges')
 async def allParticipatingPharmacyCollege(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
@@ -331,7 +331,7 @@ async def allParticipatingPharmacyCollege(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/pharmacy_colleges/nirf')
+@app.get('/pharmacy_colleges/nirf', description='All NIRF listed pharmacy colleges')
 async def pharmacyCollegesNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfPharmacyColleges.json")) as file:
@@ -341,7 +341,7 @@ async def pharmacyCollegesNirf(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/pharmacy_colleges/state={state}')
+@app.get('/pharmacy_colleges/state={state}', description='Filter all pharmacy colleges by state')
 async def pharmacyCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -355,7 +355,7 @@ async def pharmacyCollegesByState(state: str or None = None, page: int = 1, limi
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-@app.get('/pharmacy_colleges/city={city}')
+@app.get('/pharmacy_colleges/city={city}', description='Filter all pharmacy colleges by city')
 async def pharmacyCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -370,7 +370,7 @@ async def pharmacyCollegesByCity(city: str or None = None, page: int = 1, limit:
 
 # Dental Colleges
 
-@app.get("/dental_colleges")
+@app.get("/dental_colleges", description='List all dental colleges')
 async def participating_dental_colleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
@@ -380,7 +380,7 @@ async def participating_dental_colleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/dental_colleges/nirf')
+@app.get('/dental_colleges/nirf', description='List all NIRF listed dental colleges')
 async def nirf_dental_colleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfDentalColleges.json")) as file:
@@ -390,7 +390,7 @@ async def nirf_dental_colleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/dental_colleges/state={state}')
+@app.get('/dental_colleges/state={state}', description='Filter dental colleges by given state')
 async def dentalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -404,7 +404,7 @@ async def dentalCollegesByState(state: str or None = None, page: int = 1, limit:
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-@app.get('/dental_colleges/city={city}')
+@app.get('/dental_colleges/city={city}', description='Filter dental colleges by given city')
 async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     cities_list = [x.strip() for x in city.split('&')]
@@ -419,7 +419,7 @@ async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: i
 
 
 # Law Colleges
-@app.get('/law_colleges/nirf')
+@app.get('/law_colleges/nirf', description='All NIRF listed law colleges')
 async def nirf_law_colleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfLawCollegesRanked.json")) as file:
@@ -430,7 +430,7 @@ async def nirf_law_colleges(page: int = 1, limit: int = 50):
 
 
 # Architecture Colleges
-@app.get('/architecture_colleges')
+@app.get('/architecture_colleges', description='List all architecture colleges')
 async def researchColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allArchitectureColleges.json")) as file:
@@ -440,7 +440,7 @@ async def researchColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/architecture_colleges/nirf')
+@app.get('/architecture_colleges/nirf', description='All NIRF listed architecture colleges')
 async def architectureCollegesNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfArchitectureColleges.json")) as file:
@@ -450,7 +450,7 @@ async def architectureCollegesNirf(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/architecture_colleges/state={state}')
+@app.get('/architecture_colleges/state={state}', description='Filter architecture colleges by state')
 def architectureCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -466,7 +466,7 @@ def architectureCollegesByState(state: str or None = None, page: int = 1, limit:
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/architecture_colleges/city={city}')
+@app.get('/architecture_colleges/city={city}', description='Filter architecture colleges by city')
 async def architectureCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -482,7 +482,7 @@ async def architectureCollegesByCity(city: str or None = None, page: int = 1, li
 
 
 # Research Colleges
-@app.get('/research_colleges')
+@app.get('/research_colleges', description='All research colleges')
 async def researchColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(r'data\allResearchColleges.json', 'r') as file:
@@ -492,7 +492,7 @@ async def researchColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/research_colleges/nirf')
+@app.get('/research_colleges/nirf', description='All NIRF listed research colleges')
 async def nirfResearchColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfResearchColleges.json")) as file:
@@ -502,7 +502,7 @@ async def nirfResearchColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/research_colleges/state={state}')
+@app.get('/research_colleges/state={state}', description='Filter research colleges by state')
 def researchCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -517,7 +517,7 @@ def researchCollegesByState(state: str or None = None, page: int = 1, limit: int
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/research_colleges/city={city}')
+@app.get('/research_colleges/city={city}', description='Filter research colleges by city')
 async def researchCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -533,7 +533,7 @@ async def researchCollegesByCity(city: str or None = None, page: int = 1, limit:
 
 
 # University Endpoints
-@app.get('/universities')
+@app.get('/universities', description="List all NIRF universities")
 async def universities(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(r'data/nirfUniversities.json', 'r') as file:
@@ -543,7 +543,7 @@ async def universities(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/universities/city={city}')
+@app.get('/universities/city={city}', description='Filter universities by city')
 def universitiesByCity(city, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
@@ -561,7 +561,7 @@ def universitiesByCity(city, page: int = 1, limit: int = 50):
             status_code=404, detail='Some error occured, please try again')
 
 
-@app.get('/universities/state={state}')
+@app.get('/universities/state={state}', description="Filter universities by state.")
 def universitiesbyState(state, page: int = 1, limit: int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
