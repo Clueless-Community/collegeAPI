@@ -97,7 +97,7 @@ def paginate(data: array, page, limit):
     return data[(page-1)*limit:page*limit]
 
 
-@app.get('/all', description="All NIRF colleges listed.")
+@app.get('/all', description="All NIRF listed colleges.")
 async def allNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatingColleges22.json")) as file:
