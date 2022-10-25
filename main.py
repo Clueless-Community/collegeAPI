@@ -97,7 +97,7 @@ def paginate(data: array, page, limit):
     return data[(page-1)*limit:page*limit]
 
 
-@app.get('/all', description="All NIRF colleges listed.")
+@app.get('/all', description="All NIRF listed colleges.")
 async def allNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatingColleges22.json")) as file:
@@ -603,13 +603,3 @@ def universitiesbyState(state, page: int = 1, limit: int = 50):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
-
-
-@app.get('/law_colleges/nirf')
-async def nirfRankedLawColleges(page: int = 1, limit: int = 50):
-    try:
-        async with aiofiles.open(r'data/nirfLawCollegesRanked.json', 'r') as file:
-            output = await file.read()
-    except:
-        raise HTTPException(status_code=404)
-    return paginate(json.loads(output), page, limit)
