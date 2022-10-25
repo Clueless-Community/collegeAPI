@@ -319,6 +319,31 @@ async def nirfCollegesRanked(page: int = 1, limit: int = 50):
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
 
+@app.get('/colleges/state={state}')
+async def collegesByState(state: str or None = None, page: int = 1, limit: int = 50):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'nirf', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return paginate(response, page, limit)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='State  not found')
+
+@app.get('/colleges/city={city}')
+async def collegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
+    city_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'nirf', 'city', city_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return paginate(response, page, limit)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='City  not found')
+
 
 # Pharmacy Colleges
 @app.get('/pharmacy_colleges', description='All pharmacy colleges')
