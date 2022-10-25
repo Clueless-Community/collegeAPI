@@ -603,13 +603,3 @@ def universitiesbyState(state, page: int = 1, limit: int = 50):
     except Exception as e:
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
-
-
-@app.get('/law_colleges/nirf')
-async def nirfRankedLawColleges(page: int = 1, limit: int = 50):
-    try:
-        async with aiofiles.open(r'data/nirfLawCollegesRanked.json', 'r') as file:
-            output = await file.read()
-    except:
-        raise HTTPException(status_code=404)
-    return paginate(json.loads(output), page, limit)
