@@ -148,7 +148,7 @@ async def allNirfByCity(city: str or None = None):
 
 
 # Engineering Colleges
-@app.get('/engineering_colleges', description='All engineering colleges')
+@app.get('/engineering_colleges', description='All engineering colleges', tags=['engineering_colleges'])
 async def engineeringColleges(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
@@ -158,7 +158,7 @@ async def engineeringColleges(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/engineering_colleges/nirf', description='All NIRF listed engineering colleges')
+@app.get('/engineering_colleges/nirf', description='All NIRF listed engineering colleges', tags=['engineering_colleges'])
 async def engineeringCollegesNirf(page: int = 1, limit: int = 50):
     try:
         async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfEngineeringColleges.json")) as file:
@@ -169,7 +169,7 @@ async def engineeringCollegesNirf(page: int = 1, limit: int = 50):
     return paginate(json.loads(output), page, limit)
 
 
-@app.get('/engineering_colleges/state={state}', description='Filter engineering colleges by state')
+@app.get('/engineering_colleges/state={state}', description='Filter engineering colleges by state', tags=['engineering_colleges'])
 async def engineeringCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
@@ -183,7 +183,7 @@ async def engineeringCollegesByState(state: str or None = None, page: int = 1, l
         raise HTTPException(status_code=404, detail='State  not found')
 
 
-@app.get('/engineering_colleges/city={city}', description='Filter engineering colleges by city')
+@app.get('/engineering_colleges/city={city}', description='Filter engineering colleges by city', tags=['engineering_colleges'])
 async def engineeringCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
