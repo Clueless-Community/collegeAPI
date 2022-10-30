@@ -454,6 +454,15 @@ async def nirf_law_colleges(page: int = 1, limit: int = 50):
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
 
+@app.get('/law_colleges', description='All the participated law instututes', tags=['law_colleges'])
+async def law_colleges(page: int = 1, limit: int = 50):
+    try:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatedLawColleges.json")) as file:
+            output = await file.read()
+    except:
+        raise HTTPException(status_code=404)
+    return paginate(json.loads(output), page, limit)
+
 
 # Architecture Colleges
 @app.get('/architecture_colleges', description='List all architecture colleges', tags=['architecture_colleges'])
