@@ -88,6 +88,10 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.nirf_colleges_by_state(i))
         elif(field == 'nirf' and region == 'city'):
             response.extend(filters.nirf_colleges_by_city(i))
+        elif(field == 'law' and region == 'state'):
+            response.extend(filters.law_colleges_by_state(i))
+        elif(field == 'law' and region == 'city'):
+            response.extend(filters.law_colleges_by_city(i))
     return response
 
 # All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
@@ -462,6 +466,33 @@ async def law_colleges(page: int = 1, limit: int = 50):
     except:
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
+
+@app.get('/law_colleges/state={state}', description='Filter law colleges by given state', tags=['law_colleges'])
+async def dentalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
+    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+    states_list = [x.strip() for x in state.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'law', 'state', states_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='State not found')
+        return paginate(response, page, limit)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='State  not found')
+
+
+@app.get('/law_colleges/city={city}', description='Filter law colleges by given city', tags=['law_colleges'])
+async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
+    # multiple cities will be seperated by '&' like Kolkata&Kochi
+    cities_list = [x.strip() for x in city.split('&')]
+    try:
+        response = colleges_by_state_or_city(
+            'law', 'city', cities_list)
+        if len(response) == 0:
+            raise HTTPException(status_code=404, detail='City not found')
+        return paginate(response, page, limit)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail='City  not found')
 
 
 # Architecture Colleges
