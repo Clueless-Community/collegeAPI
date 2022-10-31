@@ -147,3 +147,14 @@ def nirf_colleges_by_city(city):
     with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
         data = json.load(file)
     return processing(data, 'city', city)
+
+# filter law colleges by state
+def law_colleges_by_state(state):
+    with open(os.path.join(os.getcwd(), "data", "allParticipatedLawColleges.json")) as file:
+        data = json.load(file)
+    return processing(data, 'state', state)
+
+def law_colleges_by_city(city):
+    with open(os.path.join(os.getcwd(), "data", "allParticipatedLawColleges.json")) as file:
+        data = json.load(file)
+    return processing(data, 'city', city)
