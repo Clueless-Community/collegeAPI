@@ -25,11 +25,6 @@
 The ambition of this project is to provide data of Indian Colleges from all the categories listed in NIRF through different endpoints. We also enable the user to filter the college by the desired city and state.
 
 ## Wants to contribute?👀
-You can contribute to this project under [Hacktoberfest 2022](https://hacktoberfest.com/) 🤩 
-
-![image](https://user-images.githubusercontent.com/70385488/192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6.png)
-
-## How to contribute?🤔
 
 We recommend you to go through the [CONTRIBUTING.md](https://github.com/Clueless-Community/collegeAPI/blob/main/CONTRIBUTING.md) where we have mentioned all the guidelines that help you to set up the project and make some awesome contributions 😄
 
