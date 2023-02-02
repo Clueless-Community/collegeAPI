@@ -1,89 +1,43 @@
-# Imports
-from fastapi import FastAPI, HTTPException
+import os
+import json
+import aiofiles
 from pandas import array
 from src import filters
-import json
-import os
-import aiofiles
-from starlette.responses import FileResponse
+from fastapi import FastAPI, HTTPException
 
 # Initiating a FastAPI application
-app = FastAPI(
-    title="College API",
-    description="Fetch the details of Indian Colleges",
-    version="1",
-    terms_of_service="http://example.com/terms/",
-    contact={
+
+API_METADATA = {
+    "title": "College API",
+    "description": "Fetch the details of Indian Colleges",
+    "version": "1",
+    "contact": {
         "name": "Clueless Community",
         "url": "https://www.clueless.tech/",
         "email": "https://www.clueless.tech/contact-us",
     },
-    license_info={
+    "license_info": {
         "name": "GPL-3.0 license",
         "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
     }
-)
+}
+
+app = FastAPI(**API_METADATA)
 
 
 # Homepage
 @app.get('/', tags=['home'])
 async def home():
 
-    return {
-        "title": "College API",
-        "description": "Fetch the details of Indian Colleges",
-        "version": "1",
-        "contact": {
-            "name": "Clueless Community",
-            "url": "https://www.clueless.tech/",
-            "email": "https://www.clueless.tech/contact-us",
-        },
-        "license_info": {
-            "name": "GPL-3.0 license",
-            "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
-        }
-    }
-
+    return API_METADATA
 
 # Filter Function
-def colleges_by_state_or_city(field, region, region_list):
+def filter_colleges(field, region, region_list):
     response = []
     for i in region_list:
-        i = i.replace(" ", "").lower()
-        if(field == 'engineering' and region == 'state'):
-            response.extend(filters.engineering_colleges_by_state(i))
-        elif(field == 'engineering' and region == 'city'):
-            response.extend(filters.engineering_colleges_by_city(i))
-        elif(field == 'medical' and region == 'state'):
-            response.extend(filters.medical_colleges_by_state(i))
-        elif(field == 'medical' and region == 'city'):
-            response.extend(filters.medical_colleges_by_city(i))
-        elif(field == 'management' and region == 'state'):
-            response.extend(filters.management_colleges_by_state(i))
-        elif(field == 'management' and region == 'city'):
-            response.extend(filters.management_colleges_by_city(i))
-        elif(field == 'research' and region == 'state'):
-            response.extend(filters.research_colleges_by_state(i))
-        elif(field == 'research' and region == 'city'):
-            response.extend(filters.research_colleges_by_city(i))
-        elif(field == 'dental' and region == 'state'):
-            response.extend(filters.dental_colleges_by_state(i))
-        elif(field == 'dental' and region == 'city'):
-            response.extend(filters.dental_colleges_by_city(i))
-        elif(field == 'pharmacy' and region == 'state'):
-            response.extend(filters.pharmacy_college_by_state(i))
-        elif(field == 'pharmacy' and region == 'city'):
-            response.extend(filters.pharmacy_college_by_city(i))
-        elif(field == 'nirf' and region == 'state'):
-            response.extend(filters.nirf_colleges_by_state(i))
-        elif(field == 'nirf' and region == 'city'):
-            response.extend(filters.nirf_colleges_by_city(i))
-        elif(field == 'law' and region == 'state'):
-            response.extend(filters.law_colleges_by_state(i))
-        elif(field == 'law' and region == 'city'):
-            response.extend(filters.law_colleges_by_city(i))
+        region_req = i.replace(" ", "").lower()
+        response.extend(filters.get_colleges(field, region, region_req))
     return response
-
 
 
 def paginate(data: array, page, limit):
@@ -93,7 +47,7 @@ def paginate(data: array, page, limit):
 @app.get('/all', description="All NIRF listed colleges.")
 async def allNirf(page: int = 1, limit: int = 50):
     try:
-        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatingColleges22.json")) as file:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "nirfAllParticipatedColleges22.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=503)
@@ -118,7 +72,7 @@ async def allNirfByState(state: str or None = None):
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'nirf', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -131,7 +85,7 @@ async def allNirfByState(state: str or None = None):
 async def allNirfByCity(city: str or None = None):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'nirf', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
@@ -167,7 +121,7 @@ async def engineeringCollegesByState(state: str or None = None, page: int = 1, l
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'engineering', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -180,7 +134,7 @@ async def engineeringCollegesByState(state: str or None = None, page: int = 1, l
 async def engineeringCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city('engineering', 'city', city_list)
+        response = filter_colleges('engineering', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
@@ -216,7 +170,7 @@ def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int 
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city('medical', 'state', states_list)
+        response = filter_colleges('medical', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return paginate(response, page, limit)
@@ -230,7 +184,7 @@ def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int 
 async def medicalCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city('medical', 'city', city_list)
+        response = filter_colleges('medical', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
@@ -268,7 +222,7 @@ def managementCollegesNirf(page: int = 1, limit: int = 50):
 async def managementCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city('management', 'city', city_list)
+        response = filter_colleges('management', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
@@ -281,7 +235,7 @@ async def managementCollegesByCity(city: str or None = None, page: int = 1, limi
 async def managementCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'management', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -317,7 +271,7 @@ async def collegesByState(state: str or None = None, page: int = 1, limit: int =
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'nirf', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -330,7 +284,7 @@ async def collegesByState(state: str or None = None, page: int = 1, limit: int =
 async def collegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'nirf', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
@@ -341,9 +295,9 @@ async def collegesByCity(city: str or None = None, page: int = 1, limit: int = 5
 
 # Pharmacy Colleges
 @app.get('/pharmacy_colleges', description='All pharmacy colleges', tags=['pharmacy_colleges'])
-async def allParticipatingPharmacyCollege(page: int = 1, limit: int = 50):
+async def allParticipatedPharmacyCollege(page: int = 1, limit: int = 50):
     try:
-        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatedPharmacyColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
@@ -365,7 +319,7 @@ async def pharmacyCollegesByState(state: str or None = None, page: int = 1, limi
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'pharmacy', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -378,7 +332,7 @@ async def pharmacyCollegesByState(state: str or None = None, page: int = 1, limi
 async def pharmacyCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'pharmacy', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
@@ -392,7 +346,7 @@ async def pharmacyCollegesByCity(city: str or None = None, page: int = 1, limit:
 @app.get("/dental_colleges", description='List all dental colleges', tags=['dental_colleges'])
 async def participating_dental_colleges(page: int = 1, limit: int = 50):
     try:
-        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatingDentalColleges.json")) as file:
+        async with aiofiles.open(os.path.join(os.getcwd(), "data", "allParticipatedDentalColleges.json")) as file:
             output = await file.read()
     except:
         raise HTTPException(status_code=404)
@@ -414,7 +368,7 @@ async def dentalCollegesByState(state: str or None = None, page: int = 1, limit:
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'dental', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -428,7 +382,7 @@ async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: i
 
     cities_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'dental', 'city', cities_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
@@ -461,7 +415,7 @@ async def dentalCollegesByState(state: str or None = None, page: int = 1, limit:
     # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'law', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -475,7 +429,7 @@ async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: i
     # multiple cities will be seperated by '&' like Kolkata&Kochi
     cities_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'law', 'city', cities_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
@@ -510,7 +464,7 @@ def architectureCollegesByState(state: str or None = None, page: int = 1, limit:
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city(
+        response = filter_colleges(
             'architecture', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
@@ -525,7 +479,7 @@ def architectureCollegesByState(state: str or None = None, page: int = 1, limit:
 async def architectureCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city('architecture', 'city', city_list)
+        response = filter_colleges('architecture', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
@@ -562,7 +516,7 @@ def researchCollegesByState(state: str or None = None, page: int = 1, limit: int
 
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = colleges_by_state_or_city('research', 'state', states_list)
+        response = filter_colleges('research', 'state', states_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='State not found')
         return paginate(response, page, limit)
@@ -576,7 +530,7 @@ def researchCollegesByState(state: str or None = None, page: int = 1, limit: int
 async def researchCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = colleges_by_state_or_city('research', 'city', city_list)
+        response = filter_colleges('research', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
@@ -602,16 +556,13 @@ async def universities(page: int = 1, limit: int = 50):
 def universitiesByCity(city, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
-        response = []
-        for i in city_list:
-            i = i.replace(" ", "").lower()
-            response.append(filters.univerities_by_city(i))
-
+        response = filter_colleges('universities', 'city', city_list)
         if len(response) == 0:
             raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
 
     except Exception as e:
+
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
 
@@ -620,15 +571,12 @@ def universitiesByCity(city, page: int = 1, limit: int = 50):
 def universitiesbyState(state, page: int = 1, limit: int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
-        response = []
-        for i in states_list:
-            i = i.replace(" ", "").lower()
-            response.append(filters.univerities_by_state(i))
-
+        response = filter_colleges('universities', 'city', states_list)
         if len(response) == 0:
-            raise HTTPException(status_code=404, detail='State not found')
+            raise HTTPException(status_code=404, detail='City not found')
         return paginate(response, page, limit)
 
     except Exception as e:
+
         raise HTTPException(
             status_code=404, detail='Some error occured, please try again')
