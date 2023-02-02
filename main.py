@@ -1,8 +1,5 @@
 # Imports
-from curses import pair_number
 from fastapi import FastAPI, HTTPException
-from numpy import number, typename
-import numpy
 from pandas import array
 from src import filters
 import json
@@ -26,13 +23,6 @@ app = FastAPI(
         "url": "https://github.com/Clueless-Community/collegeAPI/blob/main/LICENSE.md",
     }
 )
-
-favicon_path = "favicon.ico"
-app.get('/favicon.ico', include_in_schema=False)
-
-
-def favicon():
-    return FileResponse(favicon_path)
 
 
 # Homepage
@@ -90,13 +80,13 @@ def colleges_by_state_or_city(field, region, region_list):
             response.extend(filters.nirf_colleges_by_city(i))
     return response
 
-# All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
 
 
 def paginate(data: array, page, limit):
     return data[(page-1)*limit:page*limit]
 
 
+# All Participating Institutes in NIRF (extracted json from https://www.nirfindia.org/2022/OverallRankingALL.html)
 @app.get('/all', description="All NIRF listed colleges.")
 async def allNirf(page: int = 1, limit: int = 50):
     try:
@@ -122,7 +112,7 @@ async def allNirf(page: int = 1, limit: int = 50):
 
 @app.get('/all/nirf/state={state}', description='Filter all NIRF listed colleges by state')
 async def allNirfByState(state: str or None = None):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -171,7 +161,7 @@ async def engineeringCollegesNirf(page: int = 1, limit: int = 50):
 
 @app.get('/engineering_colleges/state={state}', description='Filter engineering colleges by state', tags=['engineering_colleges'])
 async def engineeringCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -220,7 +210,7 @@ async def nirfMedicalColleges(page: int = 1, limit: int = 50):
 
 @app.get('/medical_colleges/state={state}', description='Filter medical colleges by state')
 def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city('medical', 'state', states_list)
@@ -319,9 +309,10 @@ async def nirfCollegesRanked(page: int = 1, limit: int = 50):
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
 
+
 @app.get('/colleges/state={state}', description='Filter all colleges by state')
 async def collegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -369,7 +360,7 @@ async def pharmacyCollegesNirf(page: int = 1, limit: int = 50):
 
 @app.get('/pharmacy_colleges/state={state}', description='Filter all pharmacy colleges by state')
 async def pharmacyCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -418,7 +409,7 @@ async def nirf_dental_colleges(page: int = 1, limit: int = 50):
 
 @app.get('/dental_colleges/state={state}', description='Filter dental colleges by given state')
 async def dentalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -432,7 +423,7 @@ async def dentalCollegesByState(state: str or None = None, page: int = 1, limit:
 
 @app.get('/dental_colleges/city={city}', description='Filter dental colleges by given city')
 async def dentalCollegesByCity(city: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     cities_list = [x.strip() for x in city.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -478,7 +469,7 @@ async def architectureCollegesNirf(page: int = 1, limit: int = 50):
 
 @app.get('/architecture_colleges/state={state}', description='Filter architecture colleges by state')
 def architectureCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city(
@@ -530,7 +521,7 @@ async def nirfResearchColleges(page: int = 1, limit: int = 50):
 
 @app.get('/research_colleges/state={state}', description='Filter research colleges by state')
 def researchCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
-    # multiple states will be seperated by '&' like Maharastra&Andhra Pradesh
+
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = colleges_by_state_or_city('research', 'state', states_list)
