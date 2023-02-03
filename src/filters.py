@@ -133,5 +133,5 @@ def get_colleges(field: str,
                    )
     )
 
-    data = get_data(field)
+    data = get_data(field.strip("_colleges"))
     return fetch_details(data, region, region_required)
