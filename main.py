@@ -166,7 +166,7 @@ async def nirfMedicalColleges(page: int = 1, limit: int = 50):
 
 
 @app.get('/medical_colleges/state={state}', description='Filter medical colleges by state', tags=['medical_colleges'])
-def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
+async def medicalCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
 
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -207,7 +207,7 @@ async def managementColleges(page: int = 1, limit: int = 50):
 
 
 @app.get('/management_colleges/nirf', description='All NIRF listed colleges', tags=['management_colleges'])
-def managementCollegesNirf(page: int = 1, limit: int = 50):
+async def managementCollegesNirf(page: int = 1, limit: int = 50):
 
     try:
         with open(os.path.join(os.getcwd(), "data", "nirfManagementColleges.json")) as file:
@@ -460,7 +460,7 @@ async def architectureCollegesNirf(page: int = 1, limit: int = 50):
 
 
 @app.get('/architecture_colleges/state={state}', description='Filter architecture colleges by state', tags=['architecture_colleges'])
-def architectureCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
+async def architectureCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
 
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -512,7 +512,7 @@ async def nirfResearchColleges(page: int = 1, limit: int = 50):
 
 
 @app.get('/research_colleges/state={state}', description='Filter research colleges by state', tags=['research_colleges'])
-def researchCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
+async def researchCollegesByState(state: str or None = None, page: int = 1, limit: int = 50):
 
     states_list = [x.strip() for x in state.split('&')]
     try:
@@ -553,7 +553,7 @@ async def universities(page: int = 1, limit: int = 50):
 
 
 @app.get('/universities/city={city}', description='Filter universities by city', tags=['universities'])
-def universitiesByCity(city, page: int = 1, limit: int = 50):
+async def universitiesByCity(city, page: int = 1, limit: int = 50):
     city_list = [x.strip() for x in city.split('&')]
     try:
         response = filter_colleges('universities', 'city', city_list)
@@ -568,7 +568,7 @@ def universitiesByCity(city, page: int = 1, limit: int = 50):
 
 
 @app.get('/universities/state={state}', description="Filter universities by state.", tags=['universities'])
-def universitiesbyState(state, page: int = 1, limit: int = 50):
+async def universitiesbyState(state, page: int = 1, limit: int = 50):
     states_list = [x.strip() for x in state.split('&')]
     try:
         response = filter_colleges('universities', 'city', states_list)
