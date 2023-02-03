@@ -1,160 +1,137 @@
-# Imports
-import json
 import os
+import json
+from typing import Generator, Iterable
 
 
-# Engineering Colleges Filter
-def processing(data, searchfor, present):
-    output = []
-    for i in range(len(data)):
-        stateCheck = data[i][searchfor].replace(" ", '').lower()
-        if stateCheck == present:
-            output.append(data[i])
-    return output
+class InvalidFieldPassedError(ValueError):
+    """
+    Exception class to raise if invalid field passed.
+    """
 
 
-def engineering_colleges_by_state(state):
-
-    with open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
-        data = json.load(file)
-
-    return processing(data, 'state', state)
+class InvalidRegionPassedError(ValueError):
+    """
+    Exception class to raise if invalid field passed.
+    """
 
 
-def engineering_colleges_by_city(city):
+# Files Not Used:
+"""
+- allAgriculture.json
+- allParticipatingDentalColleges.json
 
-    with open(os.path.join(os.getcwd(), "data", "allEngineeringColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
+- nirfAllColleges.json
+- nirfAllParticipatingColleges22.json
+- nirfArchitectureColleges.json
+- nirfLawCollegesRanked.json
+- nirfManagementColleges.json
+- nirfMedicalColleges.json
+- nirfPharmacyColleges.json
+- nirfResearchColleges.json
+- nirfUniversities.json
+- nirfParticipatingUniversities.json
+"""
 
+DATA_PATH = os.path.join(os.getcwd(), "data")
 
-# Medical Colleges Filter
-def medical_colleges_by_state(state):
-
-    with open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-
-def medical_colleges_by_city(city):
-
-    with open(os.path.join(os.getcwd(), "data", "allMedicalColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
-
-
-# Management Colleges Filter
-def management_colleges_by_state(state):
-
-    with open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'State', state)
-
-
-def management_colleges_by_city(city):
-
-    with open(os.path.join(os.getcwd(), "data", "allManagementColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'City', city)
+FIELD_FILES = {
+    "nirf": "allNirfColleges.json",
+    "dental": "nirfDentalColleges.json",
+    "medical": "allMedicalColleges.json",
+    "research": "allResearchColleges.json",
+    "law": "allParticipatedLawColleges.json",
+    "management": "allManagementColleges.json",
+    "engineering": "allEngineeringColleges.json",
+    "architecture": "allArchitectureColleges.json",
+    "pharmacy": "allParticipatingPharmacyColleges.json",
+    "universities": "nirfParticipatedUniversities.json",
+}
 
 
-# Research Colleges Filter
-def research_colleges_by_state(state):
+def check_values(*,
+                 data: Iterable,
+                 value: str,
+                 value_type: str | None = None,
+                 error_msg: str | None = None
+                 ) -> None:
+    """
+    Check if the provided value present in the data.
+    If not present,
+    it raises the `value_type` matched ERROR with msg.
+    `value_type` current matches with:
+    - "region" : InvalidRegionPassedError
+    - "field" : InvalidFieldPassedError
+    """
+    if value in data:
+        return
 
-    with open(r'data\allResearchColleges.json', 'r') as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-
-def research_colleges_by_city(city):
-
-    with open(r'data\allResearchColleges.json', 'r') as file:
-        data = json.load(file)
-
-    return processing(data, 'city', city)
-
-
-# University Filter
-def univerities_by_city(city):
-
-    with open("data/allUniversity.json", 'r') as file:
-        data = json.load(file)
-    output = []
-    for i in range(len(data)):
-        cityCheck = data[i]['city'].lower()
-        if cityCheck == city:
-            output.append(data[i])
-
-    return output
+    match value_type:
+        case "region":
+            ERROR = InvalidRegionPassedError
+        case "field":
+            ERROR = InvalidFieldPassedError
+    raise ERROR(error_msg)
 
 
-def univerities_by_state(state):
-    with open("data/allUniversity.json", 'r') as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
+def get_data(field: str) -> list:
+    """
+    Takes the field,
+    If field is correct, return the data mapped to it.
+    Else, raises InvalidFieldPassedError from `check_values()`
+    """
+    check_values(
+        data=FIELD_FILES,
+        value=field,
+        value_type="field",
+        error_msg=("Invalid Field passed.\n"
+                   "Run `field_files.keys()` to get a set of all available fields."
+                   )
+    )
+
+    file = FIELD_FILES.get(field)
+    file_path = os.path.join(DATA_PATH, file)
+    return json.load(open(file_path))
 
 
-# Architecture Colleges Filter
-def architecture_colleges_by_state(state):
+def fetch_details(data: list,
+                  region: str = "state",
+                  region_required: str = "state"
+                  ) -> Generator[dict | int, None, None]:
+    """
+    Generates the details of specified `region`.
+    If no details found, gives `-1`
+    """
+    data_is_available = False
+    for detail in range(len(data)):
+        region_name = data[detail][region].replace(" ", '').lower()
+        if region_name == region_required:
+            data_is_available = True
+            yield data[detail]
 
-    with open(r'data\allArchitectureColleges.json', 'r') as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-
-def architecture_colleges_by_city(city):
-
-    with open(r'data\allArchitectureColleges.json', 'r') as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
-
-
-def dental_colleges_by_state(state):
-    with open(r'data\nirfDentalColleges.json', 'r') as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
+    if not data_is_available:
+        yield -1
 
 
-def dental_colleges_by_city(city):
-    with open(r'data\nirfDentalColleges.json', 'r') as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
-    return processing(data, 'city', city)
+def get_colleges(field: str,
+                 region: str = "state",
+                 region_required: str = "state"
+                 ) -> Generator[dict | int, None, None]:
+    """
+    Generates details of college/universities
+    of specified field and region.
+    If field is not correct, InvalidFieldPassedError
+    If region is not correct, raises InvalidRegionPassedError
+    from `check_values()`.
+    """
 
+    check_values(
+        data=("state", "city"),
+        value=region,
+        value_type="region",
+        error_msg=('Invalid Region passed.\n'
+                   'Region either be "state" or "city".'
+                   )
+    )
 
-# filter phamarcy colleges by state
-def pharmacy_college_by_state(state):
-    with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-
-# filter phamarcy colleges by city
-def pharmacy_college_by_city(city):
-    with open(os.path.join(os.getcwd(), "data", "allParticipatingPharmacyCollege.json")) as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
-
-
-# filter all Nirf colleges
-def nirf_colleges_by_state(state):
-    with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-
-def nirf_colleges_by_city(city):
-    with open(os.path.join(os.getcwd(), "data", "allNirfColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
-
-# filter law colleges by state
-def law_colleges_by_state(state):
-    with open(os.path.join(os.getcwd(), "data", "allParticipatedLawColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'state', state)
-
-def law_colleges_by_city(city):
-    with open(os.path.join(os.getcwd(), "data", "allParticipatedLawColleges.json")) as file:
-        data = json.load(file)
-    return processing(data, 'city', city)
+    data = get_data(field)
+    return fetch_details(data, region, region_required)
