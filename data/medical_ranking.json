@@ -1,0 +1,302 @@
+[
+    {
+        "name": "All India Institute of Medical Sciences, Delhi",
+        "city": "New Delhi",
+        "rank": 1,
+        "state": "Delhi"
+    },
+    {
+        "name": "Post Graduate Institute of Medical Education and Research",
+        "city": "Chandigarh",
+        "rank": 2,
+        "state": "Chandigarh"
+    },
+    {
+        "name": "Christian Medical College",
+        "city": "Vellore",
+        "rank": 3,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "National Institute of Mental Health & Neuro Sciences, Bangalore",
+        "city": "Bangalore",
+        "rank": 4,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "rank": 5,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Jawaharlal Institute of Post Graduate Medical Education & Research",
+        "city": "Puducherry",
+        "rank": 6,
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences",
+        "city": "Lucknow",
+        "rank": 7,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "rank": 8,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Sree Chitra Tirunal Institute for Medical Sciences and Technology, Thiruvananthapuram",
+        "city": "Thiruvananthapuram",
+        "rank": 9,
+        "state": "Kerala"
+    },
+    {
+        "name": "Kasturba Medical College, Manipal",
+        "city": "Manipal",
+        "rank": 10,
+        "state": "Karnataka"
+    },
+    {
+        "name": "King George`s Medical University",
+        "city": "Lucknow",
+        "rank": 11,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Madras Medical College & Government General Hospital, Chennai",
+        "city": "Chennai",
+        "rank": 12,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Institute of Liver and Biliary Sciences",
+        "city": "New Delhi",
+        "rank": 13,
+        "state": "Delhi"
+    },
+    {
+        "name": "St. John's Medical College",
+        "city": "Bengaluru",
+        "rank": 14,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "rank": 15,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "All India Institute of Medical Sciences Jodhpur",
+        "city": "Jodhpur",
+        "rank": 16,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Dr. D. Y. Patil Vidyapeeth",
+        "city": "Pune",
+        "rank": 17,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "rank": 18,
+        "state": "Odisha"
+    },
+    {
+        "name": "Vardhman Mahavir Medical College & Safdarjung Hospital",
+        "city": "New Delhi",
+        "rank": 19,
+        "state": "Delhi"
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technology",
+        "city": "Chennai",
+        "rank": 20,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Institute of Post Graduate Medical Education & Research",
+        "city": "Kolkata",
+        "rank": 21,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "rank": 22,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Maulana Azad Medical College",
+        "city": "Delhi",
+        "rank": 23,
+        "state": "Delhi"
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "city": "Wardha",
+        "rank": 24,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "rank": 25,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "All India Institute of Medical Sciences Bhubaneswar",
+        "city": "Khordha",
+        "rank": 26,
+        "state": "Odisha"
+    },
+    {
+        "name": "Govt. Medical College & Hospital",
+        "city": "Chandigarh",
+        "rank": 27,
+        "state": "Chandigarh"
+    },
+    {
+        "name": "University College of Medical Sciences",
+        "city": "Delhi",
+        "rank": 28,
+        "state": "Delhi"
+    },
+    {
+        "name": "Lady Hardinge Medical College",
+        "city": "New Delhi",
+        "rank": 29,
+        "state": "Delhi"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "Bhubaneswar",
+        "rank": 30,
+        "state": "Odisha"
+    },
+    {
+        "name": "Kasturba Medical College, Mangalore",
+        "city": "Mangaluru",
+        "rank": 31,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Maharishi Markandeshwar",
+        "city": "Ambala",
+        "rank": 32,
+        "state": "Haryana"
+    },
+    {
+        "name": "Jamia Hamdard",
+        "city": "New Delhi",
+        "rank": 33,
+        "state": "Delhi"
+    },
+    {
+        "name": "JSS Medical College, Mysore",
+        "city": "Mysore",
+        "rank": 34,
+        "state": "Karnataka"
+    },
+    {
+        "name": "PSG Institute of Medical Sciences & Research, Coimbatore",
+        "city": "Coimbatore",
+        "rank": 35,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Christian Medical College, Ludhiana",
+        "city": "Ludhiana",
+        "rank": 36,
+        "state": "Punjab"
+    },
+    {
+        "name": "Gujarat Cancer & Research Institute",
+        "city": "Ahmadabad",
+        "rank": 37,
+        "state": "Gujarat"
+    },
+    {
+        "name": "M. S. Ramaiah Medical College",
+        "city": "Bengaluru",
+        "rank": 38,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Chettinad Academy of Research and Education",
+        "city": "Kelambakkam, Chengalpattu District",
+        "rank": 39,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Dayanand Medical College",
+        "city": "Ludhiana",
+        "rank": 40,
+        "state": "Punjab"
+    },
+    {
+        "name": "Sawai Man Singh Medical College",
+        "city": "Jaipur",
+        "rank": 41,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Krishna Institute of Medical Sciences Deemed University, Karad",
+        "city": "Karad",
+        "rank": 42,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Medical College",
+        "city": "Kolkata",
+        "rank": 43,
+        "state": "West Bengal"
+    },
+    {
+        "name": "SCB Medical College and Hospital",
+        "city": "Cuttack",
+        "rank": 44,
+        "state": "Odisha"
+    },
+    {
+        "name": "Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai",
+        "city": "Mumbai",
+        "rank": 45,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Regional Institute of Medical Sciences",
+        "city": "Imphal West",
+        "rank": 46,
+        "state": "Manipur"
+    },
+    {
+        "name": "Mahatma Gandhi Medical College and Research Institute",
+        "city": "Puducherry",
+        "rank": 47,
+        "state": "Pondicherry"
+    },
+    {
+        "name": "All India Institute of Medical Sciences, Rishikesh",
+        "city": "Rishikesh",
+        "rank": 48,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "All India Institute of Medical Sciences, Raipur",
+        "city": "Raipur",
+        "rank": 49,
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "B. J. Medical College",
+        "city": "Ahmadabad",
+        "rank": 50,
+        "state": "Gujarat"
+    }
+]
