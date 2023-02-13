@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Indian Institute of Technology, Roorkee",
+        "city": "Roorkee",
+        "rank": 1,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "National Institute of Technology, Calicut",
+        "city": "Kozhikode",
+        "rank": 2,
+        "state": "Kerala"
+    },
+    {
+        "name": "Indian Institute of Technology, Kharagpur",
+        "city": "Kharagpur",
+        "rank": 3,
+        "state": "West Bengal"
+    },
+    {
+        "name": "School of Planning and Architecture, New Delhi",
+        "city": "New Delhi",
+        "rank": 4,
+        "state": "Delhi"
+    },
+    {
+        "name": "National Institute of Technology, Tiruchirappalli",
+        "city": "Tiruchirappalli",
+        "rank": 5,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+        "city": "Howrah",
+        "rank": 6,
+        "state": "West Bengal"
+    },
+    {
+        "name": "School of Planning & Architecture, Vijayawada",
+        "city": "Vijayawada",
+        "rank": 7,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Visvesvaraya National Institute of Technology, Nagpur",
+        "city": "Nagpur",
+        "rank": 8,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "rank": 9,
+        "state": "Delhi"
+    },
+    {
+        "name": "School of Planning and Architecture, Bhopal",
+        "city": "Bhopal",
+        "rank": 10,
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technology",
+        "city": "Chennai",
+        "rank": 11,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "rank": 12,
+        "state": "Punjab"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "rank": 13,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "College of Engineering, Trivandrum",
+        "city": "Thiruvananthapuram",
+        "rank": 14,
+        "state": "Kerala"
+    },
+    {
+        "name": "Manipal School of Architecture and Planning, Mahe",
+        "city": "Udupi",
+        "rank": 15,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Shri Mata Vaishno Devi University",
+        "city": "Katra",
+        "rank": 16,
+        "state": "Jammu and Kashmir"
+    },
+    {
+        "name": "M. S. Ramaiah Institute of Technology",
+        "city": "Bengaluru",
+        "rank": 17,
+        "state": "Karnataka"
+    },
+    {
+        "name": "BMS College of Arhitecture",
+        "city": "Bengaluru",
+        "rank": 18,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Chandigarh University",
+        "city": "Mohali",
+        "rank": 19,
+        "state": "Punjab"
+    },
+    {
+        "name": "Maulana Azad National Institute of Technology",
+        "city": "Bhopal",
+        "rank": 20,
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Nirma University",
+        "city": "Ahmedabad",
+        "rank": 21,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Chitkara University",
+        "city": "Rajpura",
+        "rank": 22,
+        "state": "Punjab"
+    },
+    {
+        "name": "Thiagarajar College of Engineering",
+        "city": "Madurai",
+        "rank": 23,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Guru Gobind Singh Indraprastha University",
+        "city": "New Delhi",
+        "rank": 24,
+        "state": "Delhi"
+    },
+    {
+        "name": "Birla Institute of Technology",
+        "city": "Ranchi",
+        "rank": 25,
+        "state": "Jharkhand"
+    },
+    {
+        "name": "National Institute of Technology, Hamirpur",
+        "city": "Hamirpur",
+        "rank": 26,
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "Hindustan Institute of Technology and Science (HITS)",
+        "city": "Chennai",
+        "rank": 27,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Dr. M. G. R. Educational and Research Institute",
+        "city": "Chennai",
+        "rank": 28,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Anna University",
+        "city": "Chennai",
+        "rank": 29,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "National Institute of Technology, Patna",
+        "city": "Patna",
+        "rank": 30,
+        "state": "Bihar"
+    }
+]

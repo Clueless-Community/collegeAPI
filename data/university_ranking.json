@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Indian Institute of Science",
+        "city": "Bengaluru",
+        "rank": 1,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Jawaharlal Nehru University",
+        "city": "New Delhi",
+        "rank": 2,
+        "state": "Delhi"
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "rank": 3,
+        "state": "Delhi"
+    },
+    {
+        "name": "Jadavpur University",
+        "city": "Kolkata",
+        "rank": 4,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "rank": 5,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "rank": 6,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Manipal Academy of Higher Education, Manipal",
+        "city": "Manipal",
+        "rank": 7,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Calcutta University",
+        "city": "Kolkata",
+        "rank": 8,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Vellore Institute of Technology",
+        "city": "Vellore",
+        "rank": 9,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "University of Hyderabad",
+        "city": "Hyderabad",
+        "rank": 10,
+        "state": "Telangana"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "rank": 11,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Savitribai Phule Pune University",
+        "city": "Pune",
+        "rank": 12,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "University of Delhi",
+        "city": "Delhi",
+        "rank": 13,
+        "state": "Delhi"
+    },
+    {
+        "name": "Institute of Chemical Technology",
+        "city": "Mumbai",
+        "rank": 14,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Bharathiar University",
+        "city": "Coimbatore",
+        "rank": 15,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "rank": 16,
+        "state": "Odisha"
+    },
+    {
+        "name": "Homi Bhabha National Institute",
+        "city": "Mumbai",
+        "rank": 17,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Birla Institute of Technology & Science - Pilani",
+        "city": "Pilani",
+        "rank": 18,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technology",
+        "city": "Chennai",
+        "rank": 19,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "Bhubaneswar",
+        "rank": 20,
+        "state": "Odisha"
+    },
+    {
+        "name": "Anna University",
+        "city": "Chennai",
+        "rank": 20,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Osmania University",
+        "city": "Hyderabad",
+        "rank": 22,
+        "state": "Telangana"
+    },
+    {
+        "name": "Amity University",
+        "city": "Gautam Budh Nagar",
+        "rank": 22,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Shanmugha Arts Science Technology & Research Academy",
+        "city": "Thanjavur",
+        "rank": 24,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Panjab University",
+        "city": "Chandigarh",
+        "rank": 25,
+        "state": "Chandigarh"
+    },
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "rank": 26,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Koneru Lakshmaiah Education Foundation University (K L College of Engineering)",
+        "city": "Vaddeswaram",
+        "rank": 27,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Alagappa University",
+        "city": "Karaikudi",
+        "rank": 28,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Chandigarh University",
+        "city": "Mohali",
+        "rank": 29,
+        "state": "Punjab"
+    },
+    {
+        "name": "Mahatma Gandhi University, Kottayam",
+        "city": "Kottayam",
+        "rank": 30,
+        "state": "Kerala"
+    },
+    {
+        "name": "Thapar Institute of Engineering and Technology",
+        "city": "Patiala",
+        "rank": 31,
+        "state": "Punjab"
+    },
+    {
+        "name": "Symbiosis International",
+        "city": "Pune",
+        "rank": 32,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Mysore University",
+        "city": "Mysuru",
+        "rank": 33,
+        "state": "Karnataka"
+    },
+    {
+        "name": "JSS Academy of Higher Education and Research",
+        "city": "Mysuru",
+        "rank": 34,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Kalasalingam Academy of Research and Education",
+        "city": "Srivilliputtur",
+        "rank": 35,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Andhra University, Visakhapatnam",
+        "city": "Visakhapatnam",
+        "rank": 36,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Gauhati University",
+        "city": "Guwahati",
+        "rank": 36,
+        "state": "Assam"
+    },
+    {
+        "name": "Delhi Technological University",
+        "city": "New Delhi",
+        "rank": 38,
+        "state": "Delhi"
+    },
+    {
+        "name": "University of Madras",
+        "city": "Chennai",
+        "rank": 39,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kerala University",
+        "city": "Thiruvananthapuram",
+        "rank": 40,
+        "state": "Kerala"
+    },
+    {
+        "name": "Cochin University of Science and Technology",
+        "city": "Cochin",
+        "rank": 41,
+        "state": "Kerala"
+    },
+    {
+        "name": "Dr. D. Y. Patil Vidyapeeth",
+        "city": "Pune",
+        "rank": 41,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Sathyabama Institute of Science and Technology",
+        "city": "Chennai",
+        "rank": 43,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Guru Nanak Dev University",
+        "city": "Amritsar",
+        "rank": 44,
+        "state": "Punjab"
+    },
+    {
+        "name": "Mumbai University",
+        "city": "Mumbai",
+        "rank": 45,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Jamia Hamdard",
+        "city": "New Delhi",
+        "rank": 45,
+        "state": "Delhi"
+    },
+    {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "rank": 47,
+        "state": "Punjab"
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "rank": 48,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Banasthali Vidyapith",
+        "city": "Banasthali",
+        "rank": 49,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "King George`s Medical University",
+        "city": "Lucknow",
+        "rank": 50,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "SVKM`s Narsee Monjee Institute of Management Studies",
+        "city": "Mumbai",
+        "rank": 51,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Madurai Kamaraj University",
+        "city": "Madurai",
+        "rank": 52,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "University of Kashmir",
+        "city": "Srinagar",
+        "rank": 53,
+        "state": "Jammu and Kashmir"
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "city": "Wardha",
+        "rank": 54,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Babasheb Bhimrao Ambedkar University",
+        "city": "Lucknow",
+        "rank": 55,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "University of Jammu",
+        "city": "Jammu",
+        "rank": 56,
+        "state": "Jammu and Kashmir"
+    },
+    {
+        "name": "Bharathidasan University",
+        "city": "Tiruchirappalli",
+        "rank": 57,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Gujarat University",
+        "city": "Ahmedabad",
+        "rank": 58,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Tezpur University",
+        "city": "Tezpur",
+        "rank": 59,
+        "state": "Assam"
+    },
+    {
+        "name": "Tata Institute of Social Sciences",
+        "city": "Mumbai",
+        "rank": 60,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Shiv Nadar University",
+        "city": "Dadri",
+        "rank": 61,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Bharath Institute of Higher Education & Research",
+        "city": "Chennai",
+        "rank": 62,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Periyar University",
+        "city": "Salem",
+        "rank": 63,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Bangalore University",
+        "city": "Bangalore",
+        "rank": 64,
+        "state": "Karnataka"
+    },
+    {
+        "name": "University of Petroleum and Energy Studies",
+        "city": "Dehradun",
+        "rank": 65,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "North Eastern Hill University",
+        "city": "Shillong",
+        "rank": 66,
+        "state": "Meghalaya"
+    },
+    {
+        "name": "Sri Venkateswara University",
+        "city": "Tirupati",
+        "rank": 67,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Pondicherry University",
+        "city": "Puducherry",
+        "rank": 68,
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Calicut University, Thenhipalem",
+        "city": "Malappuram",
+        "rank": 69,
+        "state": "Kerala"
+    },
+    {
+        "name": "Sri Balaji Vidyapeeth Mahatma Gandhi Medical College Campus",
+        "city": "Puducherry",
+        "rank": 70,
+        "state": "Pondicherry"
+    },
+    {
+        "name": "Christ University",
+        "city": "Bengaluru",
+        "rank": 71,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Visvesvaraya Technological University",
+        "city": "Belgaum",
+        "rank": 72,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Krishna Institute of Medical Sciences Deemed University, Karad",
+        "city": "Karad",
+        "rank": 73,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Graphic Era University",
+        "city": "Dehradun",
+        "rank": 74,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "NITTE",
+        "city": "Mangaluru",
+        "rank": 75,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Bharati Vidyapeeth",
+        "city": "Pune",
+        "rank": 76,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Guru Gobind Singh Indraprastha University",
+        "city": "New Delhi",
+        "rank": 77,
+        "state": "Delhi"
+    },
+    {
+        "name": "Mizoram University",
+        "city": "Aizawl",
+        "rank": 78,
+        "state": "Mizoram"
+    },
+    {
+        "name": "Jain University, Bangalore",
+        "city": "Bengluru",
+        "rank": 79,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Manonmaniam Sundaranar University, Tirunelveli",
+        "city": "Tirunelveli",
+        "rank": 80,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai",
+        "city": "Mumbai",
+        "rank": 81,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Central University of Punjab",
+        "city": "Bathinda",
+        "rank": 81,
+        "state": "Punjab"
+    },
+    {
+        "name": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+        "city": "Aurangabad",
+        "rank": 83,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Avinashilingam Institute for Home Science & Higher Education for Women",
+        "city": "Coimbatore",
+        "rank": 84,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Central University of Tamil Nadu",
+        "city": "Tiruvarur",
+        "rank": 85,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kuvempu University",
+        "city": "Shivamogga",
+        "rank": 86,
+        "state": "Karnataka"
+    },
+    {
+        "name": "The University of Burdwan",
+        "city": "Bardhaman",
+        "rank": 87,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Ashoka University",
+        "city": "Sonepat",
+        "rank": 88,
+        "state": "Haryana"
+    },
+    {
+        "name": "KLE Academy of Higher Education and Research",
+        "city": "Belagavi",
+        "rank": 88,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Utkal University",
+        "city": "Bhubaneswar",
+        "rank": 88,
+        "state": "Odisha"
+    },
+    {
+        "name": "Maharishi Markandeshwar",
+        "city": "Ambala",
+        "rank": 91,
+        "state": "Haryana"
+    },
+    {
+        "name": "Gandhi Institute of Technology and Management ",
+        "city": "Visakhapatnam",
+        "rank": 92,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Chettinad Academy of Research and Education",
+        "city": "Kelambakkam, Chengalpattu District",
+        "rank": 93,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Maharshi Dayanand University",
+        "city": "Rohtak",
+        "rank": 94,
+        "state": "Haryana"
+    },
+    {
+        "name": "Vignan's Foundation for Science, Technology and Research",
+        "city": "Guntur",
+        "rank": 95,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Shoolini University of Biotechnology and Management Sciences",
+        "city": "Solan",
+        "rank": 96,
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "Yenepoya University",
+        "city": "Mangaluru",
+        "rank": 97,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Visva Bharati",
+        "city": "Santiniketan",
+        "rank": 98,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Birla Institute of Technology",
+        "city": "Ranchi",
+        "rank": 99,
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Dr. M. G. R. Educational and Research Institute",
+        "city": "Chennai",
+        "rank": 100,
+        "state": "Tamil Nadu"
+    }
+]

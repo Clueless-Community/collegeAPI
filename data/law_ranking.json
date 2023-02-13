@@ -1,0 +1,182 @@
+[
+    {
+        "name": "National Law School of India University",
+        "city": "Bengaluru",
+        "rank": 1,
+        "state": "Karnataka"
+    },
+    {
+        "name": "National Law University",
+        "city": "New Delhi",
+        "rank": 2,
+        "state": "Delhi"
+    },
+    {
+        "name": "Symbiosis Law School",
+        "city": "Pune",
+        "rank": 3,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Nalsar University of Law",
+        "city": "Hyderabad",
+        "rank": 4,
+        "state": "Telangana"
+    },
+    {
+        "name": "The West Bengal National University of Juridicial Sciences",
+        "city": "Kolkata",
+        "rank": 5,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Indian Institute of Technology, Kharagpur",
+        "city": "Kharagpur",
+        "rank": 6,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "rank": 7,
+        "state": "Delhi"
+    },
+    {
+        "name": "Gujarat National Law University",
+        "city": "Gandhinagar",
+        "rank": 8,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "rank": 9,
+        "state": "Odisha"
+    },
+    {
+        "name": "National Law University, Jodhpur",
+        "city": "Jodhpur",
+        "rank": 10,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "Bhubaneswar",
+        "rank": 11,
+        "state": "Odisha"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "rank": 12,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "rank": 13,
+        "state": "Punjab"
+    },
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "rank": 14,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "National Law Institute University, Bhopal",
+        "city": "Bhopal",
+        "rank": 15,
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Christ University",
+        "city": "Bengaluru",
+        "rank": 16,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Dr. Ram Manohar Lohiya National Law University, Lucknow",
+        "city": "Lucknow",
+        "rank": 17,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "The Rajiv Gandhi National University of Law, Patiala",
+        "city": "Patiala",
+        "rank": 18,
+        "state": "Punjab"
+    },
+    {
+        "name": "Shanmugha Arts Science Technology & Research Academy",
+        "city": "Thanjavur",
+        "rank": 19,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "rank": 20,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "University of Petroleum and Energy Studies",
+        "city": "Dehradun",
+        "rank": 21,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "National University of Study & Research in Law, Ranchi",
+        "city": "Ranchi",
+        "rank": 22,
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Guru Gobind Singh Indraprastha University",
+        "city": "New Delhi",
+        "rank": 23,
+        "state": "Delhi"
+    },
+    {
+        "name": "National Law University and Judicial Academy",
+        "city": "Kamrup",
+        "rank": 24,
+        "state": "Assam"
+    },
+    {
+        "name": "National Law University",
+        "city": "Cuttack",
+        "rank": 25,
+        "state": "Odisha"
+    },
+    {
+        "name": "Army Institute of Law, Mohali",
+        "city": "Mohali",
+        "rank": 26,
+        "state": "Punjab"
+    },
+    {
+        "name": "Amity University Haryana, Gurgaon",
+        "city": "Gurugram",
+        "rank": 27,
+        "state": "Haryana"
+    },
+    {
+        "name": "Sikkim Government Law College, Burtuk",
+        "city": "Gangtok",
+        "rank": 28,
+        "state": "Sikkim"
+    },
+    {
+        "name": "Indian Law Institute",
+        "city": "New Delhi",
+        "rank": 29,
+        "state": "Delhi"
+    },
+    {
+        "name": "Panjab University",
+        "city": "Chandigarh",
+        "rank": 30,
+        "state": "Chandigarh"
+    }
+]
