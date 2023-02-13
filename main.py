@@ -39,6 +39,7 @@ async def home(request: Request):
 
     return API_METADATA
 
+
 # Filter Function
 def filter_colleges(field, region, region_list):
     response = []
@@ -292,6 +293,7 @@ async def nirfCollegesRanked(request: Request,page: int = 1, limit: int = 50):
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
 
+
 @app.get('/colleges/state={state}', description='Filter all colleges by state', tags=['colleges'])
 @limiter.limit("5/minute")
 async def collegesByState(request: Request,state: str or None = None, page: int = 1, limit: int = 50):
@@ -438,6 +440,7 @@ async def nirf_law_colleges(request: Request,page: int = 1, limit: int = 50):
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
 
+
 @app.get('/law_colleges', description='All the participated law instututes', tags=['law_colleges'])
 @limiter.limit("5/minute")
 async def law_colleges(request: Request,page: int = 1, limit: int = 50):
@@ -447,6 +450,7 @@ async def law_colleges(request: Request,page: int = 1, limit: int = 50):
     except:
         raise HTTPException(status_code=404)
     return paginate(json.loads(output), page, limit)
+
 
 @app.get('/law_colleges/state={state}', description='Filter law colleges by given state', tags=['law_colleges'])
 @limiter.limit("5/minute")
