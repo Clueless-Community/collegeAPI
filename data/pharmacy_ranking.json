@@ -1,0 +1,608 @@
+[
+    {
+        "name": "Jamia Hamdard",
+        "city": "New Delhi",
+        "rank": 1,
+        "state": "Delhi"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education and Research Hyderabad",
+        "city": "Hyderabad",
+        "rank": 2,
+        "state": "Telangana"
+    },
+    {
+        "name": "Panjab University",
+        "city": "Chandigarh",
+        "rank": 3,
+        "state": "Chandigarh"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education and Research, Mohali",
+        "city": "Mohali",
+        "rank": 4,
+        "state": "Punjab"
+    },
+    {
+        "name": "Birla Institute of Technology & Science - Pilani",
+        "city": "Pilani",
+        "rank": 5,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "JSS College of Pharmacy",
+        "city": "Ooty",
+        "rank": 6,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Institute of Chemical Technology",
+        "city": "Mumbai",
+        "rank": 7,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "JSS College of Pharmacy",
+        "city": "Mysore",
+        "rank": 8,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Manipal College of Pharmaceutical Sciences, Manipal",
+        "city": "Udupi",
+        "rank": 9,
+        "state": "Karnataka"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education and Research Ahmedabad",
+        "city": "Gandhinagar",
+        "rank": 10,
+        "state": "Gujarat"
+    },
+    {
+        "name": "SVKM`s Narsee Monjee Institute of Management Studies",
+        "city": "Mumbai",
+        "rank": 11,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "S.R.M. Institute of Science and Technology",
+        "city": "Chennai",
+        "rank": 12,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education and Research Guwahati",
+        "city": "Guwahati",
+        "rank": 13,
+        "state": "Assam"
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "rank": 14,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Annamalai University",
+        "city": "Annamalainagar",
+        "rank": 15,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Maharaja Sayajirao University of Baroda",
+        "city": "Vadodara",
+        "rank": 16,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Amity University",
+        "city": "Gautam Budh Nagar",
+        "rank": 17,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Jadavpur University",
+        "city": "Kolkata",
+        "rank": 18,
+        "state": "West Bengal"
+    },
+    {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "rank": 19,
+        "state": "Punjab"
+    },
+    {
+        "name": "Chitkara University",
+        "city": "Rajpura",
+        "rank": 20,
+        "state": "Punjab"
+    },
+    {
+        "name": "Poona College of Pharmacy, Pune",
+        "city": "Pune",
+        "rank": 21,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Delhi Pharmaceutical Sciences and Research University",
+        "city": "Delhi",
+        "rank": 22,
+        "state": "Delhi"
+    },
+    {
+        "name": "Banasthali Vidyapith",
+        "city": "Banasthali",
+        "rank": 23,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Maharishi Markandeshwar",
+        "city": "Ambala",
+        "rank": 24,
+        "state": "Haryana"
+    },
+    {
+        "name": "Punjabi University, Patiala",
+        "city": "Patiala",
+        "rank": 25,
+        "state": "Punjab"
+    },
+    {
+        "name": "Central University of Punjab",
+        "city": "Bathinda",
+        "rank": 26,
+        "state": "Punjab"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education and Research Raebareli",
+        "city": "Lucknow",
+        "rank": 27,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Nirma University",
+        "city": "Ahmedabad",
+        "rank": 28,
+        "state": "Gujarat"
+    },
+    {
+        "name": "I. S. F. College of Pharmacy",
+        "city": "Moga",
+        "rank": 29,
+        "state": "Punjab"
+    },
+    {
+        "name": "Maharshi Dayanand University",
+        "city": "Rohtak",
+        "rank": 30,
+        "state": "Haryana"
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "rank": 31,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Bombay College of Pharmacy",
+        "city": "Mumbai",
+        "rank": 32,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Guru Jambheshwar University of Science and Technology, Hissar",
+        "city": "Hisar",
+        "rank": 33,
+        "state": "Haryana"
+    },
+    {
+        "name": "Vels Institute of Science Technology & Advanced Studies (VISTAS) -Chennai",
+        "city": "Chennai",
+        "rank": 34,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Birla Institute of Technology",
+        "city": "Ranchi",
+        "rank": 35,
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Shoolini University of Biotechnology and Management Sciences",
+        "city": "Solan",
+        "rank": 36,
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "Chandigarh University",
+        "city": "Mohali",
+        "rank": 37,
+        "state": "Punjab"
+    },
+    {
+        "name": "SVKM`s Dr. Bhanuben Nanavati College of Pharmacy",
+        "city": "Mumbai",
+        "rank": 38,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Noida Institute of Engineering and Technology (Pharmacy Institute)",
+        "city": "Greater Noida",
+        "rank": 39,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "KLE College of Pharmacy, Belgaum",
+        "city": "Belgaum",
+        "rank": 40,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Dr D.Y.Patil Institute of Pharmaceutical Sciences and Research",
+        "city": "Pune",
+        "rank": 41,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "The Rashtrasant Tukadoji Maharaj Nagpur University",
+        "city": "Nagpur",
+        "rank": 42,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Guru Ghasidas Vishwavidyalaya",
+        "city": "Bilaspur (Chhattisgarh)",
+        "rank": 43,
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "Kakatiya University",
+        "city": "Hanumakonda",
+        "rank": 44,
+        "state": "Telangana"
+    },
+    {
+        "name": "N.G.S.M. Institute of Pharmaceutical Sciences",
+        "city": "Mangaluru",
+        "rank": 45,
+        "state": "Karnataka"
+    },
+    {
+        "name": "R. C. Patel Institute of Pharmaceutical Education & Research",
+        "city": "Shirpur",
+        "rank": 46,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Dibrugarh University",
+        "city": "Dibrugarh",
+        "rank": 47,
+        "state": "Assam"
+    },
+    {
+        "name": "Integral University",
+        "city": "Lucknow",
+        "rank": 48,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Gandhi Institute of Technology and Management ",
+        "city": "Visakhapatnam",
+        "rank": 49,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Nandha College of Pharmacy",
+        "city": "Erode",
+        "rank": 50,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Acharya Nagarjuna University College of Pharmaceutical Sciences",
+        "city": "Guntur",
+        "rank": 51,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "L. M. College of Pharmacy",
+        "city": "Ahmedabad",
+        "rank": 52,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Smt. Kishoritai Bhoyar College of Pharmacy",
+        "city": "Nagpur",
+        "rank": 53,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Shri Vishnu College of Pharmacy",
+        "city": "Bhimavaram",
+        "rank": 54,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Goa College of Pharmacy",
+        "city": "Panaji",
+        "rank": 55,
+        "state": "Goa"
+    },
+    {
+        "name": "Amar Shaheed Baba Ajit Singh Jujhar Singh Memorial College of Pharmacy",
+        "city": "Bela",
+        "rank": 56,
+        "state": "Punjab"
+    },
+    {
+        "name": "Acharya & B M Reddy College of Pharmacy",
+        "city": "Bengaluru",
+        "rank": 57,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Anurag University",
+        "city": "Hyderabad",
+        "rank": 58,
+        "state": "Telangana"
+    },
+    {
+        "name": "Galgotias University",
+        "city": "Gautam Budh Nagar",
+        "rank": 59,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Mohan Lal Sukhadia University",
+        "city": "Udaipur",
+        "rank": 60,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Kumaun University, Nainital",
+        "city": "Nainital",
+        "rank": 61,
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "M.S. Ramaiah University of Applied Sciences",
+        "city": "Bangalore",
+        "rank": 62,
+        "state": "Karnataka"
+    },
+    {
+        "name": "College of Pharmacy, Madras Medical College",
+        "city": "Chennai",
+        "rank": 63,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Suresh Gyan Vihar University",
+        "city": "Jaipur",
+        "rank": 64,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Y. B. Chavan College of Pharmacy",
+        "city": "Aurangabad",
+        "rank": 65,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Sri Padmavathi Mahila Visvavidyalayam",
+        "city": "Tirupathi",
+        "rank": 66,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Vishnu Institute of Pharmaceutical Education and Research",
+        "city": "Narsapur",
+        "rank": 67,
+        "state": "Telangana"
+    },
+    {
+        "name": "Sri Venkateswara College of Pharmacy",
+        "city": "Chittoor",
+        "rank": 68,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "G. L. A. University",
+        "city": "Mathura",
+        "rank": 69,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "PSG College of Pharmacy",
+        "city": "Coimbatore",
+        "rank": 70,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Raghavendra Institute of Pharmaceuatical Education & Research ",
+        "city": "Anantapur",
+        "rank": 71,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "CMR College of Pharmacy",
+        "city": "Rangareddy",
+        "rank": 72,
+        "state": "Telangana"
+    },
+    {
+        "name": "Bundelkhand University",
+        "city": "Jhansi",
+        "rank": 73,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Bharati Vidyapeeth College of Pharmacy, Kolhapur",
+        "city": "Kolhapur",
+        "rank": 74,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "National Institute of Pharmaceutical Education And Research Hajipur",
+        "city": "Hajipur",
+        "rank": 75,
+        "state": "Bihar"
+    },
+    {
+        "name": "AISSMS College of Pharmacy",
+        "city": "Pune",
+        "rank": 76,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Chalapathi Institute of Pharmaceutical Science",
+        "city": "Guntur",
+        "rank": 77,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Pt. Ravishankar Shukla University",
+        "city": "Raipur",
+        "rank": 78,
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "Sam Higginbottom Institute of Agriculture, Technology & Sciences",
+        "city": "Prayagraj",
+        "rank": 79,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Sri Adichunchanagiri College of Pharmacy",
+        "city": "B.G Nagara",
+        "rank": 80,
+        "state": "Karnataka"
+    },
+    {
+        "name": "College of Pharmacy, Pt. B. D. Sharma, PGIMS",
+        "city": "Rohtak",
+        "rank": 81,
+        "state": "Haryana"
+    },
+    {
+        "name": "Arulmigu Kalasalingam College of Pharmacy",
+        "city": "Srivilliputtur",
+        "rank": 82,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kurukshetra University",
+        "city": "Kurukshetra",
+        "rank": 83,
+        "state": "Haryana"
+    },
+    {
+        "name": "Guru Nanak Institute of Pharmaceutical Science & Technology",
+        "city": "Kolkata",
+        "rank": 84,
+        "state": "West Bengal"
+    },
+    {
+        "name": "KMCH College of Pharmacy",
+        "city": "Coimbatore",
+        "rank": 85,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Parul University",
+        "city": "Vadodara",
+        "rank": 86,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Dr. Vishwanath Karad MIT World Peace University",
+        "city": "Pune",
+        "rank": 87,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Principal K.M. Kundnani College of Pharmacy",
+        "city": "Mumbai",
+        "rank": 88,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Sri Venkateswara University",
+        "city": "Tirupati",
+        "rank": 89,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Marathwada Mitra Mandal`s College of Pharmacy",
+        "city": "Pune",
+        "rank": 90,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Chandigarh College of Pharmacy, Landran",
+        "city": "Landran",
+        "rank": 91,
+        "state": "Punjab"
+    },
+    {
+        "name": "Jaipur National University, Jaipur",
+        "city": "Jaipur",
+        "rank": 92,
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Gokaraju Rangaraju College of Pharmacy",
+        "city": "Hyderabad",
+        "rank": 93,
+        "state": "Telangana"
+    },
+    {
+        "name": "Maliba Pharmacy College",
+        "city": "Tarsadi",
+        "rank": 94,
+        "state": "Gujarat"
+    },
+    {
+        "name": "KLE College of Pharmacy",
+        "city": "Bengaluru",
+        "rank": 95,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Al Shifa College of Pharmacy, Perinthalmanna",
+        "city": "Malappuram",
+        "rank": 96,
+        "state": "Kerala"
+    },
+    {
+        "name": "KIET Group of Institutions",
+        "city": "Ghaziabad",
+        "rank": 97,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Krupanidhi College of Pharmacy",
+        "city": "Bengaluru",
+        "rank": 98,
+        "state": "Karnataka"
+    },
+    {
+        "name": "C.U.Shah College of Pharmacy",
+        "city": "Mumbai",
+        "rank": 99,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Nirmala College of Pharmacy, Mangalagiri",
+        "city": "Mangalagiri",
+        "rank": 100,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Shree Guru Gobind Singh Tricentenary University",
+        "city": "Gurgaon",
+        "rank": 100,
+        "state": "Haryana"
+    }
+]

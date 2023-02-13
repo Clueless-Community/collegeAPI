@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "rank": 1,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Manipal College of Dental Sciences, Manipal",
+        "city": "Udupi",
+        "rank": 2,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Dr. D. Y. Patil Vidyapeeth",
+        "city": "Pune",
+        "rank": 3,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Maulana Azad Institute of Dental Sciences",
+        "city": "Delhi",
+        "rank": 4,
+        "state": "Delhi"
+    },
+    {
+        "name": "King George`s Medical University",
+        "city": "Lucknow",
+        "rank": 5,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "A.B.Shetty Memorial Institute of Dental Sciences",
+        "city": "Mangaluru",
+        "rank": 6,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Manipal College of Dental Sciences, Mangalore",
+        "city": "Mangalore",
+        "rank": 7,
+        "state": "Karnataka"
+    },
+    {
+        "name": "SRM Dental College",
+        "city": "Chennai",
+        "rank": 8,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Govt. Dental College, Nagpur",
+        "city": "Nagpur",
+        "rank": 9,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "rank": 10,
+        "state": "Odisha"
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "city": "Wardha",
+        "rank": 11,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "JSS Dental College and Hospital",
+        "city": "Mysuru",
+        "rank": 12,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sri Ramachandra Institute of Higher Education and Research",
+        "city": "Chennai",
+        "rank": 13,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "M.S. Ramaiah University of Applied Sciences",
+        "city": "Bangalore",
+        "rank": 14,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Postgraduate Institute of Dental Sciences",
+        "city": "Rohtak",
+        "rank": 15,
+        "state": "Haryana"
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "rank": 16,
+        "state": "Delhi"
+    },
+    {
+        "name": "Nair Hospital Dental College",
+        "city": "Mumbai",
+        "rank": 17,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Government Dental College, Bangalore",
+        "city": "Bangalore",
+        "rank": 18,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "city": "Coimbatore",
+        "rank": 19,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "SDM College of Dental Sciences & Hospital",
+        "city": "Dharwad",
+        "rank": 20,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "rank": 21,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Meenakshi Academy of Higher Education and Research",
+        "city": "Chennai",
+        "rank": 22,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Yenepoya Dental College",
+        "city": "Mangaluru",
+        "rank": 23,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Vishnu Dental College, Bheemavaram",
+        "city": "Bhimavaram",
+        "rank": 24,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Dr. M. G. R. Educational and Research Institute",
+        "city": "Chennai",
+        "rank": 25,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "Bhubaneswar",
+        "rank": 26,
+        "state": "Odisha"
+    },
+    {
+        "name": "Chettinad Dental College and Research Institute ",
+        "city": "Kelambakkam",
+        "rank": 27,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "K L E Society's Institute of Dental Sciences",
+        "city": "Bengaluru",
+        "rank": 28,
+        "state": "Karnataka"
+    },
+    {
+        "name": "Sree Balaji Dental College & Hospital",
+        "city": "Chennai",
+        "rank": 29,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Government Dental College",
+        "city": "Thiruvananthapuram",
+        "rank": 30,
+        "state": "Kerala"
+    },
+    {
+        "name": "Karnavati University",
+        "city": "Gandhinagar",
+        "rank": 31,
+        "state": "Gujarat"
+    },
+    {
+        "name": "Ragas Dental College & Hospital, Chennai",
+        "city": "Chennai",
+        "rank": 32,
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Gitam Dental College & Hospital",
+        "city": "Vishakhapatnam",
+        "rank": 33,
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Raja Rajeswari Dental College & Hospital",
+        "city": "Bengaluru",
+        "rank": 34,
+        "state": "Karnataka"
+    },
+    {
+        "name": "MGM Dental College and Hospital, Navi Mumbai",
+        "city": "Navi Mumbai",
+        "rank": 35,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Government Dental College",
+        "city": "Ahmedabad",
+        "rank": 36,
+        "state": "Gujarat"
+    },
+    {
+        "name": "MGVs Karmaveer Bhausaheb Hire Dental College, Nashik",
+        "city": "Nashik",
+        "rank": 37,
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "rank": 38,
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Govt. Dental College, Indore",
+        "city": "Indore",
+        "rank": 39,
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Guru nanak Institute of Dental Sciences & Research",
+        "city": "Kolkata",
+        "rank": 40,
+        "state": "West Bengal"
+    }
+]

@@ -1,0 +1,737 @@
+[
+    {
+        "name": "Aligarh Muslim University",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Allahabad Degree College",
+        "city": "Prayagraj",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Alliance University",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Amity University Haryana, Gurgaon",
+        "city": "Gurugram, Haryana",
+        "state": "Haryana"
+    },
+    {
+        "name": "Amity University, Gwalior",
+        "city": "Gwalior",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Amolakchand Vidhi Mahavidyalaya, Yavatmal",
+        "city": "Yavatmal",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Army Institute of Law, Mohali",
+        "city": "Mohali",
+        "state": "Punjab"
+    },
+    {
+        "name": "Asian Law College",
+        "city": "Noida",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Babasheb Bhimrao Ambedkar University",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Banaras Hindu University",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Banasthali Vidyapith",
+        "city": "Banasthali",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Bangalore University",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Bankura University",
+        "city": "Bankura",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Barkatullah University, Bhopal",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Bharati Vidyapeeth Deemed University New Law College, Pune",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Bundelkhand University",
+        "city": "Jhansi",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "C. N. Law College",
+        "city": "RANCHI",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Career Law College",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Career Point University",
+        "city": "Hamirpur",
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "Central University of Haryana",
+        "city": "Mahendergarh",
+        "state": "Haryana"
+    },
+    {
+        "name": "Chanakya National Law University",
+        "city": "Patna",
+        "state": "Bihar"
+    },
+    {
+        "name": "Chaudhary Charan Singh University Meerut",
+        "city": "Meerut",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Christ University",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Damodaram Sanjivayya National Law University",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Deen Dayal Upadhyay Gorakhpur University",
+        "city": "Gorakhpur",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Deoghar College, Deoghar",
+        "city": "DEOGHAR",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Desh Bhagat University",
+        "city": "Mandi Gobindgarh",
+        "state": "Punjab"
+    },
+    {
+        "name": "Devi Ahilya Vishwavidyalaya",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Devi Sharvani Education Society`s V.M. Salgaocar College of Law, Miramar",
+        "city": "Panaji",
+        "state": "Goa"
+    },
+    {
+        "name": "Dr. A.P.J. Abdul Kalam University",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Dr. Ambedkar Law College",
+        "city": "Tirupati",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Dr. B. R. Ambedkar College of Law",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Dr. Panjabrao Deshmukh Law College",
+        "city": "Amravati",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Dr. Ram Manohar Lohiya National Law University, Lucknow",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Fairfield Institute of Management & Technology",
+        "city": "NEW DELHI",
+        "state": "Delhi"
+    },
+    {
+        "name": "G. D. Goenka University",
+        "city": "Gurgaon",
+        "state": "Haryana"
+    },
+    {
+        "name": "Galgotias University",
+        "city": "Gautam Budh Nagar",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Gandhi Institute of Technology and Management",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Gautam Buddha University",
+        "city": "Gautam Buddha Nagar",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Geeta Institute of Law",
+        "city": "Panipat",
+        "state": "Haryana"
+    },
+    {
+        "name": "Government Law College",
+        "city": "MORENA",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Government Law College, Ashoknagar",
+        "city": "Ashoknagar",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Gujarat National Law University",
+        "city": "Gandhinagar",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Gujarat University",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Guru Gobind Singh Indraprastha University",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Guru Hargobind Institute of Law for Women",
+        "city": "Ludhiana",
+        "state": "Punjab"
+    },
+    {
+        "name": "Haldia Law College",
+        "city": "Haldia",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Himachal Pradesh University",
+        "city": "Shimla",
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "ICFAI Foundation for Higher Education, Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "name": "IEC (India Education Centre) University",
+        "city": "Solan",
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "IFTM University",
+        "city": "Moradabad",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "IIMT College of Law",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Imamul Hai Khan Law College, Bokaro",
+        "city": "BOKARO STEEL CITY",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "IMS Unison University",
+        "city": "Dehradun",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "Indian Institute of Technology, Kharagpur",
+        "city": "Kharagpur",
+        "state": "West Bengal"
+    },
+    {
+        "name": "Indian Law Institute",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "Indore Institute of Law, Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Institute of Chatertered Financial Analysts of India, Dehradun",
+        "city": "Dehradun",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "Integral University",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Invertis University",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Ismailsaheb Mulla Law College",
+        "city": "Satara",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "J. S. S. Law College",
+        "city": "Mysuru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Jagran Lakecity University, Bhopal",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Jamia Millia Islamia, New Delhi",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "JIS University",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "K. R. Mangalam University",
+        "city": "Gurugram",
+        "state": "Haryana"
+    },
+    {
+        "name": "K.L.E. Society Law College, Bangalore",
+        "city": "Bangalore",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Kakatiya University",
+        "city": "Hanumakonda",
+        "state": "Telangana"
+    },
+    {
+        "name": "Kalinga Institute of Industrial Technology",
+        "city": "BHUBANESWAR",
+        "state": "Odisha"
+    },
+    {
+        "name": "Karnataka State Law University",
+        "city": "Dharwad",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Karnavati University",
+        "city": "Gandhinagar",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "state": "Punjab"
+    },
+    {
+        "name": "M V N University, Palwal",
+        "city": "Palwal",
+        "state": "Haryana"
+    },
+    {
+        "name": "Maharaja Sayajirao University of Baroda",
+        "city": "Vadodara",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Maharani Laxmibai Arts and Commerce College, Gwalior",
+        "city": "Gwalior",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Maharashtra National Law University, Nagpur",
+        "city": "Nagpur",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Maharishi Markandeshwar",
+        "city": "Ambala",
+        "state": "Haryana"
+    },
+    {
+        "name": "Maharshi Dayanand University",
+        "city": "Rohtak",
+        "state": "Haryana"
+    },
+    {
+        "name": "Manipal University, Jaipur",
+        "city": "Jaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Marathwada Legal`s & General Education Society`s, Manikchand Pahade Law College",
+        "city": "Aurangabad",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Marathwada Mitra Mandal`s Shankarrao Chavan Law College, Pune",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "MATS University",
+        "city": "Raipur",
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "Mohan Lal Sukhadia University",
+        "city": "Udaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "N. B. M. Law College",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "N. E. F. Law College",
+        "city": "Kamrup",
+        "state": "Assam"
+    },
+    {
+        "name": "Nalsar University of Law",
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "name": "National Law Institute University, Bhopal",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "National Law School of India University",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "National Law University",
+        "city": "New Delhi",
+        "state": "Delhi"
+    },
+    {
+        "name": "National Law University",
+        "city": "Cuttack",
+        "state": "Odisha"
+    },
+    {
+        "name": "National Law University and Judicial Academy",
+        "city": "Kamrup",
+        "state": "Assam"
+    },
+    {
+        "name": "National Law University, Jodhpur",
+        "city": "Jodhpur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "National University of Advanced Legal Studies (NUALS)",
+        "city": "Kochi",
+        "state": "Kerala"
+    },
+    {
+        "name": "National University of Study & Research in Law, Ranchi",
+        "city": "Ranchi",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "NIMT Technical and Professional College",
+        "city": "Jaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "NIMT Vidhi Evam Kanoon Sansthan",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Nirma University",
+        "city": "Ahmedabad",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Oriental University, Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Osmania University",
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    {
+        "name": "Panjab University",
+        "city": "Chandigarh",
+        "state": "Chandigarh"
+    },
+    {
+        "name": "Presidency University , Bengaluru",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Progressive Educational Societys Modern Law College, Pune",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Pt. Ravishankar Shukla University",
+        "city": "Raipur",
+        "state": "Chhattisgarh"
+    },
+    {
+        "name": "Punjabi University, Patiala",
+        "city": "Patiala",
+        "state": "Punjab"
+    },
+    {
+        "name": "Rafflles University",
+        "city": "Neemrana",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Rajashi Shahu Evening Law College",
+        "city": "Barshi",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Rajshree Institute of Management & Technology",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Ranchi University, Ranchi",
+        "city": "Ranchi",
+        "state": "Jharkhand"
+    },
+    {
+        "name": "Rayat Bahra University",
+        "city": "Sahibzada Ajit Singh Nagar",
+        "state": "Punjab"
+    },
+    {
+        "name": "Reva University",
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "RNB Global University",
+        "city": "Bikaner",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Rourkela Law College",
+        "city": "ROURKELA",
+        "state": "Odisha"
+    },
+    {
+        "name": "Royal Academy of Law",
+        "city": "Oinam",
+        "state": "Manipur"
+    },
+    {
+        "name": "S. D. M. Law College",
+        "city": "Mangaluru",
+        "state": "Karnataka"
+    },
+    {
+        "name": "S. S. M. Law College",
+        "city": "Jalgaon",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "S.A. Manvi Law College, Gadag",
+        "city": "Gadag",
+        "state": "Karnataka"
+    },
+    {
+        "name": "SAGE University, Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Sarvajanik College of Law",
+        "city": "Surat",
+        "state": "Gujarat"
+    },
+    {
+        "name": "Saveetha Institute of Medical and Technical Sciences",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Seth Chunilal Amarchand Bohra Law College, Raichur",
+        "city": "Raichur",
+        "state": "Karnataka"
+    },
+    {
+        "name": "Shanmugha Arts Science Technology & Research Academy",
+        "city": "Thanjavur",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Shantaram Potdukhe College of Law",
+        "city": "Chandrapur",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Shivaji Law College",
+        "city": "Parbhani",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Shoolini University of Biotechnology and Management Sciences",
+        "city": "Solan",
+        "state": "Himachal Pradesh"
+    },
+    {
+        "name": "Shri Guru Teg Bhadur Khalsa College, Jabalpur",
+        "city": "Jabalpur",
+        "state": "Madhya Pradesh"
+    },
+    {
+        "name": "Sikkim Government Law College, Burtuk",
+        "city": "Gangtok",
+        "state": "Sikkim"
+    },
+    {
+        "name": "Siksha `O` Anusandhan",
+        "city": "Bhubaneswar",
+        "state": "Odisha"
+    },
+    {
+        "name": "Smt. Nathibai Damodar Thackersey Women's Univeristy, Mumbai",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Sri Padmavathi Mahila Visvavidyalayam",
+        "city": "Tirupathi",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "Sri Shirdi Sai Law College",
+        "city": "Anakapalli",
+        "state": "Andhra Pradesh"
+    },
+    {
+        "name": "SRM University, Delhi NCR",
+        "city": "Sonepat",
+        "state": "Haryana"
+    },
+    {
+        "name": "St. Wilfred?s College of Law",
+        "city": "Jaipur",
+        "state": "Rajasthan"
+    },
+    {
+        "name": "Swami Vivekanand Subharti University",
+        "city": "Meerut",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "name": "Symbiosis Law School",
+        "city": "Pune",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "Tamil Nadu Dr. Ambedkar Law University",
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+    },
+    {
+        "name": "Telangana University",
+        "city": "Nizamabad",
+        "state": "Telangana"
+    },
+    {
+        "name": "The Institute of Chartered Financial Analysts of India University",
+        "city": "Agartala",
+        "state": "Tripura"
+    },
+    {
+        "name": "The Institute of Chartered Financial Analysts of India University",
+        "city": "Gangtok",
+        "state": "Sikkim"
+    },
+    {
+        "name": "The Northcap University",
+        "city": "Gurugram",
+        "state": "Haryana"
+    },
+    {
+        "name": "The Rajiv Gandhi National University of Law, Patiala",
+        "city": "Patiala",
+        "state": "Punjab"
+    },
+    {
+        "name": "The Rashtrasant Tukadoji Maharaj Nagpur University",
+        "city": "Nagpur",
+        "state": "Maharashtra"
+    },
+    {
+        "name": "The West Bengal National University of Juridicial Sciences",
+        "city": "Kolkata",
+        "state": "West Bengal"
+    },
+    {
+        "name": "University of Jammu",
+        "city": "Jammu",
+        "state": "Jammu and Kashmir"
+    },
+    {
+        "name": "University of Petroleum and Energy Studies",
+        "city": "Dehradun",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "Uttaranchal University",
+        "city": "Dehradun",
+        "state": "Uttarakhand"
+    },
+    {
+        "name": "Vidya Vikas Mandals Govind Ramnath Kare College of Law, Margao",
+        "city": "South Goa",
+        "state": "Goa"
+    },
+    {
+        "name": "Vidyavardhaka Law College, Mysore",
+        "city": "Mysore",
+        "state": "Karnataka"
+    }
+]
