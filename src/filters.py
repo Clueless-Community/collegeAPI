@@ -15,36 +15,19 @@ class InvalidRegionPassedError(ValueError):
     """
 
 
-# Files Not Used:
-"""
-- allAgriculture.json
-- allParticipatingDentalColleges.json
-
-- nirfAllColleges.json
-- nirfAllParticipatingColleges22.json
-- nirfArchitectureColleges.json
-- nirfLawCollegesRanked.json
-- nirfManagementColleges.json
-- nirfMedicalColleges.json
-- nirfPharmacyColleges.json
-- nirfResearchColleges.json
-- nirfUniversities.json
-- nirfParticipatingUniversities.json
-"""
-
 DATA_PATH = os.path.join(os.getcwd(), "data")
 
 FIELD_FILES = {
-    "nirf": "allNirfColleges.json",
-    "dental": "nirfDentalColleges.json",
-    "medical": "allMedicalColleges.json",
-    "research": "allResearchColleges.json",
-    "law": "allParticipatedLawColleges.json",
-    "management": "allManagementColleges.json",
-    "engineering": "allEngineeringColleges.json",
-    "architecture": "allArchitectureColleges.json",
-    "pharmacy": "allParticipatingPharmacyColleges.json",
-    "universities": "nirfParticipatedUniversities.json",
+    "law": "law_participated.json",
+    "nirf": "college_participated.json",
+    "research": "research_ranking.json",
+    "dental": "dental_participated.json",
+    "medical": "medical_participated.json",
+    "pharmacy": "pharmacy_participated.json",
+    "universities": "university_ranking.json",
+    "management": "management_participated.json",
+    "engineering": "engineering_participated.json",
+    "architecture": "architecture_participated.json",
 }
 
 
@@ -79,6 +62,7 @@ def get_data(field: str) -> list:
     If field is correct, return the data mapped to it.
     Else, raises InvalidFieldPassedError from `check_values()`
     """
+    print("get_data", field)
     check_values(
         data=FIELD_FILES,
         value=field,
@@ -87,7 +71,7 @@ def get_data(field: str) -> list:
                    "Run `field_files.keys()` to get a set of all available fields."
                    )
     )
-
+    print("done")
     file = FIELD_FILES.get(field)
     file_path = os.path.join(DATA_PATH, file)
     return json.load(open(file_path))
@@ -123,7 +107,7 @@ def get_colleges(field: str,
     If region is not correct, raises InvalidRegionPassedError
     from `check_values()`.
     """
-
+    print("get_collegs")
     check_values(
         data=("state", "city"),
         value=region,
@@ -132,6 +116,48 @@ def get_colleges(field: str,
                    'Region either be "state" or "city".'
                    )
     )
-
-    data = get_data(field.strip("_colleges"))
+    print("done")
+    data = get_data(field)
+    print("data", data)
     return fetch_details(data, region, region_required)
+
+
+# Filter Function
+def filter_colleges(field: str,
+                    region_list: list[str],
+                    region: str = "state") -> list[int | str]:
+    
+    response = []
+    for i in region_list:
+        region_req = i.replace(" ", "").lower()
+        print(region_req)
+        response.extend(get_colleges(field, region, region_req))
+    return response
+
+
+def get_response(field: str,
+                 **regions: str) -> list[int | str]:
+
+    region = set(regions.keys()).pop()
+
+    region_list = [i.strip() for i in regions[region].split('&')]
+    print(regions, region, region_list)
+    try:
+        output = filter_colleges(field, region_list, region)
+        print(output)
+        if output[0] == -1:
+            output = -1
+    except:
+        output = -1
+
+    return output
+
+
+def get_field_data(file: str) -> str | int:
+    file_path = os.path.join(DATA_PATH, file)
+    try:
+        with open(file_path) as file:
+            output = file.read()
+    except:
+        output = -1
+    return output
